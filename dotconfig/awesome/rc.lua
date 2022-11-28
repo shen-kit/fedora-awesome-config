@@ -89,7 +89,7 @@ local editor       = os.getenv("EDITOR") or "vim"
 local browser      = "brave-browser"-- "brave-browser"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "default", "main", "secondary", "background"} -- { "1", "2", "3", "4", "5" }
+awful.util.tagnames = { "1", "2", "3", "4"} -- add as many tags as you want 
 awful.layout.layouts = {
     awful.layout.suit.tile,
     -- awful.layout.suit.floating,
@@ -214,10 +214,10 @@ globalkeys = mytable.join(
               {description = "go back", group = "tag"}),
 
     -- Non-empty tag browsing
-    awful.key({ altkey, "Control" }, "h", function () lain.util.tag_view_nonempty(-1) end,
-             {description = "view  previous nonempty", group = "tag"}),
-    awful.key({ altkey, "Control" }, "l", function () lain.util.tag_view_nonempty(1) end,
-             {description = "view  previous nonempty", group = "tag"}),
+    --awful.key({ altkey, "Control" }, "h", function () lain.util.tag_view_nonempty(-1) end,
+    --         {description = "view  previous nonempty", group = "tag"}),
+    --awful.key({ altkey, "Control" }, "l", function () lain.util.tag_view_nonempty(1) end,
+    --         {description = "view  previous nonempty", group = "tag"}),
 
     -- Default client focus
     awful.key({ modkey,           }, "k",

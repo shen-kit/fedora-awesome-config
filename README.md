@@ -15,6 +15,10 @@ run `sudo dnf upgrade && sudo dnf update` first!
 - sddm
 - tldr
 - trash-cli
+- xinput
+- xrandr
+- arndr
+- light
 
 ## RPM (external DNF libraries)
 - discord
