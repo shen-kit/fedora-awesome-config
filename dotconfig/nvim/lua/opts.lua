@@ -5,7 +5,6 @@ local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
 opt.scrolloff = 5 	 -- min lines of context
---opt.signcolumn = 'yes' -- show sign column
 
 -- [[ filetypes ]]
 opt.encoding = 'utf8'
@@ -35,3 +34,6 @@ opt.timeoutlen = 500
 
 -- [[ clipboard ]]
 opt.clipboard = 'unnamedplus'
+
+-- [[ find in subfolders ]]
+opt.path:append("**")
