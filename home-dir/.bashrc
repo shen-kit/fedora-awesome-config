@@ -49,20 +49,14 @@ alias ll="ls -la" #long listing format
 alias l.="ls -d .* --color=auto" #hidden files
 alias mkdir="mkdir -pv" #create parent directories + verbose
 
-alias c="z"
-alias ci="zi"
-alias cd="z"
-alias cdi="zi"
+alias rm="trash"
 
 # more complex commands
-alias activate-monitor="xrandr --output HDMI1 --primary --mode 1920x1080 --right-of eDP1"
 alias connect-headphones="bluetoothctl connect 2C:FD:B3:8C:50:89"
 alias screen-off="sleep 0.2 && xset dpms force off"
 
-alias tl="task my_list"
-alias t="task"
+# scripts
+alias pwds="py ~/shared/coding/projects/password-manager/password-manager.py"
 
 # prompt
-#export PS1="[\[$(tput sgr0)\]\[\033[38;5;226m\]\A\[$(tput sgr0)\]] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;9m\]\w\[$(tput sgr0)\]> \[$(tput sgr0)\]"
 export PS1="[\[$(tput sgr0)\]\[\033[38;5;11m\]\A\[$(tput sgr0)\]] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;9m\]\w\[$(tput sgr0)\]\n\\$ \[$(tput sgr0)\]"
-
