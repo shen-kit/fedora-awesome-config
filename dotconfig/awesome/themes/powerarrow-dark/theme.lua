@@ -34,13 +34,14 @@ theme.tasklist_bg_normal                        = "#1A1A1A"
 theme.titlebar_bg_focus                         = theme.bg_focus
 theme.titlebar_bg_normal                        = theme.bg_normal
 theme.titlebar_fg_focus                         = theme.fg_focus
+theme.taglist_squares_sel                       = theme.dir .. "/icons/square_sel.png"
+theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_unsel.png"
 theme.widget_ac                                 = theme.dir .. "/icons/ac.png"
 theme.widget_battery                            = theme.dir .. "/icons/battery.png"
 theme.widget_battery_low                        = theme.dir .. "/icons/battery_low.png"
 theme.widget_battery_empty                      = theme.dir .. "/icons/battery_empty.png"
 theme.widget_mem                                = theme.dir .. "/icons/mem.png"
 theme.widget_cpu                                = theme.dir .. "/icons/cpu.png"
-theme.widget_temp                               = theme.dir .. "/icons/temp.png"
 theme.widget_net                                = theme.dir .. "/icons/net.png"
 theme.widget_hdd                                = theme.dir .. "/icons/hdd.png"
 theme.widget_vol                                = theme.dir .. "/icons/vol.png"
@@ -167,8 +168,6 @@ function theme.at_screen_connect(s)
     -- Tags
     awful.tag(awful.util.tagnames, s, awful.layout.layouts[1])
 
-    -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
 	-- create taglist
     s.mytaglist = awful.widget.taglist(s, awful.widget.taglist.filter.all, awful.util.taglist_buttons)
 
@@ -185,11 +184,8 @@ function theme.at_screen_connect(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            --spr,
             s.mytaglist,
-            wibox.widget.textbox('         '),
-            s.mypromptbox,
-            spr,
+			spr,
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
@@ -206,12 +202,6 @@ function theme.at_screen_connect(s)
             arrl_ld,
             wibox.container.background(cpuicon, theme.bg_focus),
             wibox.container.background(cpu.widget, theme.bg_focus),
-            -- arrl_dl,
-            -- tempicon,
-            -- temp.widget,
-            -- arrl_ld,
-            -- wibox.container.background(fsicon, theme.bg_focus),
-            -- wibox.container.background(theme.fs.widget, theme.bg_focus),
             arrl_dl,
             baticon,
             bat.widget,
@@ -221,8 +211,6 @@ function theme.at_screen_connect(s)
             arrl_dl,
             clock,
             spr,
-            -- arrl_ld,
-            -- wibox.container.background(s.mylayoutbox, theme.bg_focus),
         },
     }
 end
