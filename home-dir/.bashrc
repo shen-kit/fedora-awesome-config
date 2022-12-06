@@ -49,6 +49,9 @@ alias ll="ls -la" #long listing format
 alias l.="ls -d .* --color=auto" #hidden files
 alias mkdir="mkdir -pv" #create parent directories + verbose
 
+alias shutdown-sync-onedrive="onedrive --synchronize && shutdown now"
+alias reboot-sync-onedrive="onedrive --synchronize && reboot"
+
 alias rm="trash"
 
 # more complex commands
@@ -60,3 +63,10 @@ alias pwds="py ~/shared/coding/projects/password-manager/password-manager.py"
 
 # prompt
 export PS1="[\[$(tput sgr0)\]\[\033[38;5;11m\]\A\[$(tput sgr0)\]] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;9m\]\w\[$(tput sgr0)\]\n\\$ \[$(tput sgr0)\]"
+
+# ls colours
+export LS_COLORS='ow=1;35'
+
+# github credential manager
+export GPG_TTY=$(tty)
+
