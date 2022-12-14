@@ -1,22 +1,38 @@
 -- [[ init.lua ]]
 
--- LEADER
-vim.g.mapleader = ' '
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- theme
---vim.cmd('colorscheme nord') -- UNCOMMENT
---vim.cmd('colorscheme dracula')
---vim.cmd('colorscheme gloombuddy')
--- vim.cmd('colorscheme molokai')
+vim.cmd 'colorscheme nord'
 
 -- IMPORTS
-require('vars')
-require('opts')
-require('keys')
-require('plugins')
 
--- nvim-tree (file explorer)
---vim.g.loaded_netrw = 1
---vim.g.loaded_netrwPlugin = 1
+require 'shenkit.opts'
+require 'shenkit.keys'
+require 'shenkit.plugins'
+require 'shenkit.cmp'
+require 'shenkit.lsp'
+require 'shenkit.treesitter'
+require 'shenkit.autopairs'
+require 'shenkit.toggleterm'
 
---require('nvim-tree').setup()
+-- setup
+require 'nvim-tree'.setup({
+  view = {
+    side = "right",
+    width = 40,
+  },
+  filters = {
+    dotfiles = true,
+  },
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  },
+})
+
+require 'nvim-ts-autotag'.setup()
+require 'prettier'.setup()
