@@ -2,21 +2,22 @@
 -- my first awesome rice --
 ---------------------------
 
-local theme_assets = require("beautiful.theme_assets")
-local xresources = require("beautiful.xresources")
-local dpi = xresources.apply_dpi
-local awful = require("awful")
-local wibox = require("wibox")
-local gears = require("gears")
-local lain = require("lain")
-local markup = lain.util.markup
+local theme_assets  = require("beautiful.theme_assets")
+local xresources    = require("beautiful.xresources")
+local dpi           = xresources.apply_dpi
+local awful         = require("awful")
+local wibox         = require("wibox")
+local gears         = require("gears")
+local lain          = require("lain")
+local markup        = lain.util.markup
 
-local theme_path = "~/.config/awesome/themes/theme-1/"
+local theme_path    = "~/.config/awesome/themes/theme-1/"
 
 local theme = {}
 
 -- ========== variable definitions ==========
 theme.font          = "Hack Nerd Font 9"
+theme.wallpaper = theme_path.."wall.jpg"
 
 theme.bg_normal     = "#1A1A1A"
 theme.bg_focus      = "#303030"
@@ -26,17 +27,16 @@ theme.fg_normal     = "#aaaaaa"
 theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 
-theme.tasklist_disable_icon = true
-
+-- clients
 theme.useless_gap   = dpi(2)
 theme.border_width  = dpi(1)
 theme.border_normal = "#3F3F3F"
 theme.border_focus  = "#7F7FAF"
+ 
+-- tasklist
+theme.tasklist_disable_icon = true
 
-theme.wallpaper = theme_path.."wall.jpg"
-
-
--- taglist squares local taglist_square_size = dpi(4)
+-- taglist
 local taglist_square_size = dpi(4)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
     taglist_square_size, theme.fg_normal
@@ -83,6 +83,48 @@ theme.volume = lain.widget.alsa({
 })
 
 
+-- redshift
+local myredshift = wibox.widget{
+    checked      = false,
+    forced_width = 20,
+    check_color  = "#EB8F8F",
+    border_color = "#EB8F8F",
+    border_width = 1,
+    paddings     = 0,
+    shape        = gears.shape.circle,
+    widget       = wibox.widget.checkbox
+}
+
+local myredshift_text = wibox.widget{
+    align  = "center",
+    widget = wibox.widget.textbox,
+}
+
+local myredshift_stack = wibox.widget{
+    myredshift,
+    myredshift_text,
+    layout = wibox.layout.stack
+}
+local redshift_placed = wibox.widget {
+  myredshift_stack,
+  valign = "center",
+  halign = "center",
+  widget = wibox.container.place,
+}
+
+lain.widget.contrib.redshift.attach(
+    myredshift,
+    function (active)
+        if active then
+            myredshift_text:set_markup(markup(theme.bg_normal, "<b>R</b>"))
+        else
+            myredshift_text:set_markup(markup(theme.fg_normal, "R"))
+        end
+        myredshift.checked = active
+    end
+)
+
+
 -- separator widget
 local spr = wibox.widget.textbox('  ')
 
@@ -99,13 +141,41 @@ function theme.at_screen_connect(s)
     s.mytaglist = awful.widget.taglist {
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
-        buttons = taglist_buttons
+        buttons = taglist_buttons,
+        layout  = {
+            spacing = 4,
+            layout = wibox.layout.fixed.horizontal,
+            spacing_widget = {
+                color = theme.bg_normal,
+            }
+        },
     }
 
     -- create a tasklist widget
     s.mytasklist = awful.widget.tasklist {
         screen  = s,
-        filter  = awful.widget.tasklist.filter.currenttags
+        filter  = awful.widget.tasklist.filter.currenttags,
+        buttons = awful.util.tasklist_buttons,
+        style = {
+            shape = gears.shape.rounded_rect,
+            shape_border_width = 4,
+            shape_border_color = theme.bg_normal,
+            align = "center"
+        },
+        layout   = {
+            spacing = 20,
+            spacing_widget = {
+                {
+                    forced_width = 4,
+                    shape        = gears.shape.circle,
+                    widget       = wibox.widget.separator
+                },
+                valign = 'center',
+                halign = 'center',
+                widget = wibox.container.place,
+            },
+            layout  = wibox.layout.flex.horizontal
+        }
     }
 
     -- Create the wibox
@@ -123,6 +193,9 @@ function theme.at_screen_connect(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
+            spr,
+            -- myredshift_stack,
+            redshift_placed,
             spr,
             volicon,
             theme.volume.widget,

@@ -4,19 +4,16 @@ pcall(require, "luarocks.loader")
 
 -- ==================== IMPORT REQUIREMENTS ====================
 -- Standard awesome library
-local gears = require("gears")
-local awful = require("awful")
-              require("awful.autofocus")
--- Widget and layout library
-local wibox = require("wibox")
--- Theme handling library
-local beautiful = require("beautiful")
--- Notification library
-local naughty = require("naughty")
+local gears         = require("gears")
+local awful         = require("awful")
+                      require("awful.autofocus")
+local wibox         = require("wibox")                -- Widget and layout library
+local beautiful     = require("beautiful")            -- theme handling library
+local naughty       = require("naughty")              -- notification library
 local hotkeys_popup = require("awful.hotkeys_popup")
--- Enable hotkeys help widget for VIM and other apps
--- when client with a matching name is opened:
-require("awful.hotkeys_popup.keys")
+                      require("awful.hotkeys_popup.keys")
+local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
+local lain          = require("lain")
 
 
 -- ==================== ERROR HANDLING ====================
@@ -58,6 +55,14 @@ local browser = "brave-browser"
 
 local modkey = "Mod4"
 local altkey = "Mod1"
+
+awful.util.tasklist_buttons = mytable.join(
+    awful.button({}, 1, function(c)
+        if c ~= client.focus then
+          c:emit_signal("request::activate", "tasklist", {raise = true })
+        end
+    end)
+)
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
@@ -116,12 +121,12 @@ local globalkeys = gears.table.join(
 
     -- window focus
     awful.key({ modkey }, "j",
-        function () awful.client.focus.byidx( 1) end,
-        {description = "focus next by index", group = "client"}
-    ),
-    awful.key({ modkey }, "k",
         function () awful.client.focus.byidx(-1) end,
         {description = "focus previous by index", group = "client"}
+    ),
+    awful.key({ modkey }, "k",
+        function () awful.client.focus.byidx( 1) end,
+        {description = "focus next by index", group = "client"}
     ),
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
               {description = "swap with next client", group = "client"}),
@@ -201,6 +206,9 @@ local globalkeys = gears.table.join(
               {description = "+7.5%", group = "hotkeys"}),
     awful.key({ }, "XF86MonBrightnessDown", function () os.execute("light -U 7.5") end,
               {description = "-7.5%", group = "hotkeys"}),
+
+    -- redshift
+    awful.key({ modkey, "Shift" }, "t", function () lain.widget.contrib.redshift.toggle() end),
 
     -- ALSA volume control
     awful.key({ }, "XF86AudioRaiseVolume",
