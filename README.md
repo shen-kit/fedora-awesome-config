@@ -3,30 +3,35 @@ run `sudo dnf upgrade && sudo dnf update` first!
 # Install the Following
 
 ## DNF
+- arndr
 - awesome
 - alacritty
-- dmenu
-- neovim
-- zoxide
-- okular
 - compton
-- nautilus
+- dmenu
+- gcalcli
 - git
+- libreoffice
+- light
+- neovim
+- nodejs
+- okular
+- python3
+- scrot
 - sddm
+- thunar
 - tldr
 - trash-cli
 - xinput
 - xrandr
-- arndr
-- light
+- zoxide
 
 ## RPM (external DNF libraries)
-- discord
 - brave
+- discord
 
 ## Flatpak
-- spotify
 - obsidian
+- spotify
 
 ## Other
 - git credential manager
