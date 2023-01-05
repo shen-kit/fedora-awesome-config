@@ -7,13 +7,11 @@ pcall(require, "luarocks.loader")
 local gears         = require("gears")
 local awful         = require("awful")
                       require("awful.autofocus")
-local wibox         = require("wibox")                -- Widget and layout library
 local beautiful     = require("beautiful")            -- theme handling library
 local naughty       = require("naughty")              -- notification library
 local hotkeys_popup = require("awful.hotkeys_popup")
                       require("awful.hotkeys_popup.keys")
 local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
-local lain          = require("lain")
 
 
 -- ==================== ERROR HANDLING ====================
@@ -43,9 +41,9 @@ end
 
 -- ==================== VARIABLE DEFINITIONS ====================
 -- theme for colours, icons, font and wallpapers
--- local theme = "theme-1"
--- beautiful.init(string.format("~/.config/awesome/themes/%s/theme.lua", theme))
-beautiful.init("~/.config/awesome/themes/theme-1/theme.lua")
+local theme = "theme-1"
+beautiful.init(string.format("~/.config/awesome/themes/%s/theme.lua", theme))
+-- beautiful.init("~/.config/awesome/themes/theme-1/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 local terminal = "alacritty"
@@ -206,9 +204,6 @@ local globalkeys = gears.table.join(
               {description = "+7.5%", group = "hotkeys"}),
     awful.key({ }, "XF86MonBrightnessDown", function () os.execute("light -U 7.5") end,
               {description = "-7.5%", group = "hotkeys"}),
-
-    -- redshift
-    awful.key({ modkey, "Shift" }, "t", function () lain.widget.contrib.redshift.toggle() end),
 
     -- ALSA volume control
     awful.key({ }, "XF86AudioRaiseVolume",

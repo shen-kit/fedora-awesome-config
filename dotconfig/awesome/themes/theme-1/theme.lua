@@ -32,7 +32,7 @@ theme.useless_gap   = dpi(2)
 theme.border_width  = dpi(1)
 theme.border_normal = "#3F3F3F"
 theme.border_focus  = "#7F7FAF"
- 
+
 -- tasklist
 theme.tasklist_disable_icon = true
 
@@ -124,9 +124,47 @@ lain.widget.contrib.redshift.attach(
     end
 )
 
+-- battery
+local baticon = wibox.widget.textbox(' ')
+local bat = lain.widget.bat({
+    timeout  = 20,
+    settings = function()
+        if bat_now.status and bat_now.status ~= "N/A" then
+            if bat_now.ac_status == 1 then
+                baticon:set_markup(' ')
+                widget:set_markup(markup.font(theme.font, " " .. bat_now.perc .. "% "))
+                return
+            elseif tonumber(bat_now.perc) <= 20 then
+                baticon:set_markup(' ')
+            elseif tonumber(bat_now.perc) <= 40 then
+                baticon:set_markup(' ')
+            elseif tonumber(bat_now.perc) <= 60 then
+                baticon:set_markup(' ')
+            elseif tonumber(bat_now.perc) <= 80 then
+                baticon:set_markup(' ')
+            else
+                baticon:set_markup(' ')
+            end
+            widget:set_markup(markup.font(theme.font, " " .. bat_now.perc .. "% " .. bat_now.time .. " remaining"))
+        else
+            widget:set_markup(markup.font(theme.font, " 100% "))
+        end
+    end
+})
+
 
 -- separator widget
-local spr = wibox.widget.textbox('  ')
+local gap = wibox.widget.textbox('  ')
+local spr = wibox.widget{
+  widget = wibox.widget.separator,
+  shape = gears.shape.circle,
+  color = "#52b0c4",
+  border_color = theme.bg_normal,
+  border_width = 6,
+  forced_height = 4,
+  forced_width = 16,
+}
+local spr_long = wibox.widget.textbox('        ')
 
 function theme.at_screen_connect(s)
     -- set wallpaper
@@ -187,21 +225,26 @@ function theme.at_screen_connect(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             s.mytaglist,
-            spr,
+            spr_long
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            spr_long,
             wibox.widget.systray(),
             spr,
-            -- myredshift_stack,
+            gap,
             redshift_placed,
+            gap,
             spr,
             volicon,
             theme.volume.widget,
             spr,
+            baticon,
+            bat,
+            spr,
             mytextclock,
-            s.mylayoutbox,
+            gap
         },
     }
 end
