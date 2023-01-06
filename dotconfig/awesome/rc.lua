@@ -41,9 +41,13 @@ end
 
 -- ==================== VARIABLE DEFINITIONS ====================
 -- theme for colours, icons, font and wallpapers
-local theme = "theme-1"
+local themes = {
+    "theme-1",
+    "everforest"
+}
+local theme = themes[2]
 beautiful.init(string.format("~/.config/awesome/themes/%s/theme.lua", theme))
--- beautiful.init("~/.config/awesome/themes/theme-1/theme.lua")
+-- beautiful.init("~/.config/awesome/themes/everforest/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 local terminal = "alacritty"
@@ -126,7 +130,9 @@ local globalkeys = gears.table.join(
         function () awful.client.focus.byidx( 1) end,
         {description = "focus next by index", group = "client"}
     ),
-    awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
+    awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(-1)    end,
+              {description = "swap with previous client", group = "client"}),
+    awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx(1)    end,
               {description = "swap with next client", group = "client"}),
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
               {description = "focus next screen", group = "screen"}),

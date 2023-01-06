@@ -11,7 +11,7 @@ local gears         = require("gears")
 local lain          = require("lain")
 local markup        = lain.util.markup
 
-local theme_path    = "~/.config/awesome/themes/theme-1/"
+local theme_path    = "~/.config/awesome/themes/everforest/"
 
 local theme = {}
 
@@ -19,8 +19,8 @@ local theme = {}
 theme.font          = "Hack Nerd Font 9"
 theme.wallpaper = theme_path.."wall.jpg"
 
-theme.bg_normal     = "#1A1A1A"
-theme.bg_focus      = "#303030"
+theme.bg_normal     = "#0d140d"
+theme.bg_focus      = "#213321"
 theme.bg_minimize   = "#232b2b"
 theme.bg_urgent     = "#ff0000"
 theme.fg_normal     = "#aaaaaa"
@@ -29,9 +29,9 @@ theme.fg_urgent     = "#ffffff"
 
 -- clients
 theme.useless_gap   = dpi(2)
-theme.border_width  = dpi(1)
-theme.border_normal = "#3F3F3F"
-theme.border_focus  = "#7F7FAF"
+theme.border_width  = dpi(2)
+theme.border_normal = "#3c4a3c"
+theme.border_focus  = "#396339"
 
 -- tasklist
 theme.tasklist_disable_icon = true
