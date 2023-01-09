@@ -1,0 +1,7 @@
+2022/12/17-14:32:48.406 4ff8 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.disneyplus.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/12/17-14:32:48.407 4ff8 Recovering log #3
+2022/12/17-14:32:48.407 4ff8 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.disneyplus.com_0.indexeddb.leveldb/000003.log 
+2022/12/17-14:33:45.476 4ec4 Level-0 table #5: started
+2022/12/17-14:33:45.479 4ec4 Level-0 table #5: 3655 bytes OK
+2022/12/17-14:33:45.482 4ec4 Delete type=0 #3
+2022/12/17-14:33:45.482 4ec4 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,7 @@
+2023/01/02-00:02:34.589 39f0 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/02-00:02:34.589 39f0 Recovering log #3
+2023/01/02-00:02:34.590 39f0 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000003.log 
+2023/01/02-00:03:39.636 3672 Level-0 table #5: started
+2023/01/02-00:03:39.641 3672 Level-0 table #5: 8927 bytes OK
+2023/01/02-00:03:39.646 3672 Delete type=0 #3
+2023/01/02-00:03:39.646 3672 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

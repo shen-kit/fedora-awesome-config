@@ -54,6 +54,8 @@ packer.startup(function(use)
  
   -- colorscheme
 	use 'arcticicestudio/nord-vim'
+  use "EdenEast/nightfox.nvim"
+
 
   -- completion
   use 'hrsh7th/nvim-cmp'
@@ -92,6 +94,14 @@ packer.startup(function(use)
 			'nvim-tree/nvim-web-devicons',
 		},
 	}
+
+  use 'startup-nvim/startup.nvim'
+
+  -- statusline
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
 	-- comments
 	use {

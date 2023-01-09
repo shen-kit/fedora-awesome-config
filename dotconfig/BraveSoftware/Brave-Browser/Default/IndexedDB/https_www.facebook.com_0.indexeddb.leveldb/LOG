@@ -1,0 +1,13 @@
+2022/12/21-10:20:11.579 82a Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/12/21-10:20:11.579 82a Recovering log #36
+2022/12/21-10:20:11.579 82a Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/000036.log 
+2022/12/21-10:20:13.076 807 Level-0 table #41: started
+2022/12/21-10:20:13.080 807 Level-0 table #41: 517 bytes OK
+2022/12/21-10:20:13.084 807 Delete type=0 #36
+2022/12/21-10:20:13.084 807 Manual compaction at level-0 from '\x00\x0e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0e\x00\x00\x05' @ 332 : 1
+2022/12/21-10:20:13.084 807 Compacting 1@0 + 1@1 files
+2022/12/21-10:20:13.089 807 Generated table #42@0: 11 keys, 473 bytes
+2022/12/21-10:20:13.089 807 Compacted 1@0 + 1@1 files => 473 bytes
+2022/12/21-10:20:13.093 807 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/21-10:20:13.093 807 Delete type=2 #41
+2022/12/21-10:20:13.094 807 Manual compaction at level-0 from '\x00\x0e\x00\x00\x05' @ 332 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,7 @@
+XDG_DESKTOP_DIR="/mnt/shared/locations/desktop"
+XDG_DOWNLOAD_DIR="/mnt/shared/locations/downloads"
+XDG_DOCUMENTS_DIR="/mnt/shared/locations/documents"
+XDG_MUSIC_DIR="/mnt/shared/locations/music"
+XDG_PICTURES_DIR="/mnt/shared/locations/pictures"
+XDG_VIDEOS_DIR="/mnt/shared/locations/videos"
+

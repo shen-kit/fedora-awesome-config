@@ -1,0 +1,43 @@
+[Desktop Entry]
+FullScreen=false
+
+[MainWindow]
+DP-3 eDP-1=DP-3
+DP-3 eDP-1 Height 1280x720 eDP-1=680
+DP-3 eDP-1 Height 1920x1080 DP-3=1040
+DP-3 eDP-1 Width 1280x720 eDP-1=630
+DP-3 eDP-1 Width 1920x1080 DP-3=950
+DP-3 eDP-1 XPosition 1280x720 eDP-1=6
+DP-3 eDP-1 XPosition 1920x1080 DP-3=1350
+DP-3 eDP-1 YPosition 1280x720 eDP-1=466
+DP-3 eDP-1 YPosition 1920x1080 DP-3=34
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABQAAAAK0AAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+eDP-1 Height 1280x720 eDP-1=687
+eDP-1 Width 1280x720 eDP-1=632
+eDP-1 XPosition 1280x720 eDP-1=5
+eDP-1 YPosition 1280x720 eDP-1=28
+
+[Recent Files]
+File1[$e]=$HOME/OneDrive/Tuition/resources/12 physics/Textbooks/Pearson/Pearson Ch 5.pdf
+File10[$e]=$HOME/.config/awesome/themes/everforest/taglist/squarew.png
+File2[$e]=$HOME/OneDrive/Tuition/resources/12 chemistry/Textbooks/Pearson 12/ChemPearsonCh2.pdf
+File3[$e]=$HOME/OneDrive/Tuition/resources/12 chemistry/Textbooks/Pearson 12/ChemPearsonChAnswers.pdf
+File4[$e]=$HOME/OneDrive/Tuition/resources/12 physics/Textbooks/Pearson/Pearson Worked Solutions.pdf
+File5[$e]=/mnt/shared/locations/downloads/1568041-Itinerary-Document.pdf
+File6[$e]=$HOME/shared/Uni/2023 Monash Residency Agreement.pdf
+File7[$e]=$HOME/OneDrive/Uni/residency agreement signed.pdf
+File8[$e]=$HOME/OneDrive/Documents/Important/unsw-accept-summary-96f0d0afb639c1879da45d2ab8cc70eececffd29.pdf
+File9[$e]=$HOME/.config/awesome/themes/everforest/taglist/squarefw.png
+Name1[$e]=Pearson Ch 5.pdf
+Name10[$e]=squarew.png
+Name2[$e]=ChemPearsonCh2.pdf
+Name3[$e]=ChemPearsonChAnswers.pdf
+Name4[$e]=Pearson Worked Solutions.pdf
+Name5[$e]=1568041-Itinerary-Document.pdf
+Name6[$e]=2023 Monash Residency Agreement.pdf
+Name7[$e]=residency agreement signed.pdf
+Name8[$e]=unsw-accept-summary-96f0d0afb639c1879da45d2ab8cc70eececffd29.pdf
+Name9[$e]=squarefw.png

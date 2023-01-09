@@ -1,0 +1,5 @@
+[Trace 13:11:21.269] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/shenkit/coding/courses/css-dave-gray/notes.md
+[Trace 13:11:21.270] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/shenkit/coding/courses/css-dave-gray/notes.md
+[Trace 13:11:21.270] Server: connection.languages.diagnostics.on: file:///home/shenkit/coding/courses/css-dave-gray/notes.md
+[Trace 13:11:21.271] Server: connection.languages.diagnostics.on: file:///home/shenkit/coding/courses/css-dave-gray/notes.md
+[Debug 13:11:21.302] LinkProvider: compute - file:///home/shenkit/coding/courses/css-dave-gray/notes.md

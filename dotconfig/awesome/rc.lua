@@ -68,7 +68,7 @@ awful.util.tasklist_buttons = mytable.join(
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.tile.left,
+    awful.layout.suit.tile,
 }
 
 
@@ -307,6 +307,7 @@ root.keys(globalkeys)
 -- ==================== Rules ====================
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
+
     -- All clients
     { rule = { },
       properties = { border_width = beautiful.border_width,
@@ -317,6 +318,14 @@ awful.rules.rules = {
                      screen = awful.screen.preferred,
                      placement = awful.placement.no_overlap+awful.placement.no_offscreen
      }
+    },
+
+    { rule = { instance = "spotify" },
+      properties = { screen = 2, tag = " 4 " }
+    },
+
+    { rule = { instance = "obsidian" },
+      properties = { screen = 1, tag = " 1 "}
     },
 
     -- Floating clients.
@@ -383,3 +392,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- ==================== AUTOSTART APPLICATIONS ====================
 awful.spawn.with_shell("compton")
 awful.spawn.with_shell("xfce4-power-manager")
+awful.spawn(terminal)
+awful.spawn("flatpak run md.obsidian.Obsidian")

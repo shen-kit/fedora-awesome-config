@@ -1,0 +1,7 @@
+2022-12-22 12:21:49.249 [info] Starting worker process with pid 5127 (type: fileWatcher, window: 1).
+2022-12-22 12:21:52.457 [info] Getting Manifest... dart-code.dart-code
+2022-12-22 12:21:57.629 [info] Installing extension: dart-code.dart-code
+2022-12-22 12:22:15.273 [info] Extracted extension to /home/shenkit/.vscode/extensions/.36d2ae35-cd64-4a5c-b99e-1f392a4ac837: dart-code.dart-code
+2022-12-22 12:22:15.291 [info] Renamed to /home/shenkit/.vscode/extensions/dart-code.dart-code-3.56.0
+2022-12-22 12:22:15.297 [info] Extracting completed. dart-code.dart-code
+2022-12-22 12:22:15.305 [info] Extension installed successfully: dart-code.dart-code

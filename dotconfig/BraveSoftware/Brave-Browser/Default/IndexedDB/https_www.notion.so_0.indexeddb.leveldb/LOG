@@ -1,0 +1,14 @@
+2023/01/08-12:56:48.598 5a50 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/08-12:56:48.598 5a50 Recovering log #42
+2023/01/08-12:56:48.598 5a50 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.notion.so_0.indexeddb.leveldb/000042.log 
+2023/01/08-12:56:48.598 5a50 Delete type=2 #41
+2023/01/08-12:56:49.159 5a50 Level-0 table #47: started
+2023/01/08-12:56:49.163 5a50 Level-0 table #47: 549 bytes OK
+2023/01/08-12:56:49.167 5a50 Delete type=0 #42
+2023/01/08-12:56:49.167 5a50 Manual compaction at level-0 from '\x00\x0d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0e\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0d\x00\x00\x05' @ 2506 : 1
+2023/01/08-12:56:49.167 5a50 Compacting 1@0 + 1@1 files
+2023/01/08-12:56:49.172 5a50 Generated table #48@0: 797 keys, 9516 bytes
+2023/01/08-12:56:49.172 5a50 Compacted 1@0 + 1@1 files => 9516 bytes
+2023/01/08-12:56:49.176 5a50 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/01/08-12:56:49.176 5a50 Delete type=2 #47
+2023/01/08-12:56:49.176 5a50 Manual compaction at level-0 from '\x00\x0d\x00\x00\x05' @ 2506 : 1 .. '\x00\x0e\x00\x00\x00' @ 0 : 0; will stop at (end)

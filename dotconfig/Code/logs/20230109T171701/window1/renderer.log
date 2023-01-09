@@ -1,0 +1,9 @@
+2023-01-09 17:17:02.630 [error] Error: File not found
+    at h.handleSetInputError (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2745:95931)
+    at async h.setInput (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2745:95171)
+    at async a.doSetInput (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2743:6429)
+    at async a.doOpenEditor (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2743:4791)
+    at async a.openEditor (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2743:3783)
+    at async vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2970:16742
+2023-01-09 17:17:02.775 [warning] [backup tracker] suspended, ignoring dirty change event untitled:Untitled-1 
+2023-01-09 17:17:02.776 [warning] [backup tracker] suspended, ignoring content change event untitled:Untitled-1 

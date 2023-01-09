@@ -1,0 +1,3 @@
+2022-12-11 12:16:01.657 [info] [perf] Render performance baseline is 21ms
+2022-12-11 12:29:59.556 [error] Cannot uninstall 'Dart' extension. 'Flutter' extension depends on this.: Internal: Cannot uninstall 'Dart' extension. 'Flutter' extension depends on this.
+    at $.uninstallExtension (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:87:100646)

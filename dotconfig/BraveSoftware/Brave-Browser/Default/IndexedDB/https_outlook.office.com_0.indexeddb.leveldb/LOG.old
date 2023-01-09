@@ -1,0 +1,13 @@
+2022/12/14-12:33:10.724 6387 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/12/14-12:33:10.724 6387 Recovering log #7
+2022/12/14-12:33:10.724 6387 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/000007.log 
+2022/12/14-12:33:17.124 6357 Level-0 table #11: started
+2022/12/14-12:33:17.125 6357 Level-0 table #11: 11727 bytes OK
+2022/12/14-12:33:17.126 6357 Delete type=0 #7
+2022/12/14-12:33:17.126 6357 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x04\x00\x00\x05' @ 118 : 1
+2022/12/14-12:33:17.126 6357 Compacting 1@0 + 1@1 files
+2022/12/14-12:33:17.127 6357 Generated table #12@0: 21 keys, 6347 bytes
+2022/12/14-12:33:17.127 6357 Compacted 1@0 + 1@1 files => 6347 bytes
+2022/12/14-12:33:17.129 6357 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/12/14-12:33:17.129 6357 Delete type=2 #11
+2022/12/14-12:33:17.129 6357 Manual compaction at level-0 from '\x00\x04\x00\x00\x05' @ 118 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

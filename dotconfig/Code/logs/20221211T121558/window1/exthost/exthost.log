@@ -1,0 +1,25 @@
+2022-12-11 12:15:59.515 [info] Extension host with pid 5974 started
+2022-12-11 12:15:59.515 [info] Skipping acquiring lock for /home/shenkit/.config/Code/User/workspaceStorage/9a29241764ed83e49316e12dfc715a63.
+2022-12-11 12:15:59.553 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2022-12-11 12:15:59.553 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2022-12-11 12:15:59.553 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2022-12-11 12:15:59.580 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-12-11 12:15:59.597 [info] Eager extensions activated
+2022-12-11 12:15:59.602 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2022-12-11 12:15:59.602 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-12-11 12:15:59.602 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-12-11 12:15:59.602 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-12-11 12:16:03.398 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2022-12-11 12:16:03.414 [info] ExtensionService#_doActivateExtension maptz.regionfolder, startup: false, activationEvent: '*'
+2022-12-11 12:16:03.414 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2022-12-11 12:16:22.617 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2022-12-11 12:16:23.969 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2022-12-11 12:16:37.648 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2022-12-11 12:16:37.648 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2022-12-11 12:16:37.649 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2022-12-11 12:19:59.777 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2022-12-11 12:29:46.630 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2022-12-11 12:57:46.355 [info] Extension host terminating: received terminate message from renderer
+2022-12-11 12:57:46.376 [error] Error: read ECONNRESET
+	at Pipe.onStreamRead (node:internal/stream_base_commons:217:20)
+2022-12-11 12:57:46.382 [info] Extension host with pid 5974 exiting with code 0

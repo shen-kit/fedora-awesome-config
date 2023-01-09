@@ -3,11 +3,17 @@
 -- disable netrw
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+vim.g.startup_bookmarks = {
+  ['n'] = '~/.config/nvim/',
+  ['c'] = '~/coding/courses/',
+  ['p'] = '~/coding/projects/',
+}
 
--- theme
-vim.cmd 'colorscheme nord'
+-- [[ THEME ]]
+-- vim.cmd 'colorscheme nord'
+vim.cmd 'colorscheme nightfox'
 
--- IMPORTS
+-- [[ IMPORTS ]]
 
 require 'shenkit.opts'
 require 'shenkit.keys'
@@ -17,8 +23,9 @@ require 'shenkit.lsp'
 require 'shenkit.treesitter'
 require 'shenkit.autopairs'
 require 'shenkit.toggleterm'
+require 'shenkit.startup'
 
--- setup
+-- [[ PLUGIN SETUP ]]
 require 'nvim-tree'.setup({
   view = {
     side = "right",
@@ -29,10 +36,19 @@ require 'nvim-tree'.setup({
   },
   actions = {
     open_file = {
-      quit_on_open = true,
+      -- quit_on_open = true,
     },
   },
 })
 
+require 'nightfox'.setup({
+  options = {
+    styles = {
+      comments = 'italic',
+    }
+  }
+})
+
 require 'nvim-ts-autotag'.setup()
 require 'prettier'.setup()
+require 'lualine'.setup()

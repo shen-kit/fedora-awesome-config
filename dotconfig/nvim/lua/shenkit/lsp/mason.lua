@@ -3,7 +3,8 @@ local servers = {
 	"pyright",
 	"jsonls",
   "html",
-  "quick_lint_js"
+  "quick_lint_js",
+  "cssls",
 }
 
 local settings = {

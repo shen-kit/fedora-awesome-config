@@ -1,0 +1,21 @@
+2023/01/09-16:44:56.842 151f Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/bmnlcjabgnpnenekpadlanbbkooimhnj/MANIFEST-000001
+2023/01/09-16:44:56.843 151f Recovering log #511
+2023/01/09-16:44:56.848 151f Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/bmnlcjabgnpnenekpadlanbbkooimhnj/000511.log 
+2023/01/09-16:44:58.476 150e Level-0 table #514: started
+2023/01/09-16:44:58.511 150e Level-0 table #514: 1623162 bytes OK
+2023/01/09-16:44:58.515 150e Delete type=0 #511
+2023/01/09-16:44:58.516 150e Compacting 4@0 + 1@1 files
+2023/01/09-16:44:58.550 150e Generated table #515@0: 17 keys, 2249964 bytes
+2023/01/09-16:44:58.550 150e Compacted 4@0 + 1@1 files => 2249964 bytes
+2023/01/09-16:44:58.554 150e compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/01/09-16:44:58.555 150e Delete type=2 #508
+2023/01/09-16:44:58.555 150e Delete type=2 #510
+2023/01/09-16:44:58.555 150e Delete type=2 #514
+2023/01/09-16:44:58.555 150e Delete type=2 #502
+2023/01/09-16:44:58.555 150e Delete type=2 #505
+2023/01/09-16:45:05.266 14f8 Level-0 table #517: started
+2023/01/09-16:45:05.309 14f8 Level-0 table #517: 2163599 bytes OK
+2023/01/09-16:45:05.314 14f8 Delete type=0 #513
+2023/01/09-17:07:44.231 397a Level-0 table #519: started
+2023/01/09-17:07:44.264 397a Level-0 table #519: 2163429 bytes OK
+2023/01/09-17:07:44.269 397a Delete type=0 #516

@@ -115,6 +115,11 @@ _G.packer_plugins = {
     path = "/home/shenkit/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/shenkit/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/shenkit/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -124,6 +129,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/shenkit/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/shenkit/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nord-vim"] = {
     loaded = true,
@@ -194,6 +204,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/shenkit/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
+  },
+  ["startup.nvim"] = {
+    loaded = true,
+    path = "/home/shenkit/.local/share/nvim/site/pack/packer/start/startup.nvim",
+    url = "https://github.com/startup-nvim/startup.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
