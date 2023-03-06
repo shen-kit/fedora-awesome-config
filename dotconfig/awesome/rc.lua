@@ -161,7 +161,7 @@ local globalkeys = gears.table.join(
               {description = "spotify", group = "launch applications"}),
     awful.key({ modkey }, "2", function () awful.spawn(browser) end,
               {description = "firefox", group = "launch applications"}),
-    awful.key({ modkey }, "3", function () awful.spawn.with_shell("~/Discord/Discord") end,
+    awful.key({ modkey }, "3", function () awful.spawn.with_shell("Discord") end,
               {description = "discord", group = "launch applications"}),
     awful.key({ modkey }, "4", function () awful.spawn("flatpak run md.obsidian.Obsidian") end,
               {description = "obsidian", group = "launch applications"}),
@@ -321,11 +321,14 @@ awful.rules.rules = {
     },
 
     { rule = { instance = "spotify" },
-      properties = { screen = 2, tag = " 4 " }
+      properties = { tag = " 4 ",
+                     -- screen = 2,
+                     switchtotag = true
+      }
     },
 
     { rule = { instance = "obsidian" },
-      properties = { screen = 1, tag = " 1 "}
+      properties = { screen = 1, tag = " 1 ", switchtotag = true }
     },
 
     -- Floating clients.
@@ -393,4 +396,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.spawn.with_shell("compton")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn(terminal)
-awful.spawn("flatpak run md.obsidian.Obsidian")
+awful.spawn("nm-applet")
+awful.spawn.with_shell("rclone mount gdrive: ~/shared/gDrive")
