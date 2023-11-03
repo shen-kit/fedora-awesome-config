@@ -1,0 +1,73 @@
+{
+   "action": {
+      "browser_style": true,
+      "default_icon": "images/icon/Red-32.png",
+      "default_popup": "popup.html",
+      "default_title": "ShopBack Button"
+   },
+   "background": {
+      "service_worker": "background-wrapper.js"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [  ],
+      "js": [ "js/runtime.c9c7d432.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [  ],
+      "js": [ "js/installationFlagInjector.e256b1c5.js" ],
+      "matches": [ "*://*.shopback.com/*", "*://*.shopback.com.au/*", "*://*.shopback.com.hk/*", "*://*.shopback.co.id/*", "*://*.shopback.co.kr/*", "*://*.shopback.de/*", "*://*.shopback.my/*", "*://*.shopback.ph/*", "*://*.shopback.sg/*", "*://*.shopback.co.th/*", "*://*.shopback.com.tw/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [  ],
+      "js": [ "js/cashbackActivator.8bcf894e.js" ],
+      "matches": [ "*://*.shopback.com/redirect/alink/*", "*://*.shopback.com.au/redirect/alink/*", "*://*.shopback.com.hk/redirect/alink/*", "*://*.shopback.co.id/redirect/alink/*", "*://*.shopback.co.kr/redirect/alink/*", "*://*.shopback.de/redirect/alink/*", "*://*.shopback.my/redirect/alink/*", "*://*.shopback.ph/redirect/alink/*", "*://*.shopback.sg/redirect/alink/*", "*://*.shopback.co.th/redirect/alink/*", "*://*.shopback.com.tw/redirect/alink/*", "*://*.shopback.com/product/redirect/plink/*", "*://*.shopback.com.au/product/redirect/plink/*", "*://*.shopback.com.hk/product/redirect/plink/*", "*://*.shopback.co.id/product/redirect/plink/*", "*://*.shopback.co.kr/product/redirect/plink/*", "*://*.shopback.de/product/redirect/plink/*", "*://*.shopback.my/product/redirect/plink/*", "*://*.shopback.ph/product/redirect/plink/*", "*://*.shopback.sg/product/redirect/plink/*", "*://*.shopback.co.th/product/redirect/plink/*", "*://*.shopback.com.tw/product/redirect/plink/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "css": [  ],
+      "js": [ "js/contentApp.edacb656.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "differential_fingerprint": "1.53db9aeb5544a3a9627bf53b64e8895157fe3a0a9399c58b16356b08a4cffec9",
+   "externally_connectable": {
+      "matches": [ "*://*.shopback.com/*", "*://*.shopback.co.id/*", "*://*.shopback.co.kr/*", "*://*.shopback.co.th/*", "*://*.shopback.com.au/*", "*://*.shopback.com.hk/*", "*://*.shopback.com.tw/*", "*://*.shopback.de/*", "*://*.shopback.my/*", "*://*.shopback.ph/*", "*://*.shopback.sg/*" ]
+   },
+   "homepage_url": "https://www.shopback.com",
+   "host_permissions": [ "*://*/*", "*://*.shopback.com/*", "*://*.shopback.com.au/*", "*://*.shopback.com.hk/*", "*://*.shopback.co.id/*", "*://*.shopback.co.kr/*", "*://*.shopback.my/*", "*://*.shopback.ph/*", "*://*.shopback.sg/*", "*://*.shopback.co.th/*", "*://*.shopback.com.tw/*" ],
+   "icons": {
+      "128": "images/icon/Red-128.png",
+      "16": "images/icon/Red-16.png",
+      "18": "images/icon/Red-18.png",
+      "32": "images/icon/Red-32.png",
+      "48": "images/icon/Red-48.png",
+      "64": "images/icon/Red-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvTq3qc1c1yZMZb6wv71aH1V6rGPDstX74So6YNEGH0MrIhN7R3XbuGMuXxRIK2XSxCMy3BUDn5fc+f/dLM2szxf+ybpqO0jy2NlHc2/gS+YnzhFNrdv3qHQneu6c8QSKrN06i0Sj3Xn1jTVCfIetQWwHeEF5BVXJuD47ZKyjtbMQT/+yso69kcaBjRmXx7fLE2AU+4iUHzlSDwaMUCMDt4NSC23a9UJaPQBn5ViCc5eIw+ZPweXP9wuykhcEpFJCtWApaS/qbtSG7aImLYZR55N7x6lw5ilNw2X29MG0oHJaz2QmuxgyZ4NIvfio4FsxvBUkOorIERUI22a/+Os0+wIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "options_ui": {
+      "page": "preferences.html"
+   },
+   "permissions": [ "tabs", "storage", "cookies", "webNavigation", "scripting", "webRequest", "alarms" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7.18.1",
+   "version_name": "7.18.1-mv3",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "chunks-ui.json" ]
+   }, {
+      "matches": [ "*://*/*" ],
+      "resources": [ "js/*" ]
+   }, {
+      "matches": [ "*://*/*" ],
+      "resources": [ "images/*" ]
+   }, {
+      "matches": [ "*://*/*" ],
+      "resources": [ "injector.js" ]
+   } ]
+}

@@ -1,2 +1,6 @@
-2022/12/20-20:37:43.291 14355 Creating DB /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_studio.youtube.com_0.indexeddb.leveldb since it was missing.
-2022/12/20-20:37:43.301 14355 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_studio.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/03-12:22:10.281 e1b Creating DB /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_studio.youtube.com_0.indexeddb.leveldb since it was missing.
+2023/11/03-12:22:10.284 e1b Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_studio.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/03-12:35:46.201 e1a Level-0 table #5: started
+2023/11/03-12:35:46.203 e1a Level-0 table #5: 4513 bytes OK
+2023/11/03-12:35:46.205 e1a Delete type=0 #3
+2023/11/03-12:35:46.205 e1a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

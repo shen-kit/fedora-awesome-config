@@ -1,0 +1,18 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "mart.png",
+      "default_popup": "index.html",
+      "default_title": "URL Redirector"
+   },
+   "description": "Redirect url by pattern to any place you want.",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl9Ry9+oDBaZAOIW5vlm5QmXPjaO87nv71yu779loGGXrowEEMWA0C3FS97MR+8uMb8yGTuQshrF16ct0Ug28D1kWLCiBE/OPs5Ej98i2ingnMEIA68cXejSArDTHMIYl+S08UbroH9ywwxouVbUrAqAxmL3g+VA36bvGt/jG8WMkQIA6xVUlAwscL6m/bKVuMyGyM0vkrXhj0jVhVClaKyqo7gG1Qbq4DcnDvQ9hWIkXDHMkZ55tjSXikED0+jenrhu2jPs93gInFMkwe86cttFH8FdRlrNwka8JNjsL+eiTO5GNNv5uFHFelXC+O85ZRwWCNzygeZwNJuHeWAbiTQIDAQAB",
+   "manifest_version": 2,
+   "name": "URL Redirector",
+   "options_page": "option.html",
+   "permissions": [ "webRequest", "*://*/*", "storage", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

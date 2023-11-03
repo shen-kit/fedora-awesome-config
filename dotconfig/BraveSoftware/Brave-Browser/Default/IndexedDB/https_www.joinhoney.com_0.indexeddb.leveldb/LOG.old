@@ -1,7 +1,0 @@
-2022/12/26-11:04:19.238 9e1 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.joinhoney.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/12/26-11:04:19.239 9e1 Recovering log #3
-2022/12/26-11:04:19.239 9e1 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.joinhoney.com_0.indexeddb.leveldb/000003.log 
-2022/12/26-11:04:19.373 9e0 Level-0 table #5: started
-2022/12/26-11:04:19.377 9e0 Level-0 table #5: 7728 bytes OK
-2022/12/26-11:04:19.384 9e0 Delete type=0 #3
-2022/12/26-11:04:19.384 9e0 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,3 +1,30 @@
-2023/01/09-12:21:31.905 bf6 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
-2023/01/09-12:21:31.906 bf6 Recovering log #982
-2023/01/09-12:21:31.906 bf6 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000982.log 
+2023/11/03-11:32:00.026 e1a Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/11/03-11:32:00.026 e1a Recovering log #149
+2023/11/03-11:32:00.027 e1a Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000149.log 
+2023/11/03-11:35:28.949 e1e Level-0 table #153: started
+2023/11/03-11:35:28.967 e1e Level-0 table #153: 75749 bytes OK
+2023/11/03-11:35:28.979 e1e Delete type=0 #149
+2023/11/03-11:40:24.912 e1a Level-0 table #155: started
+2023/11/03-11:40:24.925 e1a Level-0 table #155: 70494 bytes OK
+2023/11/03-11:40:24.930 e1a Delete type=0 #152
+2023/11/03-11:44:41.918 e1b Level-0 table #157: started
+2023/11/03-11:44:41.930 e1b Level-0 table #157: 72419 bytes OK
+2023/11/03-11:44:41.951 e1b Delete type=0 #154
+2023/11/03-11:44:41.951 e1b Compacting 4@0 + 1@1 files
+2023/11/03-11:44:41.957 e1b Generated table #158@0: 249 keys, 45739 bytes
+2023/11/03-11:44:41.957 e1b Compacted 4@0 + 1@1 files => 45739 bytes
+2023/11/03-11:44:41.959 e1b compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/11/03-11:44:41.959 e1b Delete type=2 #147
+2023/11/03-11:44:41.959 e1b Delete type=2 #150
+2023/11/03-11:44:41.959 e1b Delete type=2 #153
+2023/11/03-11:44:41.959 e1b Delete type=2 #155
+2023/11/03-11:44:41.959 e1b Delete type=2 #157
+2023/11/03-11:49:01.695 e1b Level-0 table #160: started
+2023/11/03-11:49:01.698 e1b Level-0 table #160: 70263 bytes OK
+2023/11/03-11:49:01.724 e1b Delete type=0 #156
+2023/11/03-11:53:46.913 e1b Level-0 table #162: started
+2023/11/03-11:53:46.926 e1b Level-0 table #162: 72210 bytes OK
+2023/11/03-11:53:46.929 e1b Delete type=0 #159
+2023/11/03-12:22:24.008 e27 Level-0 table #164: started
+2023/11/03-12:22:24.035 e27 Level-0 table #164: 77783 bytes OK
+2023/11/03-12:22:24.052 e27 Delete type=0 #161

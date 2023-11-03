@@ -1,7 +1,0 @@
-2022-12-17 21:11:25.243 [info] Extension host with pid 11957 started
-2022-12-17 21:11:25.306 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
-2022-12-17 21:11:25.306 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
-2022-12-17 21:11:25.307 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
-2022-12-17 21:11:25.307 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
-2022-12-17 21:11:25.392 [info] Extension host terminating: renderer closed the socket
-2022-12-17 21:11:25.393 [info] Extension host with pid 11957 exiting with code 0

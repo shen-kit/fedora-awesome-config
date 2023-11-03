@@ -29,8 +29,9 @@ map('n', '<S-l>', ':bnext<CR>', opts)
 map('n', '<S-h>', ':bprevious<CR>', opts)
 
 -- move text up and down
-map('n', '<A-j>', 'ddp', opts)
-map('n', '<A-k>', 'ddkP', opts)
+map('n', '<A-j>', ':m +1<CR>', opts)
+map('n', '<A-k>', ':m -2<CR>', opts)
+
 
 -- VISUAL --
 -- stay in indent mode

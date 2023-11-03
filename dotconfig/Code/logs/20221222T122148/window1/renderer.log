@@ -1,8 +1,0 @@
-2022-12-22 12:21:48.662 [error] Error: File not found
-    at h.handleSetInputError (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2745:95931)
-    at async h.setInput (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2745:95171)
-    at async a.doSetInput (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2743:6429)
-    at async a.doOpenEditor (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2743:4791)
-    at async a.openEditor (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2743:3783)
-    at async vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2970:16742
-2022-12-22 12:21:51.396 [info] [perf] Render performance baseline is 33ms

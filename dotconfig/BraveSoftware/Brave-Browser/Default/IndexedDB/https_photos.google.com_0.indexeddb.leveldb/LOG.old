@@ -1,3 +1,2 @@
-2022/12/20-16:18:22.813 daa8 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_photos.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/12/20-16:18:22.813 daa8 Recovering log #36
-2022/12/20-16:18:22.813 daa8 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_photos.google.com_0.indexeddb.leveldb/000036.log 
+2023/11/03-12:14:42.117 e1a Creating DB /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_photos.google.com_0.indexeddb.leveldb since it was missing.
+2023/11/03-12:14:42.121 e1a Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_photos.google.com_0.indexeddb.leveldb/MANIFEST-000001

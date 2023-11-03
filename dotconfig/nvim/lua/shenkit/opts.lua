@@ -50,4 +50,3 @@ opt.completeopt = { 'menuone', 'noselect' } -- for autocompletion
 opt.conceallevel = 0 -- make `` visible in markdown files
 opt.updatetime = 300
 
-opt.iskeyword:append('-') -- strings joined by a hyphen count as one word

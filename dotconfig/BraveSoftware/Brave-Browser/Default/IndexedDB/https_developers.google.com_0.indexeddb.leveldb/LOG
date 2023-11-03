@@ -1,6 +1,0 @@
-2023/01/01-15:06:05.907 34b4 Creating DB /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_developers.google.com_0.indexeddb.leveldb since it was missing.
-2023/01/01-15:06:05.917 34b4 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_developers.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/01-15:07:16.124 3e61 Level-0 table #5: started
-2023/01/01-15:07:16.128 3e61 Level-0 table #5: 1870 bytes OK
-2023/01/01-15:07:16.133 3e61 Delete type=0 #3
-2023/01/01-15:07:16.133 3e61 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

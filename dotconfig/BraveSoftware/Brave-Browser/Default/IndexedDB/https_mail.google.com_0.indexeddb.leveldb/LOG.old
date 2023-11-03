@@ -1,15 +1,2 @@
-2023/01/08-13:05:40.606 5b7c Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/08-13:05:40.606 5b7c Recovering log #55
-2023/01/08-13:05:40.610 5b7c Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000055.log 
-2023/01/08-13:05:42.389 5dae Level-0 table #60: started
-2023/01/08-13:05:42.404 5dae Level-0 table #60: 2061048 bytes OK
-2023/01/08-13:05:42.409 5dae Delete type=0 #55
-2023/01/08-13:05:45.036 5de6 Compacting 1@1 + 1@2 files
-2023/01/08-13:05:45.047 5de6 Generated table #61@1: 133 keys, 232215 bytes
-2023/01/08-13:05:45.047 5de6 Compacted 1@1 + 1@2 files => 232215 bytes
-2023/01/08-13:05:45.050 5de6 compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/01/08-13:05:45.050 5de6 Delete type=2 #57
-2023/01/08-13:05:45.050 5de6 Delete type=2 #60
-2023/01/08-13:12:50.604 5de7 Level-0 table #63: started
-2023/01/08-13:12:50.620 5de7 Level-0 table #63: 2119697 bytes OK
-2023/01/08-13:12:50.625 5de7 Delete type=0 #59
+2023/11/02-15:03:20.348 2b06 Creating DB /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb since it was missing.
+2023/11/02-15:03:20.371 2b06 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001

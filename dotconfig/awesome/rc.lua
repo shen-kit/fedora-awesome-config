@@ -149,11 +149,8 @@ local globalkeys = gears.table.join(
               {description = "focus previous screen", group = "window focus"}),
 
     -- launch applications
-    awful.key({ modkey }, "r", function ()
-                    os.execute(string.format("dmenu_run -b -m 0 -i -fn 'Monospace' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
-                    beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
-              end,
-              {description = "launch dmenu", group = "launch applications"}),
+    awful.key({ modkey }, "r", function () os.execute("rofi -show run") end,
+              {description = "launch rofi", group = "launch applications"}),
     awful.key({ modkey }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launch applications"}),
     awful.key({ modkey }, "1",
@@ -393,8 +390,8 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 
 -- ==================== AUTOSTART APPLICATIONS ====================
-awful.spawn.with_shell("compton")
-awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn(terminal)
+awful.spawn.with_shell("compton")
 awful.spawn("nm-applet")
-awful.spawn.with_shell("rclone mount gdrive: ~/shared/gDrive")
+awful.spawn.with_shell("xfce4-power-manager")
+awful.spawn.with_shell("export RCLONE_VERBOSE=1")

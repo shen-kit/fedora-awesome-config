@@ -1,0 +1,5 @@
+# upload to remotes every 3 minutes
+*/3 * * * * ~/.config/rclone-upload.sh
+
+# download remotes on boot
+@reboot sleep 10 ~/.config/rclone-download.sh
