@@ -45,6 +45,13 @@ function _M.get()
         end,
         {description = "toggle wibox", group = "awesome"}),
 
+    -- toggle systray visibility
+    awful.key({ modkey }, "=",
+      function()
+        screen.primary.systray.visible = not screen.primary.systray.visible
+      end,
+      {description="show help", group="awesome"}),
+
     -- switch tags
     awful.key({ modkey }, "h",
       function() awful.tag.viewprev() end,
@@ -55,19 +62,19 @@ function _M.get()
 
     -- window focus
     awful.key({ modkey }, "j",
-        function () awful.client.focus.byidx(-1) end,
-        {description = "focus previous by index", group = "window focus"}
+      function () awful.client.focus.byidx(-1) end,
+      {description = "focus previous by index", group = "window focus"}
     ),
     awful.key({ modkey }, "k",
-        function () awful.client.focus.byidx( 1) end,
-        {description = "focus next by index", group = "window focus"}
+      function () awful.client.focus.byidx( 1) end,
+      {description = "focus next by index", group = "window focus"}
     ),
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(-1)    end,
-              {description = "swap with previous client", group = "window focus"}),
+      {description = "swap with previous client", group = "window focus"}),
     awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx(1)    end,
-              {description = "swap with next client", group = "window focus"}),
+      {description = "swap with next client", group = "window focus"}),
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
-              {description = "focus next screen", group = "window focus"}),
+      {description = "focus next screen", group = "window focus"}),
     awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
               {description = "focus previous screen", group = "window focus"}),
 

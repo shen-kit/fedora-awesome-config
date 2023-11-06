@@ -55,22 +55,32 @@ function WB.add_widgets_right (s)
   local cis = clone_icon_set
   local cws = clone_widget_set
 
-  return {
-    layout = wibox.layout.fixed.horizontal,
-    wibox.widget.textbox(" | "),
-    mykeyboardlayout,
-    wibox.widget.systray(),
-
-    cws.mpd,
-    sep1,
-    cws.mem,
-    sep1,
-    cws.volume,
-    sep1,
-    cws.bat,
-    sep1,
-    cws.textclock,
+  local t = {
+      layout = wibox.layout.fixed.horizontal,
+      cws.mpd,
+      sep1,
+      cws.mem,
+      sep1,
+      cws.volume,
+      sep1,
+      cws.bat,
+      sep1,
+      cws.textclock,
   }
+
+  -- add the systray to the primary screen, hidden by default
+  -- use Mod4+= to toggle visibility
+  if s == screen.primary then
+    s.systray = wibox.widget {
+      layout = wibox.layout.align.horizontal,
+      sep1,
+      wibox.widget.systray()
+    }
+    s.systray.visible = false
+    table.insert(t, 1, s.systray)
+  end
+
+  return t
 end
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --

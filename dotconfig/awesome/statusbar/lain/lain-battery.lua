@@ -31,10 +31,10 @@ W.bat = lain.widget.bat({
   n_perc = {7, 20},
   bat = "BAT0",
   ac = "AC",
-  timeout = 30,
+  timeout = 5,
   settings = function()
 
-    if bat_now.status == "Charging" or bat_now.status == "Discharging" then
+    if bat_now.status == "Charging" or bat_now.status == "Discharging" or bat_now.status == "Not charging" then
       if bat_now.perc > 80 then
         perc = ""
       elseif bat_now.perc > 60 then
@@ -51,7 +51,7 @@ W.bat = lain.widget.bat({
 
       if bat_now.status == "Charging" then
         perc = perc .. "󱐋 "
-      elseif bat_now.status == "Discharging" then
+      else
         perc = perc .. "% "
       end
     else

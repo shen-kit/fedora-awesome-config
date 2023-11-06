@@ -27,6 +27,14 @@ function _M.get(clientkeys, clientbuttons)
       }
     },
 
+    -- Conky
+    {
+      rule_any = { class = { "Conky" } },
+      properties = {
+        border_width = 0
+      }
+    },
+
     -- Floating clients.
     { rule_any = {
         instance = {
