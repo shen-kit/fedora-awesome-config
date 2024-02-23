@@ -45,7 +45,7 @@ W.mem = lain.widget.mem({
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 -- Textclock
-W.textclock = awful.widget.textclock(" %a %d %b, %H:%M%P  ")
+W.textclock = awful.widget.textclock(" %a %d %b, %I:%M%P  ")
     --markup(gmc.color['blue900'], "%a %d %b ")
     --    .. markup(gmc.color['grey100'], ",")
     --    .. markup(gmc.color['green900'], " %H:%M "))

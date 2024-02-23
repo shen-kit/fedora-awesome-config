@@ -78,3 +78,5 @@ local statusbar = require("statusbar.lain.statusbar")
 -- local statusbar = require("statusbar.arrow.statusbar")
 
 statusbar()
+
+require("main.startup")

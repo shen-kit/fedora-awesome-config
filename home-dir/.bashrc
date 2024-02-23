@@ -27,9 +27,13 @@ fi
 unset rc
 
 # case insensitive
-bind -s 'set completion-ignore-case on'
+#bind -s 'set completion-ignore-case on'
 
 # ======= MY ADDITIONS =======
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  tmux a -t default || exec tmux new -s default && exit;
+fi
 
 eval "$(zoxide init bash)"
 
@@ -49,7 +53,9 @@ alias ls="ls --color=auto" #colorise output
 alias ll="ls -la" #long listing format
 alias l.="ls -d .* --color=auto" #hidden files
 alias mkdir="mkdir -pv" #create parent directories + verbose
+alias cd="z"
 
+alias ii="xdg-open"
 alias rm="trash"
 
 # remotes
@@ -61,9 +67,10 @@ alias onedrive-sync-upload="rclone sync ~/onedrive/ onedrive:"
 alias onedrive-sync-download="rclone sync onedrive: ~/onedrive"
 alias onedrive-status="rclone check onedrive: ~/onedrive"
 
-alias remotes-sync-download="onedrive-sync-download && gdrive-sync-download"
-alias remotes-sync-upload="onedrive-sync-upload && gdrive-sync-upload"
-alias status-remotes="onedrive-status && gdrive-status"
+alias rclone-download="onedrive-sync-download && gdrive-sync-download"
+alias rclone-upload="onedrive-sync-upload && gdrive-sync-upload"
+alias rclone-status="tail -5 ~/.config/rclone.log"
+alias rs=rclone-status
 
 # power
 alias suspend="systemctl suspend"
@@ -76,7 +83,7 @@ alias connect-mouse="bluetoothctl pair DA:7D:CF:0F:BB:BB; bluetoothctl connect D
 #alias connect-headphones="bluetoothctl connect 2C:FD:B3:8C:50:89"
 
 # scripts
-alias pwds="py ~/onedrive/password-manager/password-manager.py"
+alias pwds="py ~/onedrive/01\ password-manager/password-manager.py"
 
 
 # ===== STARTUP =====
@@ -93,19 +100,5 @@ export GPG_TTY=$(tty)
 # default text editor
 export VISUAL=nvim
 
-# gcalcli
-#alias cal=gcalcli
-## get x number of weeks from today (argument)
-#calw() {
-#	if [ $# -eq 0 ] ; then
-#		gcalcli calw
-#	else 
-#		gcalcli calw today "$1"
-#	fi
-#}
-## search for an event, giving details
-#cals() {
-#	gcalcli search "$1" today $2 --details description --details location --details length --details reminders --no-military 
-#}
-
-#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# make rclone verbose when called
+export RCLONE_VERBOSE=1

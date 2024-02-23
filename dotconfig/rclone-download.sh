@@ -13,7 +13,8 @@ else
   rclone sync onedrive: ~/onedrive/ --log-file ~/.config/rclone.log
   touch "$FILE"
 
-  echo -e "\ndownload finished: $(date +'%H:%M, %d-%m-%y')\n" >> ~/.config/rclone.log
+  # overwrite the file, not append
+  echo -e "\ndownload finished: $(date +'%H:%M, %d-%m-%y')\n" > ~/.config/rclone.log
   notify-send "Rclone Download" "download finished"
 fi
 

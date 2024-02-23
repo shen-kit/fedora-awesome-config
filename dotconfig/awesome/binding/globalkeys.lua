@@ -152,7 +152,7 @@ function _M.get()
     awful.key({ }, "XF86AudioPlay", sendToSpotify("PlayPause"), {description = "play/pause", group = "music"}),
     awful.key({ }, "XF86AudioNext", sendToSpotify("Next"), {description = "next track", group = "music"}),
     awful.key({ }, "XF86AudioPrev", sendToSpotify("Previous"), {description = "previous track", group = "music"}),
-    awful.key({ "Control", altkey }, "space", sendToSpotify("PlayPause"), {description = "play/pause", group = "music"}),
+    awful.key({ "Control", "Shift" }, "space", sendToSpotify("PlayPause"), {description = "play/pause", group = "music"}),
     awful.key({ "Control", altkey }, "Right", sendToSpotify("Next"), {description = "next track", group = "music"}),
     awful.key({ "Control", altkey }, "Left", sendToSpotify("Previous"), {description = "previous track", group = "music"}),
 
