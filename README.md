@@ -6,21 +6,20 @@ run `sudo dnf upgrade && sudo dnf update` first!
 - arndr
 - awesome
 - alacritty
-- compton
-- dmenu
-- gcalcli
+- conky
 - git
-- libreoffice
 - light
 - neovim
 - nodejs
 - okular
+- picom
 - python3
 - scrot
 - sddm
 - thunar
 - tldr
 - trash-cli
+- rofi
 - xinput
 - xrandr
 - zoxide
@@ -33,13 +32,11 @@ run `sudo dnf upgrade && sudo dnf update` first!
 - obsidian
 - spotify
 
-## Other
-- git credential manager
-
 # Move the Files
 - `dotconfig` -> `~/.config/`
 - `home-dir` -> `~/`
 - `./sddm-themes/` -> `/usr/share/sddm/themes/`
+- run `crontab -e` and replace contents with with `crontab-e`
 
 # Configuration
 
@@ -49,9 +46,7 @@ run `sudo dnf upgrade && sudo dnf update` first!
 	- `sudo systemctl set-default graphical.target`
 - `/etc/sddm.conf` -> `Current=sugar-candy`
 
-## Nvim 
-- install Packer
-	- run :checkhealth and fix errors
+## Nvim
 - install plugins by saving `~/.config/nvim/lua/plugins.lua`
 - uncomment `init.lua` and `keys.lua`
 
