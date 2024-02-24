@@ -1,83 +1,27 @@
--- [[ keys.lua ]]
-
--- map(mode, sequence, command, options)
 local map = vim.api.nvim_set_keymap
-
 local opts = { noremap = true, silent = true }
 
-map('', '<Space>', '<Nop>', opts)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
 
--- leave insert mode with 'jk'
-map('i', 'jk', '<ESC>', opts)
+map("i", "jk", "<ESC>", opts)
 
--- pane navigation
-map("n", "<C-h>", "<C-w>h", opts)
-map("n", "<C-j>", "<C-w>j", opts)
-map("n", "<C-k>", "<C-w>k", opts)
-map("n", "<C-l>", "<C-w>l", opts)
+-- open directory of current file
+map("n", "<leader>pv", ":Explore<CR>", opts)
 
--- resizing panes
-map("n", "<C-Up>", ":resize +2<CR>", opts)
-map("n", "<C-Down>", ":resize -2<CR>", opts)
-map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+-- move lines
+map("v", "<M-j>", ":m '>+1<CR>gv=gv", opts)
+map("v", "<M-k>", ":m '<-2<CR>gv=gv", opts)
+map("n", "<M-k>", ":m -2<CR>", opts)
+map("n", "<M-j>", ":m +1<CR>", opts)
 
--- navigate buffers
-map('n', '<S-l>', ':bnext<CR>', opts)
-map('n', '<S-h>', ':bprevious<CR>', opts)
+-- keep cursor in middle when jumping half pages, and when searching
+map("n", "<C-d>", "<C-d>zz", opts)
+map("n", "<C-u>", "<C-u>zz", opts)
+map("n", "n", "nzzzv", opts)
+map("n", "N", "Nzzzv", opts)
 
--- move text up and down
-map('n', '<A-j>', ':m +1<CR>', opts)
-map('n', '<A-k>', ':m -2<CR>', opts)
+-- paste without replacing the buffer
+map("x", "<leader>p", [["_dP]], opts)
 
 
--- VISUAL --
--- stay in indent mode
-map('v', '<', '<gv', opts)
-map('v', '>', '>gv', opts)
-
--- Visual Block --
--- Move text up and down
-map("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-map("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
-
--- telescope
-map('n', '<leader>p', ':lua require"telescope.builtin".find_files()<CR>', opts)
-map('n', '<leader>fg', ':lua require"telescope.builtin".live_grep()<CR>', opts)
-map('n', '<leader>fb', ':lua require"telescope.builtin".buffers()<CR>', opts)
-map('n', '<leader>fh', ':lua require"telescope.builtin".help_tags()<CR>', opts)
-
--- nvim-tree
-map("n", "<C-p>", ":NvimTreeToggle<CR>", opts)
-
--- lsp
-map('n', 'gd', ':lua vim.lsp.buf.definition()<CR>', opts)
-map('n', 'gr', ':lua vim.lsp.buf.references()<CR>', opts)
-map('n', '<leader>r', ':lua vim.lsp.buf.rename()<CR>', opts)
-map('n', 'K', ':lua vim.lsp.buf.hover()<CR>', opts)
-map('n', '<C-K>', ':lua vim.lsp.buf.signature_help()<CR>', opts)
-map('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<CR>', opts)
-
--- diagnostics
-map('n', 'gl', ':lua vim.diagnostic.open_float()<CR>', opts)
-map('n', 'g[', ':lua vim.diagnostic.goto_prev()<CR>', opts)
-map('n', 'g]', ':lua vim.diagnostic.goto_next()<CR>', opts)
-
-
--- comment
-map('n', '<leader>\\', ':lua require("Comment.api").toggle.linewise.current()<CR>', opts)
-map('i', '<leader>\\', '<ESC>:lua require("Comment.api").toggle.linewise.current()<CR>i', opts)
-
--- tabs
-map('n', '<Tab>', 'gt', opts)
-map('n', '<S-Tab>', 'gT', opts)
-map('n', '<Leader>1', '1gt', opts)
-map('n', '<Leader>2', '2gt', opts)
-map('n', '<Leader>3', '3gt', opts)
-map('n', '<Leader>4', '4gt', opts)
-map('n', '<Leader>5', '5gt', opts)
-
--- unhighlight search
-map('n', '<C-n>', ':nohl<CR>', opts)
+map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {silent = false})
