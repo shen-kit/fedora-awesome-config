@@ -1,1 +1,0 @@
-try{importScripts("background.a1393f68.js")}catch(r){console.error(r)}
