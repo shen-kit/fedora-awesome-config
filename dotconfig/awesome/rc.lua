@@ -29,7 +29,6 @@ require("main.theme")
 local main = {
   layouts = require("main.layouts"),
   tags    = require("main.tags"),
-  menu    = require("main.menu"),
   rules   = require("main.rules"),
 }
 
@@ -49,7 +48,6 @@ RC.layouts = main.layouts()
 RC.tags = main.tags()
 
 -- Menu
-RC.mainmenu = awful.menu({ items = main.menu() }) -- in globalkeys
 RC.launcher = awful.widget.launcher(
   { image = beautiful.awesome_icon, menu = RC.mainmenu }
 )

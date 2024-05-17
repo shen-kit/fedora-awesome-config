@@ -3,7 +3,9 @@ require("nvim-tree").setup({
     sorter = "case_sensitive",
   },
   view = {
-    width = 30,
+    width = 40,
+    number = true,
+    relativenumber = true,
   },
   renderer = {
     group_empty = true,
@@ -11,9 +13,14 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = true,
   },
+  actions = {
+      open_file = {
+          quit_on_open = true,
+      },
+  },
 })
 
 vim.keymap.set("n", "<C-p>", ":NvimTreeToggle<CR>")
 -- find the current file in the tree
-vim.keymap.set("n", "<leader>tf", ":NvimTreeFindFile<CR>")
+vim.keymap.set("n", "<leader>fc", ":NvimTreeFindFile<CR>")
 

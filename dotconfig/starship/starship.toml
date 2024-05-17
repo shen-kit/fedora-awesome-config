@@ -1,0 +1,79 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$time\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$line_break\
+$python\
+$character
+"""
+
+add_newline = false
+
+palette = "sk"
+
+# ========== PROMPT ==========  
+
+[time]
+format = '\[[$time]($style)\] '
+style = "fg:yellow"
+time_format = "%R" # HH:MM
+disabled = false
+
+[directory]
+format = '[$path ]($style)[$read_only]($read_only_style)'
+style = "bold red"
+truncation_length = 3
+truncation_symbol = '…/'
+truncate_to_repo = false
+
+[sudo]
+format = '[\(sudo\) ]($style)'
+style = "fg:green"
+disabled = false
+
+[git_branch]
+format = '[❯ \($symbol$branch\)]($style)'
+style = "fg:blue"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "fg:grey"
+
+[git_status]
+format = "[(*$conflicted$untracked$modified$staged$renamed$deleted) ($ahead_behind$stashed)]($style)"
+style = "fg:blue"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[cmd_duration]
+format = "[took $duration]($style) "
+style = "fg:yellow"
+min_time = 30_000 # only show if the last command took more than 30 seconds
+
+[python]
+format = '([\($virtualenv\) ]($style))'
+style = "fg:grey"
+
+[character]
+success_symbol = '[\$](white)'
+error_symbol = "[✗](red)"
+vimcmd_symbol = "[❮](green)"
+
+# ========== COLOURS ==========  
+
+[palettes.sk]
+purple = '#9B3BCE'
+blue = '#63B4D1'
+red = '#F25467'
+green = '#77BB28'
+grey = '#888888'

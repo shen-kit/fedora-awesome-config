@@ -1,0 +1,39 @@
+snippet binary-search
+	def binary_search(${1:arr}, ${2:target}):
+		def condition(value) -> bool:
+			${4:pass}
+
+		l, r = ${3:0}, len($1)-1
+		while l < r:
+			mid = (l+r) // 2
+			if condition($1[mid]):
+				r = mid
+			else:
+				l = mid + 1
+		$0	
+		return $1[l] == $2
+
+snippet lc leetcode template
+	"""
+	problem: $1
+	================================================================================
+	# Problem Description
+
+	$2
+
+	================================================================================
+
+	# Solution
+
+
+	## Complexity Analysis
+
+	:Time Complexity: 
+	:Space Complexity: 
+
+	"""
+
+	from typing import ${3:List}
+
+	$0
+

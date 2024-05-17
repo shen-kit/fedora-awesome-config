@@ -1,5 +1,6 @@
-# upload to remotes every 5 minutes
-*/5 * * * * ~/.config/rclone-upload.sh
+# check battery every 2 minutes
+*/2 * * * * ~/.config/batteryNotify.sh
 
-# do stuff on startup
-@reboot ~/.config/rclone-download.sh
+# backup onedrive/gdrive every 10 minutes
+*/10 * * * * ~/.config/rclone/rclone-upload.sh
+

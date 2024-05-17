@@ -1,0 +1,20 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/shenkit/gDrive/uni/FIT2081/android_studio_projects/assignment
+- /home/shenkit/gDrive/uni/FIT2004/assignments/a2
+- /home/shenkit/gDrive/uni/FIT2099/javaProjects/assignment_group
+- /home/shenkit/coding/projects/personal-website
+- /home/shenkit/coding/projects/hias_up
+- /home/shenkit/gDrive/uni/FIT2099/javaProjects/assignment
+- /home/shenkit/gDrive/uni/FIT2004/assignments/a1
+- /home/shenkit/gDrive/uni/FIT2081/android_studio_projects/lab-assessment
+- /home/shenkit/gDrive/uni/FIT2099/javaProjects/bootcamp
+- /home/shenkit/fedora-awesome-config
+startuppopupversion: 5
+customcommandshistory:
+- q
+- git push origin:HEAD
+- ""
+- git push origin HEAD
+hidecommandlog: false
+ignorewhitespaceindiffview: true

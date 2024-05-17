@@ -1,5 +1,5 @@
-[colors]
 # apply window.opacity to all backgrounds (i.e. including nvim)
+[colors]
 transparent_background_colors = true
 
 [cursor.style]
@@ -22,4 +22,92 @@ family = "Hack Nerd Font Mono"
 style = "Regular"
 
 [window]
-opacity = 0.85
+opacity = 0.95
+
+# ========== set bindings for neovim to use ==========
+# chose random escape sequences that I won't use
+
+# for newline below
+[[keyboard.bindings]]
+key = "Return"
+mods = "Control"
+chars = "\u00A4"
+
+# for newline above
+[[keyboard.bindings]]
+key = "Return"
+mods = "Control|Shift"
+chars = "\u00A5"
+
+# for markdown renumber list
+[[keyboard.bindings]]
+key = "2"
+mods = "Control"
+chars = "\u00A2"
+
+# for markdown checkboxes
+[[keyboard.bindings]]
+key = "3"
+mods = "Control"
+chars = "\u00A3"
+
+# for buffer delete
+[[keyboard.bindings]]
+key = "D"
+mods = "Control | Shift"
+chars = "\u00A6"
+
+# for delete all other buffers
+[[keyboard.bindings]]
+key = "B"
+mods = "Control | Shift"
+chars = "\u00A7"
+
+# for jump forward in jump list (override Tab)
+[[keyboard.bindings]]
+key = "I"
+mods = "Control"
+chars = "\u00A8"
+
+# for quick switcher in obsidian nvim
+[[keyboard.bindings]]
+key = "O"
+mods = "Control | Shift"
+chars = "\u00A9"
+
+# ==================== Summer Theme Colours (edited) ==================== 
+# Default colors
+[colors.primary]
+foreground = '#bbbbbb'
+
+# Normal colors
+[colors.normal]
+black =   '#1d1f21'
+red =     '#CF3746'
+green =   '#7CBD27'
+yellow =  '#ECBD10'
+blue =    '#428cc2'
+magenta = '#AD4ED2'
+cyan =    '#32B5C7'
+white =   '#d8e2e1'
+
+# Bright colors
+[colors.bright]
+black =   '#292A2B'
+red =     '#d95473'
+green =   '#b6da74'
+yellow =  '#e7ca62'
+blue =    '#5398c9'
+magenta = '#bc82d3'
+cyan =    '#65cedc'
+white =   '#ebf6f5'
+
+# Indexed Colors
+[[colors.indexed_colors]]
+index = 16
+color = '#ff966c'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#c53b53'
+

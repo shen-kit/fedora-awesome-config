@@ -87,8 +87,8 @@ function _M.get()
               function () awful.util.spawn("flatpak run com.spotify.Client") end,
               {description = "spotify", group = "launch applications"}),
     awful.key({ modkey }, "2", function () awful.spawn(browser) end,
-              {description = "firefox", group = "launch applications"}),
-    awful.key({ modkey }, "3", function () awful.spawn.with_shell("Discord") end,
+              {description = "web browser", group = "launch applications"}),
+    awful.key({ modkey }, "3", function () awful.spawn.with_shell("discord") end,
               {description = "discord", group = "launch applications"}),
     awful.key({ modkey }, "4", function () awful.spawn("flatpak run md.obsidian.Obsidian") end,
               {description = "obsidian", group = "launch applications"}),
@@ -123,10 +123,10 @@ function _M.get()
             {description = "screenshot selection to clipboard", group = "utilities"}),
 
     -- Screen brightness
-    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("light -A 7.5") end,
-              {description = "+7.5%", group = "utilities"}),
-    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("light -U 7.5") end,
-              {description = "-7.5%", group = "utilities"}),
+    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("light -A 5") end,
+              {description = "+5%", group = "utilities"}),
+    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("light -U 5") end,
+              {description = "-5%", group = "utilities"}),
 
     -- ALSA volume control
     awful.key({ }, "XF86AudioRaiseVolume",

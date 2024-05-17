@@ -1,2 +1,4 @@
-require("shenkit.keys")
 require("shenkit.opts")
+require("shenkit.keys")
+require("shenkit.plugins")
+require("shenkit.highlights")

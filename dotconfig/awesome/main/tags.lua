@@ -9,7 +9,7 @@ function _M.get ()
   local tags = {}
 
   local tagpairs = {
-    names  = { "一", "二", "三", "四" },
+    names  = { "一", "二", "三", "四", "五" },
 
     layout = RC.layouts[1]
   }
