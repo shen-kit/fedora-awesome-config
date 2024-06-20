@@ -5,9 +5,9 @@
   <property name="minimumPressure" value="0.05"/>
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
-  <property name="selectedToolbar" value="Minimal Left"/>
-  <property name="lastSavePath" value="/home/shenkit/gDrive/tuition/Leah Leonard/Leah/2024"/>
-  <property name="lastOpenPath" value="/home/shenkit/gDrive/uni/FIT2004/applied"/>
+  <property name="selectedToolbar" value="Minimal Left Copy"/>
+  <property name="lastSavePath" value="/home/shenkit/gDrive/tuition/Arina/2024"/>
+  <property name="lastOpenPath" value="/home/shenkit/gDrive/uni/MAT1830/exam-prep"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -34,7 +34,7 @@
   <property name="layoutBottomToTop" value="false"/>
   <property name="numPairsOffset" value="1"/>
   <!--The icon theme, allowed values are "disabled", "onDrawOfLastPage", and "onScrollOfLastPage"-->
-  <property name="emptyLastPageAppend" value="disabled"/>
+  <property name="emptyLastPageAppend" value="onScrollOfLastPage"/>
   <property name="presentationMode" value="false"/>
   <!--Which GUI elements are shown in default view mode, separated by a colon (,)-->
   <property name="defaultViewModeAttributes" value="showMenubar,showToolbar,showSidebar"/>
@@ -62,7 +62,7 @@
   <property name="autoloadMostRecent" value="false"/>
   <property name="autoloadPdfXoj" value="true"/>
   <property name="defaultSaveName" value="%F"/>
-  <property name="defaultPdfExportName" value="%{name}_pdf"/>
+  <property name="defaultPdfExportName" value="%{name}-pdf"/>
   <property name="autosaveEnabled" value="true"/>
   <property name="autosaveTimeout" value="3"/>
   <property name="addHorizontalSpace" value="false"/>
@@ -76,7 +76,7 @@
   <property name="snapGrid" value="true"/>
   <property name="snapGridTolerance" value="0.1"/>
   <property name="snapGridSize" value="14.17"/>
-  <property name="strokeRecognizerMinSize" value="40"/>
+  <property name="strokeRecognizerMinSize" value="42"/>
   <property name="touchDrawing" value="false"/>
   <property name="gtkTouchInertialScrolling" value="true"/>
   <property name="pressureGuessing" value="false"/>
@@ -101,7 +101,7 @@
   <property name="defaultSeekTime" value="5"/>
   <property name="pluginEnabled" value=""/>
   <property name="pluginDisabled" value=""/>
-  <property name="strokeFilterIgnoreTime" value="150"/>
+  <property name="strokeFilterIgnoreTime" value="148"/>
   <property name="strokeFilterIgnoreLength" value="1"/>
   <property name="strokeFilterSuccessiveTime" value="500"/>
   <property name="strokeFilterEnabled" value="false"/>
@@ -126,19 +126,19 @@
   <property name="latexSettings.defaultText" value="x^2"/>
   <property name="latexSettings.globalTemplatePath" value="/usr/share/xournalpp/resources/default_template.tex"/>
   <property name="latexSettings.genCmd" value="pdflatex -halt-on-error -interaction=nonstopmode '{}'"/>
-  <property name="latexSettings.sourceViewThemeId" value="classic"/>
+  <property name="latexSettings.sourceViewThemeId" value="oblivion"/>
   <property name="latexSettings.editorFont" value="Monospace 12"/>
   <property name="latexSettings.useCustomEditorFont" value="false"/>
   <property name="latexSettings.editorWordWrap" value="true"/>
   <property name="latexSettings.sourceViewAutoIndent" value="true"/>
   <property name="latexSettings.sourceViewSyntaxHighlight" value="true"/>
   <property name="latexSettings.sourceViewShowLineNumbers" value="false"/>
-  <property name="font" font="Sans" size="10"/>
+  <property name="font" font="MesloLGS NF" size="8"/>
   <data name="buttonConfig">
     <data name="default">
-      <attribute name="color" type="hex" value="ff000000"/>
-      <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="medium"/>
+      <attribute name="color" type="hex" value="ffffffff"/>
+      <attribute name="drawingType" type="string" value="dontChange"/>
+      <attribute name="size" type="string" value="none"/>
       <attribute name="tool" type="string" value="pen"/>
     </data>
     <data name="eraser">
@@ -229,7 +229,7 @@
     <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
-    <attribute name="current" type="string" value="pen"/>
+    <attribute name="current" type="string" value="selectRect"/>
     <data name="drawArrow">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
@@ -258,7 +258,7 @@
     </data>
     <data name="highlighter">
       <attribute name="color" type="hex" value="ffffa348"/>
-      <attribute name="drawingType" type="string" value="default"/>
+      <attribute name="drawingType" type="string" value="strokeRecognizer"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
       <attribute name="size" type="string" value="MEDIUM"/>
@@ -267,7 +267,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="ffffffff"/>
+      <attribute name="color" type="hex" value="ffffff"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
@@ -295,7 +295,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="selectRect">
-      <attribute name="drawingType" type="string" value="line"/>
+      <attribute name="drawingType" type="string" value="strokeRecognizer"/>
     </data>
     <data name="selectRegion">
       <attribute name="drawingType" type="string" value="default"/>
@@ -304,8 +304,8 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="ffffffff"/>
-      <attribute name="drawingType" type="string" value="default"/>
+      <attribute name="color" type="hex" value="ffffff"/>
+      <attribute name="drawingType" type="string" value="line"/>
     </data>
     <data name="verticalSpace">
       <attribute name="drawingType" type="string" value="default"/>

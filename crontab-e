@@ -1,5 +1,8 @@
-# check battery every 2 minutes
+# check battery
 */2 * * * * ~/.config/batteryNotify.sh
+
+# check battery and notify phone
+*/5 * * * * ~/.config/batteryNotifyPhone.sh
 
 # backup onedrive/gdrive every 10 minutes
 */10 * * * * ~/.config/rclone/rclone-upload.sh

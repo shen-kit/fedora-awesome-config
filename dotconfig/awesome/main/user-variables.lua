@@ -2,11 +2,10 @@
 -- moved here in module as local variable
 -- }}}
 
-local home = os.getenv("HOME")
-
 local _M = {
   terminal = "alacritty",
-  browser  = "brave-browser",
+  browserA  = "brave-browser --profile-directory='Default'",
+  browserB  = "brave-browser --profile-directory='Profile 3'",
   file_explorer = "thunar",
 
   -- device, used in vicious widget

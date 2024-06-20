@@ -1,52 +1,41 @@
-"$schema" = 'https://starship.rs/config-schema.json'
-
 format = """
 $time\
+[](fg:#2C313D bg:#384152)\
 $directory\
+[](bg:#4B566B fg:#384152)\
 $git_branch\
 $git_state\
 $git_status\
+[ ](fg:#4B566B)\
 $cmd_duration\
 $line_break\
 $python\
 $character
 """
-
-add_newline = false
-
 palette = "sk"
-
-# ========== PROMPT ==========  
+add_newline = false
+command_timeout = 5000
 
 [time]
-format = '\[[$time]($style)\] '
-style = "fg:yellow"
-time_format = "%R" # HH:MM
 disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#2C313D fg:grey"
+format = '[ $time ]($style)'
 
 [directory]
-format = '[$path ]($style)[$read_only]($read_only_style)'
-style = "bold red"
+style = "bg:#384152 fg:red"
+format = "[ $path ]($style)"
 truncation_length = 3
-truncation_symbol = '…/'
 truncate_to_repo = false
-
-[sudo]
-format = '[\(sudo\) ]($style)'
-style = "fg:green"
-disabled = false
+truncation_symbol = "…/"
 
 [git_branch]
-format = '[❯ \($symbol$branch\)]($style)'
-style = "fg:blue"
-
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "fg:grey"
+format = '[ $symbol$branch]($style)'
+style = "bg:#4B566B fg:green"
 
 [git_status]
+style = "bg:#4B566B fg:green"
 format = "[(*$conflicted$untracked$modified$staged$renamed$deleted) ($ahead_behind$stashed)]($style)"
-style = "fg:blue"
 conflicted = "​"
 untracked = "​"
 modified = "​"
@@ -55,25 +44,19 @@ renamed = "​"
 deleted = "​"
 stashed = "≡"
 
-[cmd_duration]
-format = "[took $duration]($style) "
-style = "fg:yellow"
-min_time = 30_000 # only show if the last command took more than 30 seconds
-
 [python]
-format = '([\($virtualenv\) ]($style))'
 style = "fg:grey"
+format = '[(\($virtualenv\) )]($style)'
 
 [character]
 success_symbol = '[\$](white)'
-error_symbol = "[✗](red)"
-vimcmd_symbol = "[❮](green)"
+error_symbol = '[\$](white)' # "[✗](red)"
 
-# ========== COLOURS ==========  
+# ========== Colours ========== 
 
 [palettes.sk]
-purple = '#9B3BCE'
-blue = '#63B4D1'
-red = '#F25467'
-green = '#77BB28'
-grey = '#888888'
+blue = '#5FC8ED'
+red = '#F29E54'
+green = '#85ed13'
+grey = '#cccccc'
+

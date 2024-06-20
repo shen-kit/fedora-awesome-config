@@ -5,6 +5,9 @@ vim.g.mapleader = " "
 
 map("i", "jk", "<ESC>", opts)
 
+-- save file in insert mode
+map("i", "<C-s>", "<ESC>:w<CR>", opts)
+
 -- map ctrl+enter to new line below
 map("i", "\u{00A4}", "<C-o>o", opts)
 map("n", "\u{00A4}", "o<ESC>", opts)
@@ -55,13 +58,16 @@ map("i", "<C-_>", "<ESC>:CommentToggle<CR>a", opts)
 map("n", "<C-_>", "<ESC>:CommentToggle<CR>", opts)
 map("v", "<C-_>", ":CommentToggle<CR>gv", opts)
 
--- paste without replacing the buffer
-map("x", "<leader>p", [["_dP]], opts)
+-- perform <action> without replacing the buffer
+map("x", "<leader>p", [["_dP]], opts)   -- paste 
+map("x", "<leader>d", [[^"_D]])         -- delete line
+map("x", "<leader>x", [["_x]])          -- delete char
+map("x", "<leader>s", [["_s]])          -- delete and enter insert mode
 
 map("x", "Y", '"+y', opts) -- copy to system clipboard
 
 -- search and replace the word under the cursor
-map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {silent = false})
+map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {silent = false})
 
 -- add parentheses/quotes in visual mode
 map("v", "(", "c()<ESC>Pgvlolo", opts)

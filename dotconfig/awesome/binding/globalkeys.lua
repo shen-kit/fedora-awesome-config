@@ -9,11 +9,12 @@ local menubar = require("menubar")
 local beautiful = require("beautiful")
 
 -- Resource Configuration
-local modkey        = RC.vars.modkey
-local altkey        = RC.vars.altkey
-local terminal      = RC.vars.terminal
-local browser       = RC.vars.browser
-local file_explorer = RC.vars.file_explorer
+local modkey          = RC.vars.modkey
+local altkey          = RC.vars.altkey
+local terminal        = RC.vars.terminal
+local browserPersonal = RC.vars.browserA
+local browserUni      = RC.vars.browserB
+local file_explorer   = RC.vars.file_explorer
 
 local _M = {}
 
@@ -79,15 +80,17 @@ function _M.get()
               {description = "focus previous screen", group = "window focus"}),
 
     -- launch applications
-    awful.key({ modkey }, "r", function () os.execute("rofi -show drun") end,
+    awful.key({ "Control", "Shift" }, "r", function () os.execute("rofi -show drun") end,
               {description = "launch rofi", group = "launch applications"}),
     awful.key({ modkey }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launch applications"}),
     awful.key({ modkey }, "1",
               function () awful.util.spawn("flatpak run com.spotify.Client") end,
               {description = "spotify", group = "launch applications"}),
-    awful.key({ modkey }, "2", function () awful.spawn(browser) end,
-              {description = "web browser", group = "launch applications"}),
+    awful.key({ modkey }, "2", function () awful.spawn(browserPersonal) end,
+              {description = "brave browser (personal profile)", group = "launch applications"}),
+    awful.key({ modkey, 'Shift' }, "2", function () awful.spawn(browserUni) end,
+              {description = "brave browser (uni profile)", group = "launch applications"}),
     awful.key({ modkey }, "3", function () awful.spawn.with_shell("discord") end,
               {description = "discord", group = "launch applications"}),
     awful.key({ modkey }, "4", function () awful.spawn("flatpak run md.obsidian.Obsidian") end,
@@ -121,6 +124,9 @@ function _M.get()
     awful.key({ }, "Print", function()
             awful.util.spawn("scrot -z -s -e 'xclip -selection clipboard -t image/png -i $f && rm $f'") end,
             {description = "screenshot selection to clipboard", group = "utilities"}),
+    awful.key({ "Shift" }, "Print", function()
+            awful.util.spawn("scrot -z -s ~screenshot.png") end,
+            {description = "screenshot to file", group = "utilities"}),
 
     -- Screen brightness
     awful.key({ }, "XF86MonBrightnessUp", function () os.execute("light -A 5") end,

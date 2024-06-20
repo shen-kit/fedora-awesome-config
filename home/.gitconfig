@@ -9,3 +9,5 @@
 	directory = /mnt/shared/coding/projects/personal-website/
 	directory = /mnt/shared/coding/
 	directory = /mnt/shared/coding/projects/personal-website/
+[pull]
+	ff = only
