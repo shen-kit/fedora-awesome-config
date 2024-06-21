@@ -1,6 +1,7 @@
 #!/bin/bash
 
 FILE=/tmp/rclone-downloaded.lock
+LOGFILE=~/.cache/rclone/rclone.log
 
 sleep 5 # wait for network to connect
 
@@ -9,15 +10,11 @@ if [[ -f "$FILE" ]]; then
 else
   notify-send "Rclone Download" "download starting"
 
-  rclone sync onedrive: ~/onedrive/ --log-file ~/.config/rclone/rclone.log
+  rclone sync onedrive: ~/onedrive/ --log-file $LOGFILE
   notify-send "Rclone Download" "onedrive download finished"
-
-  rclone sync gdrive: ~/gDrive/ --log-file ~/.config/rclone/rclone.log
-  notify-send "Rclone Download" "gdrive download finished"
+  rclone sync gdrive: ~/gDrive/ --log-file $LOGFILE
 
   touch "$FILE"
-
-  # overwrite the file, not append
-  echo -e "\ndownload finished: $(date +'%H:%M, %d-%m-%y')\n" > ~/.config/rclone/rclone.log
+  echo -e "download finished: $(date +'%H:%M, %d-%m-%y')\n" > $LOGFILE
 fi
 
