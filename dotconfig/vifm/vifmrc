@@ -151,6 +151,12 @@ command! GrepFZF : set noquickview
         \|     execute system('[ -f "$FZF_PICK" ] && echo goto || echo cd') fnameescape($FZF_PICK)
         \| endif
 
+" search zoxide database with fzf
+command! z :set noquickview | :execute 'cd' fnameescape(system('zoxide query -l "%a" | fzf --height 20 2>/dev/tty')) '%IU' | redraw
+
+" automatically add current dir to zoxide database
+autocmd DirEnter * !zoxide add %d %i
+
 
 " ------------------------------------------------------------------------------
 " File types association
@@ -519,6 +525,9 @@ nnoremap <a-i> :sync<cr>
 nnoremap <a-o> :sync %c<cr>
 " Swap panes
 nnoremap <c-u> <c-w>x
+
+" zoxide with cd
+nnoremap cd :z<space>
 
 " ------------------------------------------------------------------------------
 " Various customization examples
