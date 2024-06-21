@@ -30,5 +30,5 @@ fusuma -d
 export PATH="$PATH:/home/shenkit/.local/share/JetBrains/Toolbox/scripts"
 
 # map capslock to escape, use shift+caps to toggle capslock
-setxkbmap -option caps:escape_shifted_capslock
+# setxkbmap -option caps:escape_shifted_capslock
 
