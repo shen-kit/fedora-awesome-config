@@ -92,10 +92,11 @@ colorscheme nord papercolor-dark gruvbox Default-256 Default
 
 " :mark mark /full/directory/path [filename]
 
-mark z ~/
+mark h ~/
 mark u ~/gDrive/uni
 mark t ~/gDrive/tuition
 mark a ~/gDrive/tuition/Arina/2024
+mark l ~/gDrive/tuition/Leah\ Leonard
 
 " ------------------------------------------------------------------------------
 " Commands
@@ -125,7 +126,6 @@ command! make !!make %a
 command! mkcd :mkdir! %a | cd %a
 command! reload :write | restart full
 
-command! pv sxiv -tr %d
 command! th thunar %d &
 
 " fzf
@@ -469,6 +469,8 @@ nnoremap ff :FZFcurrent<cr>
 nnoremap fg :GrepFZF<cr>
 
 nnoremap Q :q<cr>
+
+nnoremap ~ :cd ~<cr>
 
 " ================ DEFAULT MAPPINGS ================
 

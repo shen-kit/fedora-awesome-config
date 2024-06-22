@@ -5,6 +5,9 @@ vim.g.mapleader = " "
 
 map("i", "jk", "<ESC>", opts)
 
+-- quit
+map("n", "Q", ":wqa<CR>", opts)
+
 -- save file in insert mode
 map("i", "<C-s>", "<ESC>:w<CR>", opts)
 

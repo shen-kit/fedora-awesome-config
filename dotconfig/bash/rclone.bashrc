@@ -14,6 +14,6 @@ alias rclone-download="onedrive-sync-download && gdrive-sync-download"
 alias rclone-upload="onedrive-sync-upload && gdrive-sync-upload"
 
 # status
-alias rs="tail -5 ~/.config/rclone/rclone.log" # most recent status update
-alias rsh="cat .config/rclone/rclone.log | head -2 | tail -1" # download finished yet?
+alias rs="tail -5 ~/.cache/rclone/rclone.log" # most recent status update
+alias rsh="cat .cache/rclone/rclone.log | head -1" # download finished yet?
 

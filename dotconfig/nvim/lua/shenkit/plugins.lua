@@ -96,6 +96,30 @@ local plugins = {
     "mbbill/undotree",
     "nvim-tree/nvim-tree.lua",
 
+    -- "vifm/vifm.vim",
+    {
+        "rolv-apneseth/tfm.nvim",
+        lazy = false,
+        opts = {
+            file_manager = "vifm",
+            replace_netrw = true,
+            enable_cmds = true,
+            keybindings = {
+                ["<ESC>"] = ":q<CR>",
+                ["<C-v>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.vsplit)<CR><CR>",
+                ["<C-x>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.split)<CR><CR>",
+                ["<C-t>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.tabedit)<CR><CR>",
+            },
+        },
+        keys = {
+            {
+                "<leader>e",
+                ":Tfm<CR>",
+                desc = "TFM",
+            }
+        }
+    },
+
     -- obsidian
     {
         "epwalsh/obsidian.nvim",
