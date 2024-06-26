@@ -12,10 +12,10 @@ map("n", "Q", ":wqa<CR>", opts)
 map("i", "<C-s>", "<ESC>:w<CR>", opts)
 
 -- map ctrl+enter to new line below
-map("i", "<C-CR>", "<C-o>o", opts)
-map("n", "<C-CR>", "o<ESC>", opts)
-map("i", "<C-S-CR>", "<C-o>O", opts)
-map("n", "<C-S-CR>", "O<ESC>", opts)
+map("i", "\u{00A1}", "<C-o>o", opts)
+map("n", "\u{00A1}", "o<ESC>", opts)
+map("i", "\u{00A2}", "<C-o>O", opts)
+map("n", "\u{00A2}", "O<ESC>", opts)
 
 -- move lines
 map("v", "<C-M-j>", ":m '>+1<CR>gv=gv", opts)
@@ -33,9 +33,9 @@ map("v", ">", ">gv", opts)
 map("n", "<S-H>", ":bprevious<CR>", opts)
 map("n", "<S-L>", ":bnext<CR>", opts)
 -- close current buffer
-map("n", "<C-S-D>", ":bdelete<CR>", opts)
+map("n", "\u{00A3}", ":bdelete<CR>", opts)
 -- close all buffers except current
-map("n", "<C-S-B>", ":%bd|e#<CR>:bnext<CR>:bdelete<CR>", opts)
+map("n", "\u{00A4}", ":%bd|e#<CR>:bnext<CR>:bdelete<CR>", opts)
 
 -- switch tabs using tab and shift+tab
 map("n", "<TAB>", ":tabnext<CR>", opts)
@@ -51,9 +51,9 @@ map("n", "n", "nzzzv", opts)
 map("n", "N", "Nzzzv", opts)
 
 -- toggle comment with <C-/> (C-_) is a special key
-map("i", "<C-/>", "<ESC>:CommentToggle<CR>a", opts)
-map("n", "<C-/>", "<ESC>:CommentToggle<CR>", opts)
-map("v", "<C-/>", ":CommentToggle<CR>gv", opts)
+map("i", "<C-_>", "<ESC>:CommentToggle<CR>a", opts)
+map("n", "<C-_>", "<ESC>:CommentToggle<CR>", opts)
+map("v", "<C-_>", ":CommentToggle<CR>gv", opts)
 
 -- perform <action> without replacing the buffer
 map("x", "<leader>p", [["_dP]], opts)   -- paste 
@@ -61,7 +61,8 @@ map("x", "<leader>d", [[^"_D]])         -- delete line
 map("x", "<leader>x", [["_x]])          -- delete char
 map("x", "<leader>s", [["_s]])          -- delete and enter insert mode
 
-map("x", "Y", '"+y', opts) -- copy to system clipboard
+-- copy to system clipboard
+map("x", "Y", '"+y', opts)
 
 -- search and replace the word under the cursor
 map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {silent = false})
@@ -74,7 +75,8 @@ map("v", "<leader>\"", "c\"\"<ESC>Pgvlolo", opts)
 map("v", "<leader>'", "c''<ESC>Pgvlolo", opts)
 
 -- easy align
-map("x", "ea", "<CMD>EasyAlign<CR>")
+map("x", "ea", ":EasyAlign ")
+map("n", "ea", "vip:EasyAlign ")
 
 -- toggle diagnostic messages
 vim.api.nvim_create_user_command("DiagnosticToggle", function()

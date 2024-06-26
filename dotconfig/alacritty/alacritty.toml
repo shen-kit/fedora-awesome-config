@@ -2,6 +2,9 @@
 [colors]
 transparent_background_colors = true
 
+[window]
+opacity = 0.95
+
 [cursor.style]
 shape = "Beam"
 
@@ -27,59 +30,51 @@ style = "Bold Italic"
 family = "MesloLGS NF"
 style = "Italic"
 
-[window]
-opacity = 0.95
-
 # ========== set bindings for neovim to use ==========
-# chose random escape sequences that I won't use
 
 # for newline below
 [[keyboard.bindings]]
 key = "Return"
 mods = "Control"
-chars = "\u00A4"
+chars = "\u00A1"
 
 # for newline above
 [[keyboard.bindings]]
 key = "Return"
 mods = "Control|Shift"
-chars = "\u00A5"
-
-# for markdown renumber list
-[[keyboard.bindings]]
-key = "2"
-mods = "Control"
 chars = "\u00A2"
 
-# for markdown checkboxes
-[[keyboard.bindings]]
-key = "3"
-mods = "Control"
-chars = "\u00A3"
-
-# for buffer delete
+# delete current buffer
 [[keyboard.bindings]]
 key = "D"
 mods = "Control | Shift"
-chars = "\u00A6"
+chars = "\u00A3"
 
-# for delete all other buffers
+# delete all other buffers
 [[keyboard.bindings]]
 key = "B"
 mods = "Control | Shift"
-chars = "\u00A7"
+chars = "\u00A4"
 
-# for jump forward in jump list (override Tab)
+# ---- Markdown Specific ----
+
+# renumber markdown list
 [[keyboard.bindings]]
-key = "I"
+key = "2"
 mods = "Control"
-chars = "\u00A8"
+chars = "\u00B2"
+
+# markdown checkbox toggle
+[[keyboard.bindings]]
+key = "3"
+mods = "Control"
+chars = "\u00B3"
 
 # for quick switcher in obsidian nvim
 [[keyboard.bindings]]
 key = "O"
 mods = "Control | Shift"
-chars = "\u00A9"
+chars = "\u00B4"
 
 # ==================== Summer Theme Colours (edited) ==================== 
 # Default colors
