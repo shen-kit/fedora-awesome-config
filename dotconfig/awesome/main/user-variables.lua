@@ -3,7 +3,7 @@
 -- }}}
 
 local _M = {
-  terminal = "alacritty",
+  terminal = "wezterm", -- alacritty
   browserA  = "brave-browser --profile-directory='Default'",
   browserB  = "brave-browser --profile-directory='Profile 3'",
   file_explorer = "thunar",

@@ -9,5 +9,11 @@
 	directory = /mnt/shared/coding/projects/personal-website/
 	directory = /mnt/shared/coding/
 	directory = /mnt/shared/coding/projects/personal-website/
+	directory = /mnt/shared/main
 [pull]
 	ff = only
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

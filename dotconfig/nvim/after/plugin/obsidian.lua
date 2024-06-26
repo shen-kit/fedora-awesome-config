@@ -1,5 +1,14 @@
 require("obsidian").setup({
-    dir = "~/onedrive/obsidian_zettelkasten",
+    workspaces = {
+        {
+            name = "personal-notes",
+            path = "~/gDrive/1-personal-notes",
+        },
+        {
+            name = "zettelkasten",
+            path = "~/gDrive/2-zettelkasten",
+        },
+    },
     new_notes_location = "current_dir",
     preferred_link_style = "wiki",
     wiki_link_func = "use_alias_only",
@@ -13,19 +22,8 @@ require("obsidian").setup({
             end,
             opts = { noremap = false, expr = true, buffer = true },
         },
-        -- Smart action depending on context, either follow link or toggle checkbox.
-        --["<cr>"] = {
-        --    action = function()
-        --        return require("obsidian").util.smart_action()
-        --    end,
-        --    opts = { buffer = true, expr = true },
-        --},
     },
     note_path_func = function(spec)
-        -- add prefix if zettel
-        if string.find(tostring(spec.dir), "zettelkasten") then
-            spec.title = '"' .. spec.title
-        end
         return (spec.dir / spec.title):with_suffix(".md")
     end,
     completion = {
@@ -34,7 +32,6 @@ require("obsidian").setup({
     },
     daily_notes = {
         folder = "areas/journal/daily",
-        --template = "notes/=daily",
     },
     picker = {
         name = "telescope.nvim",

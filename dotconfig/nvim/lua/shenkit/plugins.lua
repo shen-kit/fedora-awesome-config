@@ -74,23 +74,10 @@ local plugins = {
         dependencies = {"nvim-lua/plenary.nvim"},
     },
 
-    -- tmux integration
+    -- integrate with wezterm panes
     {
-        "christoomey/vim-tmux-navigator",
-        cmd = {
-            "TmuxNavigateLeft",
-            "TmuxNavigateDown",
-            "TmuxNavigateUp",
-            "TmuxNavigateRight",
-            "TmuxNavigatePrevious",
-        },
-        keys = {
-            { "<M-h>", "<cmd>TmuxNavigateLeft<cr>" },
-            { "<M-j>", "<cmd>TmuxNavigateDown<cr>" },
-            { "<M-k>", "<cmd>TmuxNavigateUp<cr>" },
-            { "<M-l>", "<cmd>TmuxNavigateRight<cr>" },
-            { "<M-\\>", "<cmd>TmuxNavigatePrevious<cr>" },
-        },
+        "mrjones2014/smart-splits.nvim",
+        lazy = false,
     },
 
     "mbbill/undotree",
@@ -134,6 +121,7 @@ local plugins = {
             "hrsh7th/nvim-cmp", -- note reference completion
         },
     },
+    "junegunn/vim-easy-align",
 
     "bullets-vim/bullets.vim",
 

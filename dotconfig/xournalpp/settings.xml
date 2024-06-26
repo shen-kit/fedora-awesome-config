@@ -6,7 +6,7 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Minimal Left Copy"/>
-  <property name="lastSavePath" value="/home/shenkit/gDrive/tuition/Arina/2024"/>
+  <property name="lastSavePath" value="/home/shenkit/gDrive/3-work/tuition/Arina/2024"/>
   <property name="lastOpenPath" value="/home/shenkit/gDrive/uni/MAT1830/exam-prep"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
@@ -14,8 +14,8 @@
   <property name="zoomStep" value="10"/>
   <property name="zoomStepScroll" value="6"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="1908"/>
-  <property name="mainWndHeight" value="1042"/>
+  <property name="mainWndWidth" value="1268"/>
+  <property name="mainWndHeight" value="682"/>
   <property name="maximized" value="false"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
@@ -229,7 +229,7 @@
     <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
-    <attribute name="current" type="string" value="selectRect"/>
+    <attribute name="current" type="string" value="pen"/>
     <data name="drawArrow">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
@@ -267,7 +267,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="ffffff"/>
+      <attribute name="color" type="hex" value="ffffffff"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>

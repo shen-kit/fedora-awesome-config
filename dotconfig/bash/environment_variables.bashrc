@@ -1,3 +1,6 @@
+# path
+# export PATH="/var/lib/flatpak/app/org.wezfurlong.wezterm/current/active/export/bin:$PATH"
+
 # default text editor
 export EDITOR=nvim
 export VISUAL=nvim
@@ -13,8 +16,8 @@ export GTK_IM_MODULE='fcitx'
 export QT_IM_MODULE='fcitx'
 export XMODIFIERS='@im=fcitx'
 
-# make rclone verbose
-export RCLONE_VERBOSE=1
+# how much detail to show in rclone output
+export RCLONE_VERBOSE=0
 
 # starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"

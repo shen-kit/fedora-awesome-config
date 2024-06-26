@@ -1,6 +1,7 @@
 # google drive
-alias gdrive-upload="rclone sync ~/gDrive/ gdrive:"
-alias gdrive-download="rclone sync gdrive: ~/gDrive"
+# don't upload tuition resources as it doesn't change and is a large folder
+alias gdrive-upload="rclone sync ~/gDrive/ gdrive: --exclude '3-work/tuition/resources/**'"
+alias gdrive-download="rclone sync gdrive: ~/gDrive --exclude '3-work/tuition/resources/**'"
 alias gdrive-status="rclone check gdrive: ~/gDrive"
 alias gdrive-dedupe="rclone dedupe gdrive: --dedupe-mode newest"
 

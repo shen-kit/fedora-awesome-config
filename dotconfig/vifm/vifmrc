@@ -497,8 +497,8 @@ nnoremap yf :!echo %c:p | xclip -sel clip<cr>
 
 " faster renaming
 nnoremap I cw<c-a>
-nnoremap cc cw<c-u>
 nnoremap A cw
+nnoremap cc cw<c-u>
 " exclude file extension
 nnoremap <C-r> cW
 
@@ -514,8 +514,8 @@ nnoremap <c-v> :move<cr>
 
 nnoremap W :!less %f<cr>
 
-nnoremap <c-n> :touch<space>
-nnoremap <a-n> :mkdir!<space>
+nnoremap <c-n> :touch ""<left>
+nnoremap <a-n> :mkdir! ""<left>
 
 nnoremap <delete> :delete<cr>
 vnoremap <delete> :delete<cr>
