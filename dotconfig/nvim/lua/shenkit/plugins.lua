@@ -13,10 +13,33 @@ vim.opt.rtp:prepend(lazypath)
 
 
 local plugins = {
+    -- file explorer
     {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.6",
         dependencies = { "nvim-lua/plenary.nvim" }
+    },
+    {
+        "rolv-apneseth/tfm.nvim",
+        lazy = false,
+        opts = {
+            file_manager = "vifm",
+            replace_netrw = true,
+            enable_cmds = true,
+            keybindings = {
+                ["<ESC>"] = ":q<CR>",
+                ["<C-v>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.vsplit)<CR><CR>",
+                ["<C-x>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.split)<CR><CR>",
+                ["<C-t>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.tabedit)<CR><CR>",
+            },
+        },
+        keys = {
+            {
+                "<leader>e",
+                ":Tfm<CR>",
+                desc = "TFM",
+            }
+        }
     },
 
     -- appearance
@@ -26,7 +49,6 @@ local plugins = {
         priority = 1000,
         config = function() vim.cmd("colorscheme tokyonight") end
     },
-
     {
         "nvim-lualine/lualine.nvim",
         dependencies = { "kyazdani42/nvim-web-devicons" },
@@ -68,13 +90,13 @@ local plugins = {
         config = true,
     },
 
-    -- git integration
+    -- git 
     {
         "kdheepak/lazygit.nvim",
         dependencies = {"nvim-lua/plenary.nvim"},
     },
 
-    -- integrate with wezterm panes
+    -- integrate splits with tmux panes
     {
         "mrjones2014/smart-splits.nvim",
         lazy = false,
@@ -83,30 +105,13 @@ local plugins = {
     "mbbill/undotree",
     "nvim-tree/nvim-tree.lua",
 
-    -- "vifm/vifm.vim",
-    {
-        "rolv-apneseth/tfm.nvim",
-        lazy = false,
-        opts = {
-            file_manager = "vifm",
-            replace_netrw = true,
-            enable_cmds = true,
-            keybindings = {
-                ["<ESC>"] = ":q<CR>",
-                ["<C-v>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.vsplit)<CR><CR>",
-                ["<C-x>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.split)<CR><CR>",
-                ["<C-t>"] = "<C-\\><C-O>:lua require('tfm').set_next_open_mode(require('tfm').OPEN_MODE.tabedit)<CR><CR>",
-            },
-        },
-        keys = {
-            {
-                "<leader>e",
-                ":Tfm<CR>",
-                desc = "TFM",
-            }
-        }
-    },
 
+    "junegunn/vim-easy-align",
+
+    -- comments
+    "terrortylor/nvim-comment",
+
+    -- ===== notes =====
     -- obsidian
     {
         "epwalsh/obsidian.nvim",
@@ -121,12 +126,22 @@ local plugins = {
             "hrsh7th/nvim-cmp", -- note reference completion
         },
     },
-    "junegunn/vim-easy-align",
-
-    "bullets-vim/bullets.vim",
-
-    -- comments
-    "terrortylor/nvim-comment",
+    {
+        "vimwiki/vimwiki",
+        init = function()
+            vim.g.vimwiki_list = {
+                {
+                    path = "~/vimwiki",
+                    syntax = "markdown",
+                    ext = ".md",
+                },
+                {
+                    path = "~/zettelkasten-vimwiki",
+                },
+            }
+            vim.g.vimwiki_listsyms = " .x"
+        end,
+    },
 }
 
 require("lazy").setup(plugins, opts)

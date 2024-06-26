@@ -34,7 +34,7 @@ opt.incsearch = true
 opt.termguicolors = true
 opt.linebreak = true    -- only wrap after a space
 opt.textwidth = 999     -- don't hard-wrap at 80 chars, override in ftplugin/<filetype>.lua for specific files
-opt.wrap = true         -- wrap at the edges of the screen so I don't have to scroll to read
+opt.wrap = false        -- whether to wrap at edges of screen
 opt.showtabline = 2
 opt.conceallevel = 0
 vim.diagnostic.config({ virtual_text = false, signs = false })     -- disable inline diagnostic text by default (change with :DiagnosticToggle)

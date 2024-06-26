@@ -16,9 +16,9 @@ map("v", "<leader>$", "c$$<ESC>Pgvlolo", opts)
 map("i", "<C-b>"    , "**"             , opts)
 
 -- auto numbered list and checkboxes
-map({"n", "i"}, "\u{00B2}", "<cmd>RenumberList<CR>"          , opts)
-map({"n", "i"}, "\u{00B3}", "<cmd>ObsidianToggleCheckbox<CR>", opts)
-map({"v", "x"}, "\u{00B3}", ":norm @c<CR>gv"                 , opts)
+map({"n" , "i"}, "\u{00B2}", ":VimwikiRenumberAllLists<CR>", opts)
+map({"n" , "v"}, "\u{00B3}", ":VimwikiToggleListItem<CR>"  , opts)
+map("i"        , "\u{00B3}", "<CMD>VimwikiToggleListItem<CR>"  , opts)
 
 -- obsidian
 map("n" , "\u{00B4}"   , ":ObsidianQuickSwitch<CR>" , opts)    -- quick switcher, Ctrl+Shift+O

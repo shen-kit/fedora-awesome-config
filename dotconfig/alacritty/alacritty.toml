@@ -44,9 +44,9 @@ key = "Return"
 mods = "Control|Shift"
 chars = "\u00A2"
 
-# delete current buffer
+# close current buffer
 [[keyboard.bindings]]
-key = "D"
+key = "W"
 mods = "Control | Shift"
 chars = "\u00A3"
 

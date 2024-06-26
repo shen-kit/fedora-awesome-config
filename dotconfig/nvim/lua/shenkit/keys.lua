@@ -10,6 +10,7 @@ map("n", "Q", ":wqa<CR>", opts)
 
 -- save file in insert mode
 map("i", "<C-s>", "<ESC>:w<CR>", opts)
+map("n", "<C-s>", ":w<CR>", opts)
 
 -- map ctrl+enter to new line below
 map("i", "\u{00A1}", "<C-o>o", opts)
@@ -75,8 +76,8 @@ map("v", "<leader>\"", "c\"\"<ESC>Pgvlolo", opts)
 map("v", "<leader>'", "c''<ESC>Pgvlolo", opts)
 
 -- easy align
-map("x", "ea", ":EasyAlign ")
-map("n", "ea", "vip:EasyAlign ")
+map("x", "ga", ":EasyAlign ")
+map("n", "ga", "vip:EasyAlign ")
 
 -- toggle diagnostic messages
 vim.api.nvim_create_user_command("DiagnosticToggle", function()
