@@ -3,15 +3,14 @@
 -- }}}
 
 local _M = {
-  terminal = "wezterm", -- alacritty
+  terminal = "alacritty",
   browserA  = "brave-browser --profile-directory='Default'",
   browserB  = "brave-browser --profile-directory='Profile 3'",
   file_explorer = "thunar",
 
   -- device, used in vicious widget
   wlandev = 'wlan0',
-  --wlandev = 'wlp2s0b1', # void on notebook
-
+  --
   -- Default modkey.
   -- Usually, Mod4 is the key with a logo between Control and Alt.
   -- If you do not like this or do not have such a key,
