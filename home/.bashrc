@@ -4,7 +4,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # attach to tmux
-~/.config/tmux-attach.sh
+~/.config/tmux/tmux-attach.sh
 
 # load custom aliases and functions from ~/.bashrc.d
 if [ -d ~/.config/bash ]; then 

@@ -65,6 +65,7 @@ alias connect-bt-earphones="bluetoothctl connect 84:AC:60:1F:91:05"
 alias connect-bt-headphones="bluetoothctl connect 2C:FD:B3:8C:50:89"
 
 # ========== CODING / SCRIPTS ==========
+
 alias py="python"                               # python
 alias pwds="py ~/onedrive/01\ password-manager/password-manager.py"
 
@@ -86,4 +87,4 @@ function gacp () {
 # ========== MISC. ==========
 
 alias ntfy="notify-send"
-
+alias zettelkasten="~/.config/tmux/tmux-zettelkasten.sh"
