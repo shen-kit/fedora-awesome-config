@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     -- file explorer
+    "nvim-tree/nvim-tree.lua",
     {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.6",
@@ -103,8 +104,6 @@ local plugins = {
     },
 
     "mbbill/undotree",
-    "nvim-tree/nvim-tree.lua",
-
 
     "junegunn/vim-easy-align",
 
@@ -112,7 +111,6 @@ local plugins = {
     "terrortylor/nvim-comment",
 
     -- ===== notes =====
-    -- obsidian
     {
         "epwalsh/obsidian.nvim",
         version = "*",  -- recommended, use latest release instead of latest commit
@@ -126,22 +124,7 @@ local plugins = {
             "hrsh7th/nvim-cmp", -- note reference completion
         },
     },
-    {
-        "vimwiki/vimwiki",
-        init = function()
-            vim.g.vimwiki_list = {
-                {
-                    path = "~/vimwiki",
-                    syntax = "markdown",
-                    ext = ".md",
-                },
-                {
-                    path = "~/zettelkasten-vimwiki",
-                },
-            }
-            vim.g.vimwiki_listsyms = " .x"
-        end,
-    },
+    "bullets-vim/bullets.vim",
 }
 
 require("lazy").setup(plugins, opts)
