@@ -46,10 +46,10 @@ map("n", "<S-TAB>", ":tabprevious<CR>", opts)
 map("n", "J", "mzJ`z", opts)
 
 -- keep cursor in middle when jumping half pages, and when searching
-map("n", "<C-d>", "<C-d>zz", opts)
-map("n", "<C-u>", "<C-u>zz", opts)
-map("n", "n", "nzzzv", opts)
-map("n", "N", "Nzzzv", opts)
+-- map("n", "<C-d>", "<C-d>zz", opts)
+-- map("n", "<C-u>", "<C-u>zz", opts)
+-- map("n", "n", "nzzzv", opts)
+-- map("n", "N", "Nzzzv", opts)
 
 -- toggle comment with <C-/> (C-_) is a special key
 map("i", "<C-_>", "<ESC>:CommentToggle<CR>a", opts)
