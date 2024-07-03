@@ -5,6 +5,10 @@ vim.g.mapleader = " "
 
 map("i", "jk", "<ESC>", opts)
 
+-- jump forward in jump list (alacritty specific)
+map("n", "\u{00A5}", "<C-i>", opts)
+map("n", "<leader>fd", ":find \\c*", { noremap = true, silent = false })
+
 -- quit
 map("n", "Q", ":wqa<CR>", opts)
 
@@ -38,23 +42,12 @@ map("n", "\u{00A3}", ":bdelete<CR>", opts)
 -- close all buffers except current
 map("n", "\u{00A4}", ":%bd|e#<CR>:bnext<CR>:bdelete<CR>", opts)
 
--- switch tabs using tab and shift+tab
+-- switch tabs
 map("n", "<TAB>", ":tabnext<CR>", opts)
 map("n", "<S-TAB>", ":tabprevious<CR>", opts)
 
 -- keep cursor in place when joining lines
 map("n", "J", "mzJ`z", opts)
-
--- keep cursor in middle when jumping half pages, and when searching
--- map("n", "<C-d>", "<C-d>zz", opts)
--- map("n", "<C-u>", "<C-u>zz", opts)
--- map("n", "n", "nzzzv", opts)
--- map("n", "N", "Nzzzv", opts)
-
--- toggle comment with <C-/> (C-_) is a special key
-map("i", "<C-_>", "<ESC>:CommentToggle<CR>a", opts)
-map("n", "<C-_>", "<ESC>:CommentToggle<CR>", opts)
-map("v", "<C-_>", ":CommentToggle<CR>gv", opts)
 
 -- perform <action> without replacing the buffer
 map("x", "<leader>p", [["_dP]], opts)   -- paste 
@@ -68,22 +61,10 @@ map("x", "Y", '"+y', opts)
 -- search and replace the word under the cursor
 map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {silent = false})
 
--- add parentheses/quotes in visual mode
+-- surround text with parentheses/quotes
 map("v", "(", "c()<ESC>Pgvlolo", opts)
 map("v", "<leader>[", "c[]<ESC>Pgvlolo", opts)
 map("v", "<leader>{", "c{}<ESC>Pgvlolo", opts)
+map("v", "<leader><", "c<><ESC>Pgvlolo", opts)
 map("v", "<leader>\"", "c\"\"<ESC>Pgvlolo", opts)
 map("v", "<leader>'", "c''<ESC>Pgvlolo", opts)
-
--- easy align
-map("x", "ga", ":EasyAlign ")
-map("n", "ga", "vip:EasyAlign ")
-
--- toggle diagnostic messages
-vim.api.nvim_create_user_command("DiagnosticToggle", function()
-    local config = vim.diagnostic.config
-    config {
-        virtual_text = not config().virtual_text,
-        signs = not config().virtual_text,
-    }
-end, { desc = "toggle diagnostic" })

@@ -3,6 +3,8 @@
 local opt = vim.opt
 
 opt.conceallevel = 2 -- required by obsidian plugin
+opt.textwidth = 80
+opt.wrap = true
 
 -- ==========  KEYBINDS ========== 
 

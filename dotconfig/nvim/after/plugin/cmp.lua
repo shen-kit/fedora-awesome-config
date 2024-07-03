@@ -15,6 +15,7 @@ cmp.setup({
     sources = {
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
+        { name = 'orgmode' },
     },
     mapping = cmp.mapping.preset.insert({
         -- Ctrl + space triggers completion menu

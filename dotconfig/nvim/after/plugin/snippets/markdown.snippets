@@ -24,28 +24,17 @@ snippet \text latex text block
 
 snippet daily-note
 	---
-	wake-time: $1
 	workout:
-	- $2
-	day_rating: $3
-	sleep_time: $4
+	- 
+	day_rating: 
 	---
 	[[`strftime("%Y-%m-%d", localtime() - 24*3600)`]] <== <button class="date_button_today">Today</button> ==> [[`strftime("%Y-%m-%d", localtime() + 24*3600)`]]
-	***
-	*no entries for this date in previous years*
-	***
-
-	- [ ] update [chinese progress](https://docs.google.com/spreadsheets/d/1Gxs7-ew_2Ht1V2xNzOM3O3KdP5GnWtcZg0RYv29Sqow/edit#gid=0)
 
 	# Journal
 
 	*What happened today?*
 
-	highlight:: $5
-
-	*What am I grateful for?*
-
-	gratitude:: $6
+	highlight:: $0
 
 snippet zettel
 	---

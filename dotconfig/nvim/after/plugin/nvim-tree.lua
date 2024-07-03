@@ -20,7 +20,3 @@ require("nvim-tree").setup({
     },
 })
 
-vim.keymap.set("n", "<C-p>", ":NvimTreeToggle<CR>")
--- find the current file in the tree
-vim.keymap.set("n", "<leader>fc", ":NvimTreeFindFile<CR>")
-

@@ -56,6 +56,12 @@ key = "B"
 mods = "Control | Shift"
 chars = "\u00A4"
 
+# jump forward in jump list
+[[keyboard.bindings]]
+key = "I"
+mods = "Control"
+chars = "\u00A5"
+
 # ---- Markdown Specific ----
 
 # renumber markdown list

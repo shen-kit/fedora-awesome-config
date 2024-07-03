@@ -1,3 +1,4 @@
+-- auto-install lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
     vim.fn.system({
@@ -125,6 +126,36 @@ local plugins = {
         },
     },
     "bullets-vim/bullets.vim",
+    {
+        "lukas-reineke/headlines.nvim",
+        dependencies = "nvim-treesitter/nvim-treesitter",
+    },
+    "dhruvasagar/vim-table-mode",
+    --
+    -- {
+    --     'nvim-orgmode/orgmode',
+    --     event = 'VeryLazy',
+    --     ft = { 'org' },
+    -- },
+    -- {
+    --     "chipsenkbeil/org-roam.nvim",
+    --     tag = "0.1.0",
+    --     dependencies = {
+    --         {
+    --             "nvim-orgmode/orgmode",
+    --             tag = "0.3.4",
+    --         },
+    --     },
+    --     config = function()
+    --         require("org-roam").setup({
+    --             directory = "~/org_roam_files",
+    --             org_files = {
+    --                 "~/orgfiles",
+    --             }
+    --         })
+    --     end
+    -- },
+    -- 'akinsho/org-bullets.nvim',
 }
 
 require("lazy").setup(plugins, opts)

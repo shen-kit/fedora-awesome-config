@@ -483,6 +483,8 @@ nnoremap S :sort<cr>
 " toggle preview
 nnoremap w :view<cr>
 vnoremap w :view<cr>gv
+" preview in full window
+nnoremap W :!less %f<cr>
 
 " open in nvim
 nnoremap o :!nvim %f<cr>
@@ -491,9 +493,12 @@ nnoremap O :!sudo nvim %f<cr>
 " open file background using default program
 nnoremap gb :file &<cr>l
 
-" copy current path (dir / file)
-nnoremap yd :!echo %d | xclip -sel clip<cr>
-nnoremap yf :!echo %c:p | xclip -sel clip<cr>
+" copy current directory
+nnoremap yd :!echo -n %d | xclip -selection clipboard %i<CR>
+" copy current file path
+nnoremap yf :!echo -n %c:p | xclip -selection clipboard %i<CR>
+" copy current filename without path
+nnoremap yn :!echo -n %c | xclip -selection clipboard %i<CR>
 
 " faster renaming
 nnoremap I cw<c-a>
@@ -511,8 +516,6 @@ nnoremap ,w :set wrap!<cr>
 " two-pane mappings
 nnoremap <c-c> :copy<cr>
 nnoremap <c-v> :move<cr>
-
-nnoremap W :!less %f<cr>
 
 nnoremap <c-n> :touch ""<left>
 nnoremap <a-n> :mkdir! ""<left>
@@ -542,7 +545,7 @@ nnoremap cd :z<space>
 " nnoremap <left> <nop>
 
 " Activate screen/tmux support
-screen!
+" screen!
 
 " ------------------------------------------------------------------------------
 " Icon decorations example
