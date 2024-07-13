@@ -88,4 +88,3 @@ function gacp () {
 # ========== MISC. ==========
 
 alias ntfy="notify-send"
-alias zettelkasten="~/.config/tmux/tmux-zettelkasten.sh"
