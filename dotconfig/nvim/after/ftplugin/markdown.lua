@@ -19,7 +19,8 @@ map("i", "<C-b>"    , "**"             , opts)
 
 -- auto numbered list and checkboxes
 map({"n" , "v", "i"}, "\u{00B2}", "<CMD>RenumberList<CR>", opts)
-map({"n" , "v", "i"}, "\u{00B3}", "<CMD>ObsidianToggleCheckbox<CR>"  , opts)
+map({"n" , "i"}, "\u{00B3}", "<CMD>ObsidianToggleCheckbox<CR>"  , opts)
+map("v", "\u{00B3}", ":norm @c<CR>gv", opts) -- requires @c to be bound to :ObsidianToggleCheckbox
 
 -- obsidian
 map("n" , "\u{00B4}"   , ":ObsidianQuickSwitch<CR>" , opts)    -- quick switcher, Ctrl+Shift+O
@@ -31,4 +32,4 @@ map("n" , "<leader>on" , ":ObsidianNew<CR>"         , opts)    -- new note
 map("n" , "<leader>op" , ":ObsidianOpen<CR>"        , opts)    -- open in app
 
 -- tables
-map("n", "<leader>t", "vip:EasyAlign *|<CR>", opts) -- align table cells
+map("n", "<leader>tt", "vip:EasyAlign *|<CR>", opts) -- align table cells

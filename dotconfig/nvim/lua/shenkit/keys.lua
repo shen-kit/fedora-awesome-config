@@ -5,6 +5,10 @@ vim.g.mapleader = " "
 
 map("i", "jk", "<ESC>", opts)
 
+-- quick capture
+map("n", "<leader>nn", ":e ~/gDrive/1-personal-notes/📥 Inbox.md<CR>", opts)
+map("n", "<leader>nz", ":e ~/gDrive/2-zettelkasten/_inbox.md<CR>", opts)
+
 -- jump forward in jump list (alacritty specific)
 map("n", "\u{00A5}", "<C-i>", opts)
 map("n", "<leader>fd", ":find \\c*", { noremap = true, silent = false })
@@ -37,7 +41,7 @@ map("v", ">", ">gv", opts)
 -- cycle through buffers
 map("n", "<S-H>", ":bprevious<CR>", opts)
 map("n", "<S-L>", ":bnext<CR>", opts)
--- close current buffer
+-- close current buffer (ctrl+shift+D)
 map("n", "\u{00A3}", ":bdelete<CR>", opts)
 -- close all buffers except current
 map("n", "\u{00A4}", ":%bd|e#<CR>:bnext<CR>:bdelete<CR>", opts)

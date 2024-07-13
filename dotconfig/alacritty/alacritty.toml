@@ -46,7 +46,7 @@ chars = "\u00A2"
 
 # close current buffer
 [[keyboard.bindings]]
-key = "W"
+key = "D"
 mods = "Control | Shift"
 chars = "\u00A3"
 
