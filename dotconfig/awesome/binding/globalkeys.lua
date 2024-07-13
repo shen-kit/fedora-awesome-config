@@ -80,7 +80,7 @@ function _M.get()
               {description = "focus previous screen", group = "window focus"}),
 
     -- launch applications
-    awful.key({ "Control", "Shift" }, "r", function () os.execute("rofi -show drun") end,
+    awful.key({ modkey }, "r", function () os.execute("rofi -show drun") end,
               {description = "launch rofi", group = "launch applications"}),
     awful.key({ modkey }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launch applications"}),
