@@ -27,16 +27,16 @@ map("i", "\u{00A2}", "<C-o>O", opts)
 map("n", "\u{00A2}", "O<ESC>", opts)
 
 -- move lines
-map("v", "<C-M-j>", ":m '>+1<CR>gv=gv", opts)
-map("v", "<C-M-k>", ":m '<-2<CR>gv=gv", opts)
+map("x", "<C-M-j>", ":m '>+1<CR>gv=gv", opts)
+map("x", "<C-M-k>", ":m '<-2<CR>gv=gv", opts)
 map("n", "<C-M-k>", ":m -2<CR>", opts)
 map("n", "<C-M-j>", ":m +1<CR>", opts)
 map("i", "<C-M-k>", "<esc>:m -2<CR>a", opts)
 map("i", "<C-M-j>", "<esc>:m +1<CR>a", opts)
 
 -- indenting
-map("v", "<", "<gv", opts)
-map("v", ">", ">gv", opts)
+map("x", "<", "<gv", opts)
+map("x", ">", ">gv", opts)
 
 -- cycle through buffers
 map("n", "<S-H>", ":bprevious<CR>", opts)
@@ -66,9 +66,9 @@ map("x", "Y", '"+y', opts)
 map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {silent = false})
 
 -- surround text with parentheses/quotes
-map("v", "(", "c()<ESC>Pgvlolo", opts)
-map("v", "<leader>[", "c[]<ESC>Pgvlolo", opts)
-map("v", "<leader>{", "c{}<ESC>Pgvlolo", opts)
-map("v", "<leader><", "c<><ESC>Pgvlolo", opts)
-map("v", "<leader>\"", "c\"\"<ESC>Pgvlolo", opts)
-map("v", "<leader>'", "c''<ESC>Pgvlolo", opts)
+map("x", "(", "c()<ESC>Pgvlolo", opts)
+map("x", "<leader>[", "c[]<ESC>Pgvlolo", opts)
+map("x", "<leader>{", "c{}<ESC>Pgvlolo", opts)
+map("x", "<leader><", "c<><ESC>Pgvlolo", opts)
+map("x", "<leader>\"", "c\"\"<ESC>Pgvlolo", opts)
+map("x", "<leader>'", "c''<ESC>Pgvlolo", opts)
