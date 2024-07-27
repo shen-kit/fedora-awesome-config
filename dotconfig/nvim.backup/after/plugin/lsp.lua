@@ -27,9 +27,13 @@ local default_setup = function(server)
     })
 end
 
-require('mason').setup({})
+require('mason').setup({
+    ensure_installed = {
+        "typescript-language-server",
+    },
+})
 require('mason-lspconfig').setup({
-    ensure_installed = {},
+    ensure_installed = { },
     handlers = {
         default_setup,
     },

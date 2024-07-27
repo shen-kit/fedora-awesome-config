@@ -15,11 +15,10 @@ cmp.setup({
     sources = {
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
-        { name = 'orgmode' },
     },
     mapping = cmp.mapping.preset.insert({
-        -- Ctrl + space triggers completion menu
-        ['<C-Space>'] = cmp.mapping.complete(),
+        -- trigger completion menu
+        ['<C-p>'] = cmp.mapping.complete(),
         -- tab or enter to confirms completion item
         --['<tab>'] = cmp.mapping.confirm({select = true}),
         ['<C-b>'] = cmp.mapping.scroll_docs(-4),

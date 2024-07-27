@@ -1,16 +1,3 @@
--- auto-install lazy
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-    vim.fn.system({
-        "git",
-        "clone",
-        "--filter=blob:none",
-        "https://github.com/folke/lazy.nvim.git",
-        "--branch=stable", -- latest stable release
-        lazypath,
-    })
-end
-vim.opt.rtp:prepend(lazypath)
 
 
 local plugins = {
@@ -46,11 +33,16 @@ local plugins = {
 
     -- appearance
     {
-        "folke/tokyonight.nvim",
-        lazy = false,
+        "catppuccin/nvim",
+        name = "catppuccin",
         priority = 1000,
-        config = function() vim.cmd("colorscheme tokyonight") end
     },
+    -- {
+    --     "folke/tokyonight.nvim",
+    --     lazy = false,
+    --     priority = 1000,
+    --     config = function() vim.cmd("colorscheme tokyonight") end
+    -- },
     {
         "nvim-lualine/lualine.nvim",
         dependencies = { "kyazdani42/nvim-web-devicons" },
@@ -91,6 +83,16 @@ local plugins = {
         event = "InsertEnter",
         config = true,
     },
+    {
+        "kylechui/nvim-surround",
+        version = "*", -- for stability
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end,
+    },
 
     -- git 
     {
@@ -110,6 +112,7 @@ local plugins = {
 
     -- comments
     "terrortylor/nvim-comment",
+
 
     -- ===== notes =====
     {
@@ -131,31 +134,22 @@ local plugins = {
         dependencies = "nvim-treesitter/nvim-treesitter",
     },
     "dhruvasagar/vim-table-mode",
-    --
-    -- {
-    --     'nvim-orgmode/orgmode',
-    --     event = 'VeryLazy',
-    --     ft = { 'org' },
-    -- },
-    -- {
-    --     "chipsenkbeil/org-roam.nvim",
-    --     tag = "0.1.0",
-    --     dependencies = {
-    --         {
-    --             "nvim-orgmode/orgmode",
-    --             tag = "0.3.4",
-    --         },
-    --     },
-    --     config = function()
-    --         require("org-roam").setup({
-    --             directory = "~/org_roam_files",
-    --             org_files = {
-    --                 "~/orgfiles",
-    --             }
-    --         })
-    --     end
-    -- },
-    -- 'akinsho/org-bullets.nvim',
 }
 
-require("lazy").setup(plugins, opts)
+require("lazy").setup(plugins, {
+    performance = {
+        rtp = {
+            -- disable some rtp plugins
+            disabled_plugins = {
+                "gzip",
+                "matchit",
+                "matchparen",
+                "netrwPlugin",
+                "tarPlugin",
+                "tohtml",
+                "tutor",
+                "zipPlugin",
+            },
+        },
+    },
+})

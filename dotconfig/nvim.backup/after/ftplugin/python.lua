@@ -9,8 +9,6 @@ local opt = vim.opt
 opt.textwidth = 80
 opt.wrap      = true
 
-
-
 -- format 
 --local map = vim.api.nvim_set_keymap
 --local opts = { noremap = true, silent = true }

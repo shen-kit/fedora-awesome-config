@@ -1,6 +1,0 @@
-require("shenkit.opts")
-require("shenkit.keys")
-require("shenkit.plugins")
-require("shenkit.plugin-keys")
-require("shenkit.highlights")
-require("shenkit.autocmds")
