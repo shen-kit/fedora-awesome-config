@@ -1,6 +1,7 @@
 -- ============================================================
 --                       Global Options
 -- ============================================================
+
 local g = vim.g
 g.markdown_folding = 1
 
@@ -15,7 +16,7 @@ opt.number = true
 opt.relativenumber = true
 opt.scrolloff = 5
 opt.sidescrolloff = 5
-opt.signcolumn = "yes"
+opt.signcolumn = 'yes'
 opt.completeopt = { 'menu', 'menuone', 'noselect' }
 opt.pumheight = 7
 
@@ -34,19 +35,23 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.smartindent = true
 
+-- [[ folding ]]
+opt.folemthod = 'indent'
+opt.foldlevelstart = 99
+
 -- [[ search ]]
 opt.ignorecase = true
-opt.smartcase = true 	-- case sensitive if search contains capitals
+opt.smartcase = true 	  -- case sensitive if search contains capitals
 opt.hlsearch = false    -- don't highlight all occurrences
 opt.incsearch = true    -- incremental search (update while typing)
 
 -- [[ splits ]]
 opt.splitright = true 	-- split right instead of left by default
-opt.splitbelow = true	-- split down instead of up by default
+opt.splitbelow = true	  -- split down instead of up by default
 
 -- [[ sequences ]]
 opt.timeoutlen = 400
 
 -- [[ misc ]]
 opt.updatetime = 50
-opt.path:append "**"
+opt.path:append '**'
