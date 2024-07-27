@@ -36,7 +36,7 @@ opt.expandtab = true
 opt.smartindent = true
 
 -- [[ folding ]]
-opt.folemthod = 'indent'
+opt.foldmethod = 'indent'
 opt.foldlevelstart = 99
 
 -- [[ search ]]
