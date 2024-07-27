@@ -17,6 +17,7 @@ opt.scrolloff = 5
 opt.sidescrolloff = 5
 opt.signcolumn = "yes"
 opt.completeopt = { 'menu', 'menuone', 'noselect' }
+opt.pumheight = 7
 
 -- [[ theme / appearance ]]
 opt.termguicolors = true
