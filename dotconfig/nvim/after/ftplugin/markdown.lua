@@ -33,3 +33,11 @@ map("n" , "<leader>op" , ":ObsidianOpen<CR>"        , opts)    -- open in app
 
 -- tables
 map("n", "<leader>tt", "vip:EasyAlign *|<CR>", opts) -- align table cells
+
+-- ==========  COMPLETION ========== 
+-- remove completion engines except snippets
+require('cmp').setup.buffer({
+  sources = {
+    { name = 'luasnip' },
+  },
+})
