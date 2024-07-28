@@ -1,0 +1,39 @@
+snippet ->
+	→ $0
+
+snippet --
+	— $0
+
+snippet <=
+	≤ $0
+
+snippet >=
+	≥ $0
+
+snippet <<
+	« $0
+
+snippet daily-note
+	---
+	workout:
+	- 
+	day_rating: 
+	---
+	[[`strftime("%Y-%m-%d", localtime() - 24*3600)`]] <== <button class="date_button_today">Today</button> ==> [[`strftime("%Y-%m-%d", localtime() + 24*3600)`]]
+
+	# Journal
+
+	*What happened today?*
+
+	highlight:: $0
+
+snippet zettel
+	---
+	created: `strftime("%Y-%m-%d, %H:%M")`
+	type: ${1:fleeting}
+	---
+	#$2
+	source: [[$3
+	***
+
+	$4
