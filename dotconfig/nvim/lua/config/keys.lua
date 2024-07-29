@@ -65,7 +65,7 @@ map('n', '<TAB>', ':tabnext<CR>', opts)
 map('n', '<S-TAB>', ':tabprevious<CR>', opts)
 
 -- copy to system clipboard
-map('x', 'Y', "'+y", opts)
+map('x', 'Y', '"+y', opts)
 
 -- ============================================================
 --                          Plugins
