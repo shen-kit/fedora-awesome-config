@@ -2,8 +2,10 @@ local cmp = require('cmp')
 local select_opts = { behavior = cmp.SelectBehavior.Select }
 
 local ls = require('luasnip')
-require("luasnip.loaders.from_vscode").lazy_load() -- vscode snippets
-require("luasnip.loaders.from_snipmate").lazy_load({ paths="./after/plugin/snippets" })
+-- friendly snippets
+require("luasnip.loaders.from_vscode").lazy_load() 
+-- custom snippets
+require("luasnip.loaders.from_snipmate").lazy_load({ paths="./after/plugin/snippets" }) 
 
 -- completion setup
 cmp.setup({

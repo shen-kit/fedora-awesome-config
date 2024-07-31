@@ -1,10 +1,15 @@
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
+local nosilent = { noremap = true, silent = false }
 
 map('i', 'jk', '<ESC>', opts)
 
 -- save
-map({'i', 'n', 'x'}, '<C-s>', '<CMD>w<CR>', { noremap = true, silent = false })
+map({'i', 'n', 'x'}, '<C-s>', '<CMD>w<CR>', nosilent)
+map({'i', 'n', 'x'}, 'Q', '<CMD>wq<CR>', opts)
+
+-- set working directory
+map('n', '<leader>cd', '<CMD>cd %:h<CR>', {noremap = true, silent = false})
 
 -- jump forward in jump list (alacritty specific)
 map("n", "\u{00A5}", "<C-i>", opts)
@@ -50,7 +55,7 @@ map('x', '(', 'c()<ESC>Pgvlolo', opts)
 -- ============================================================
 
 -- find file
-map("n", "<leader>fd", ":find \\c*", { noremap = true, silent = false })
+map("n", "<leader>fd", ":find \\c*", nosilent)
 
 -- cycle through buffers
 map('n', '<S-H>', ':bprevious<CR>', opts)
@@ -103,6 +108,6 @@ map('n', '<leader><leader>k', require('smart-splits').swap_buf_up, opts)
 map('n', '<leader><leader>l', require('smart-splits').swap_buf_right, opts)
 
 -- align
-map('x', 'ga', ':EasyAlign ', { noremap = true, silent = false })
-map('n', 'ga', 'vip:EasyAlign ', { noremap = true, silent = false })
+map('x', 'ga', ':EasyAlign ', nosilent)
+map('n', 'ga', 'vip:EasyAlign ', nosilent)
 

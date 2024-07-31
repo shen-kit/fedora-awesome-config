@@ -11,6 +11,8 @@ g.markdown_folding = 1
 
 local opt = vim.opt
 
+opt.swapfile = false
+
 -- [[ context ]]
 opt.number = true
 opt.relativenumber = true
