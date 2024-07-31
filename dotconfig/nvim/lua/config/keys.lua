@@ -36,19 +36,23 @@ map('i', '<C-M-j>', "<esc>:m +1<CR>a", opts)
 map('x', '<', '<gv', opts)
 map('x', '>', '>gv', opts)
 
+-- commenting
+map({'i', 'n'}, '<C-_>', '<CMD>CommentToggle<CR>', opts)
+map('x', '<C-_>', ':CommentToggle<CR>gv', opts)
+
 -- keep cursor in place when joining lines
 map('n', 'J', 'mzJ`z', opts)
 
 -- search and replace the word under the cursor
-map('n', '<leader>r', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], {silent = false})
+map('n', '<leader>r', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], nosilent)
 
 -- surround text with parentheses/quotes
 map('x', '(', 'c()<ESC>Pgvlolo', opts)
---map('x', '<leader>[', 'c[]<ESC>Pgvlolo', opts)
---map('x', '<leader>{', 'c{}<ESC>Pgvlolo', opts)
---map('x', '<leader><', 'c<><ESC>Pgvlolo', opts)
---map('x', '<leader>\'', 'c\'\'<ESC>Pgvlolo', opts)
---map('x', '<leader>'', 'c''<ESC>Pgvlolo', opts)
+map('x', '<leader>[', 'c[]<ESC>Pgvlolo', opts)
+map('x', '<leader>{', 'c{}<ESC>Pgvlolo', opts)
+map('x', '<leader><', 'c<><ESC>Pgvlolo', opts)
+map('x', '<leader>\'', 'c\'\'<ESC>Pgvlolo', opts)
+map('x', "<leader>'", "c''<ESC>Pgvlolo", opts)
 
 -- ============================================================
 --                       Multiple Files
