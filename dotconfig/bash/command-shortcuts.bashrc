@@ -34,14 +34,13 @@ alias ...="cd ../.."
 
 alias cat=bat
 
-alias ls="ls --color=auto"                      # colorise ls output
-alias l1="ls --color=auto -1"                   # output one file per line
-alias lv="ls --color=auto -1v"                  # natural sort by numbers, one per line
-alias l="ls --color=auto"                       # ls shortcut
-alias ll="ls -lh"                               # long-listing, human-readable
-alias lla="ls -lah"                             # long-listing, all files, human-readable
-alias l.="ls -d .* --color=auto"                # hidden files only
-alias lss="du -sh * | sort -hr"                 # list file/folder sizes descending
+alias l="eza -x"
+alias ls="eza -x"
+alias l1="eza --oneline"
+alias ll="eza -l"
+alias lla="eza -la"
+alias lsd="eza -D"
+alias lss="du -sh * | sort -hr"  # list file/folder sizes descending
 
 alias ii="mimeopen -n"
 alias mkdir="mkdir -pv"                         # create parent directories + verbose
