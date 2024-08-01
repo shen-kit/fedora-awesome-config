@@ -23,6 +23,7 @@ map('i', '\u{00A1}', '<C-o>o', opts)
 map('n', '\u{00A1}', 'o<ESC>', opts)
 map('i', '\u{00A2}', '<C-o>O', opts)
 map('n', '\u{00A2}', 'O<ESC>', opts)
+map('n', '<CR>', 'o<ESC>', opts)
 
 -- move lines
 map('x', '<C-M-j>', ":m '>+1<CR>gv=gv", opts)
