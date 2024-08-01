@@ -88,8 +88,8 @@ chars = "\u00B4"
 
 # =============== Tokyo Night ===============
 [colors.primary]
-background = '#1a1b26'
 foreground = '#c0caf5'
+# background = '#1a1b26'
 
 [colors.cursor]
 cursor = '#c0caf5'
