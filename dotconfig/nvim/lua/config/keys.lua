@@ -59,11 +59,11 @@ map('x', "<leader>'", "c''<ESC>Pgvlolo", opts)
 map("n", "<leader>fd", ":find \\c*", nosilent)
 
 -- cycle through buffers
-map('n', '<S-H>', ':bprevious<CR>', opts)
-map('n', '<S-L>', ':bnext<CR>', opts)
+map('n', '<S-H>', vim.cmd.bprevious, opts)
+map('n', '<S-L>', vim.cmd.bnext, opts)
 
 -- close current buffer (ctrl+shift+D)
-map('n', '\u{00A3}', ':bdelete<CR>', opts)
+map('n', '\u{00A3}', vim.cmd.bdelete, opts)
 -- close all buffers except current (ctrl+shift+B)
 map('n', '\u{00A4}', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
 
@@ -73,8 +73,8 @@ map('n', 'Q', '<CMD>wq<CR>', opts)
 map('n', '<C-Q>', '<CMD>wqa<CR>', opts)
 
 -- switch tabs
-map('n', '<TAB>', ':tabnext<CR>', opts)
-map('n', '<S-TAB>', ':tabprevious<CR>', opts)
+map('n', '<TAB>', vim.cmd.tabnext, opts)
+map('n', '<S-TAB>', vim.cmd.tabprevious, opts)
 
 -- copy to system clipboard
 map('x', 'Y', '"+y', opts)
@@ -84,8 +84,8 @@ map('x', 'Y', '"+y', opts)
 -- ============================================================
 
 -- nvim tree
-map('n', '<C-p>', ':NvimTreeToggle<CR>', opts)
-map('n', '<leader>fc', ':NvimTreeFindFile<CR>', opts)
+map('n', '<C-p>', vim.cmd.NvimTreeToggle, opts)
+map('n', '<leader>fc', vim.cmd.NvimTreeFindFile, opts)
 
 -- oil
 map('n', '<C-l>', '<CMD>Oil --float<CR>', opts)
@@ -95,6 +95,9 @@ local telescope = require('telescope.builtin')
 map('n', '<leader>ff', telescope.find_files, opts)
 map('n', '<leader>fb', telescope.buffers, opts)
 map('n', '<leader>fg', telescope.grep_string, opts)
+
+-- undotree
+map('n', '<leader>u', vim.cmd.UndotreeToggle, opts)
 
 -- smart splits
 -- moving between splits

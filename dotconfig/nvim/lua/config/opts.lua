@@ -11,7 +11,11 @@ g.markdown_folding = 1
 
 local opt = vim.opt
 
+-- [[ history / backup ]]
 opt.swapfile = false
+opt.backup = false
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undofile = true
 
 -- [[ context ]]
 opt.number = true
@@ -29,6 +33,7 @@ opt.textwidth = 999     -- don't hard-wrap at 80 chars, override in ftplugin/<fi
 opt.wrap = false        -- whether to wrap at edges of screen
 opt.showtabline = 2     -- always show
 opt.conceallevel = 0    -- show characters as they are
+vim.diagnostic.config({ virtual_text = false, signs = false })
 
 -- [[ indents ]]
 opt.tabstop = 2
