@@ -40,7 +40,9 @@ alias l1="eza --oneline"
 alias ll="eza -l"
 alias lla="eza -la"
 alias lsd="eza -D"
+
 alias lss="du -sh * | sort -hr"  # list file/folder sizes descending
+alias tree="eza -T"
 
 alias ii="mimeopen -n"
 alias mkdir="mkdir -pv"                         # create parent directories + verbose
