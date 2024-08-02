@@ -1,3 +1,5 @@
+local my_group = vim.api.nvim_create_augroup('my autocommands', { clear = true })
+
 -- lsp keymaps
 vim.api.nvim_create_autocmd('LspAttach', {
   desc = 'LSP actions',
@@ -19,5 +21,24 @@ vim.api.nvim_create_autocmd('LspAttach', {
     bufmap('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>') -- Show diagnostics in a floating window
     bufmap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>') -- Move to the previous diagnostic
     bufmap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>') -- Move to the next diagnostic
-  end
+  end,
+  group = my_group,
+})
+
+vim.api.nvim_create_autocmd('VimEnter', {
+  desc = 'set cwd to the directory of the first opened file',
+  callback = function()
+    local bufname = vim.api.nvim_buf_get_name(0)
+    -- depending which plugin is used as the default explorer
+    local is_dir = string.find(bufname, "NvimTree_1") or string.find(bufname, "oil://")
+
+    if is_dir then
+      bufname = string.gsub(bufname, "NvimTree_1", "").gsub(bufname, "oil://", "")
+      local dir = vim.fn.fnamemodify(bufname, ":p:h")
+      vim.cmd(":cd " .. dir)
+    elseif not is_nvim_tree then
+      vim.cmd(":cd %:h")
+    end
+  end,
+  group = my_group,
 })

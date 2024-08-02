@@ -6,9 +6,10 @@ map('i', 'jk', '<ESC>', opts)
 
 -- save
 map({'i', 'n', 'x'}, '<C-s>', '<CMD>w<CR>', nosilent)
-map({'i', 'n', 'x'}, 'Q', '<CMD>wq<CR>', opts)
+-- save and exit
+map('n', 'Q', '<CMD>wqa<CR>', opts)
 
--- set working directory
+-- set working directory to the current buffer's directory
 map('n', '<leader>cd', '<CMD>cd %:h<CR>', {noremap = true, silent = false})
 
 -- jump forward in jump list (alacritty specific)
