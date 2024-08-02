@@ -1,7 +1,8 @@
+local create_au = vim.api.nvim_create_autocmd
 local my_group = vim.api.nvim_create_augroup('my autocommands', { clear = true })
 
 -- lsp keymaps
-vim.api.nvim_create_autocmd('LspAttach', {
+create_au('LspAttach', {
   desc = 'LSP actions',
   callback = function()
     local bufmap = function(mode, lhs, rhs)
@@ -25,7 +26,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
   group = my_group,
 })
 
-vim.api.nvim_create_autocmd('VimEnter', {
+create_au('VimEnter', {
   desc = 'set cwd to the directory of the first opened file',
   callback = function()
     local bufname = vim.api.nvim_buf_get_name(0)
@@ -42,3 +43,18 @@ vim.api.nvim_create_autocmd('VimEnter', {
   end,
   group = my_group,
 })
+
+create_au({"BufNewFile", "BufRead"}, {
+    desc = "Set syntax highlighting for bashrc files",
+    pattern = "*bashrc",
+    command = "set filetype=sh",
+    group = my_group,
+})
+
+create_au({"BufNewFile", "BufRead"}, {
+    desc = "Set syntax highlighting for tmux config",
+    pattern = ".tmux.conf",
+    command = "set filetype= syntax=tmux",
+    group = my_group,
+})
+

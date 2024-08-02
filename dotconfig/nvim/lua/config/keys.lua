@@ -4,11 +4,6 @@ local nosilent = { noremap = true, silent = false }
 
 map('i', 'jk', '<ESC>', opts)
 
--- save
-map({'i', 'n', 'x'}, '<C-s>', '<CMD>w<CR>', nosilent)
--- save and exit
-map('n', 'Q', '<CMD>wqa<CR>', opts)
-
 -- set working directory to the current buffer's directory
 map('n', '<leader>cd', '<CMD>cd %:h<CR>', {noremap = true, silent = false})
 
@@ -57,7 +52,7 @@ map('x', '<leader>\'', 'c\'\'<ESC>Pgvlolo', opts)
 map('x', "<leader>'", "c''<ESC>Pgvlolo", opts)
 
 -- ============================================================
---                       Multiple Files
+--                    Working With Files
 -- ============================================================
 
 -- find file
@@ -66,10 +61,16 @@ map("n", "<leader>fd", ":find \\c*", nosilent)
 -- cycle through buffers
 map('n', '<S-H>', ':bprevious<CR>', opts)
 map('n', '<S-L>', ':bnext<CR>', opts)
+
 -- close current buffer (ctrl+shift+D)
 map('n', '\u{00A3}', ':bdelete<CR>', opts)
--- close all buffers except current
+-- close all buffers except current (ctrl+shift+B)
 map('n', '\u{00A4}', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
+
+-- save / exit
+map({'i', 'n', 'x'}, '<C-s>', '<CMD>w<CR>', nosilent)
+map('n', 'Q', '<CMD>wq<CR>', opts)
+map('n', '<C-Q>', '<CMD>wqa<CR>', opts)
 
 -- switch tabs
 map('n', '<TAB>', ':tabnext<CR>', opts)
