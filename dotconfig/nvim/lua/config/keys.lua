@@ -69,7 +69,7 @@ map('n', '\u{00A4}', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
 
 -- save / exit
 map({'i', 'n', 'x'}, '<C-s>', '<CMD>w<CR>', nosilent)
-map('n', 'Q', '<CMD>wq<CR>', opts)
+map('n', 'Q', '<CMD>q<CR>', opts)
 map('n', '<C-Q>', '<CMD>wqa<CR>', opts)
 
 -- switch tabs

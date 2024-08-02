@@ -1,8 +1,4 @@
 return {
-  -- lsp
-  { "neovim/nvim-lspconfig" },
-  { "hrsh7th/cmp-nvim-lsp" },
-
   -- cmp
   {
     "hrsh7th/nvim-cmp",
