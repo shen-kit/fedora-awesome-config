@@ -78,4 +78,3 @@ require('headlines').setup({
     neorg = {},
 })
 
-

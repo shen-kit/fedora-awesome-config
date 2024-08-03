@@ -2,8 +2,8 @@
 --                       Global Options
 -- ============================================================
 
-local g = vim.g
-g.markdown_folding = 1
+-- local g = vim.g
+-- g.markdown_folding = 1
 
 -- ============================================================
 --                       Local Options

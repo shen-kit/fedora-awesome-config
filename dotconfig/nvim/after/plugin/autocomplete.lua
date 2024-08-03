@@ -88,3 +88,5 @@ lspconfig.tsserver.setup({
   },
   capabilities = capabilities,
 })
+
+require('nvim_comment').setup()
