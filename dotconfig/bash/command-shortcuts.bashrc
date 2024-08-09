@@ -58,6 +58,7 @@ alias mv="mv -i"
 
 alias cpwd="pwd | xclip -selection clipboard"   # copy current directory path to clipboard
 alias cpc="xclip -sel c < "                     # copy file contents to clipboard
+alias cpat="xclip -sel c < $HOME/gDrive/4-uni/units/PAT.txt"
 
 # ========== BLUETOOTH ==========
 
