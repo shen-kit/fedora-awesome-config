@@ -12,9 +12,10 @@ local beautiful = require("beautiful")
 local modkey          = RC.vars.modkey
 local altkey          = RC.vars.altkey
 local terminal        = RC.vars.terminal
-local browserPersonal = RC.vars.browserA
-local browserUni      = RC.vars.browserB
-local file_explorer   = RC.vars.file_explorer
+local browserPersonal = RC.vars.browserPersonal
+local browserUni      = RC.vars.browserUni
+local browserWork     = RC.vars.browserWork
+local fileExplorer    = RC.vars.fileExplorer
 
 local _M = {}
 
@@ -91,12 +92,16 @@ function _M.get()
               {description = "brave browser (personal profile)", group = "launch applications"}),
     awful.key({ modkey, 'Shift' }, "2", function () awful.spawn(browserUni) end,
               {description = "brave browser (uni profile)", group = "launch applications"}),
+    awful.key({ modkey, altkey }, "2", function () awful.spawn(browserWork) end,
+              {description = "brave browser (work profile)", group = "launch applications"}),
     awful.key({ modkey }, "3", function () awful.spawn.with_shell("discord") end,
               {description = "discord", group = "launch applications"}),
     awful.key({ modkey }, "4", function () awful.spawn("flatpak run md.obsidian.Obsidian") end,
               {description = "obsidian", group = "launch applications"}),
-    awful.key({ modkey }, "e", function () awful.spawn(file_explorer) end,
+    awful.key({ modkey }, "e", function () awful.spawn(fileExplorer) end,
               {description = "file explorer", group = "launch applications"}),
+    awful.key({ modkey }, ";", function () awful.spawn("rofimoji") end,
+              {description = "emoji selector", group = "launch applications"}),
 
     -- layout
     awful.key({ modkey, altkey }, "k",     function () awful.tag.incmwfact( 0.05)          end,

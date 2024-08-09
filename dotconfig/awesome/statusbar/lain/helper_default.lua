@@ -57,9 +57,9 @@ function WB.add_widgets_right (s)
 
   local t = {
       layout = wibox.layout.fixed.horizontal,
-      cws.mpd,
-      sep1,
-      cws.mem,
+      -- cws.mpd,
+      -- sep1,
+      -- cws.mem,
       sep1,
       cws.volume,
       sep1,
@@ -74,7 +74,7 @@ function WB.add_widgets_right (s)
     s.systray = wibox.widget {
       layout = wibox.layout.align.horizontal,
       sep1,
-      wibox.widget.systray()
+      wibox.widget.systray(),
     }
     s.systray.visible = false
     table.insert(t, 1, s.systray)
