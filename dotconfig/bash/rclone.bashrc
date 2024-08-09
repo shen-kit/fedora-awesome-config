@@ -5,6 +5,8 @@ alias gdrive-download="rclone sync gdrive: ~/gDrive --exclude-from $HOME/.config
 alias gdrive-status="rclone check gdrive: ~/gDrive"
 alias gdrive-dedupe="rclone dedupe gdrive: --dedupe-mode newest"
 
+alias obsidian-upload="rclone sync ~/gDrive/1-personal-notes/ gdrive:1-personal-notes/; rclone sync ~/gDrive/2-zettelkasten/ gdrive:2-zettelkasten/"
+
 # onedrive
 # alias onedrive-upload="rclone sync ~/onedrive/ onedrive:"
 # alias onedrive-download="rclone sync onedrive: ~/onedrive"
