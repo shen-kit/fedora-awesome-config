@@ -10,8 +10,6 @@ if [[ -f "$FILE" ]]; then
 else
   notify-send "Rclone Download" "download starting"
 
-  rclone sync onedrive: ~/onedrive/ --log-file $LOGFILE
-  notify-send "Rclone Download" "onedrive download finished"
   rclone sync gdrive: ~/gDrive/ --log-file $LOGFILE
 
   touch "$FILE"
