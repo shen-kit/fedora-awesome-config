@@ -5,8 +5,8 @@
 local _M = {
   terminal        = "alacritty",
   browserPersonal = "brave-browser --profile-directory='Default'",
-  browserUni      = "brave-browser --profile-directory='Profile 3'",
-  browserWork     = "brave-browser --profile-directory='Profile 4'",
+  browserUni      = "brave-browser --profile-directory='Profile 1'",
+  browserWork     = "brave-browser --profile-directory='Profile 2'",
   fileExplorer    = "thunar",
 
   -- device, used in vicious widget

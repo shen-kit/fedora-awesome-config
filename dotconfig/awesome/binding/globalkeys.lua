@@ -100,7 +100,7 @@ function _M.get()
               {description = "obsidian", group = "launch applications"}),
     awful.key({ modkey }, "e", function () awful.spawn(fileExplorer) end,
               {description = "file explorer", group = "launch applications"}),
-    awful.key({ modkey }, ";", function () awful.spawn("rofimoji") end,
+    awful.key({ modkey }, ";", function () awful.spawn("charpickerprint.sh") end,
               {description = "emoji selector", group = "launch applications"}),
 
     -- layout
