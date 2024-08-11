@@ -34,8 +34,8 @@ alias ...="cd ../.."
 
 alias cat=bat
 
-alias l="eza -x"
-alias ls="eza -x"
+alias l="eza"
+alias ls="eza"
 alias l1="eza --oneline"
 alias ll="eza -l"
 alias lla="eza -la"
@@ -60,8 +60,9 @@ alias cpwd="pwd | xclip -selection clipboard"   # copy current directory path to
 alias cpc="xclip -sel c < "                     # copy file contents to clipboard
 alias cpat="xclip -sel c < $HOME/gDrive/4-uni/units/PAT.txt"
 
-# ========== BLUETOOTH ==========
+# ========== BLUETOOTH / PERIPHERALS ==========
 
+alias connect-monitors="~/.config/profile/connect_monitors.sh"
 alias connect-bt-speaker="bluetoothctl connect F4:2B:7D:03:22:2F"
 alias connect-bt-earphones="bluetoothctl connect 84:AC:60:1F:91:05"
 alias connect-bt-headphones="bluetoothctl connect 2C:FD:B3:8C:50:89"
@@ -70,7 +71,6 @@ alias connect-bt-headphones="bluetoothctl connect 2C:FD:B3:8C:50:89"
 
 alias py="python"                               # python
 alias pwds="py ~/comp-sci/projects/cli-password-manager/password-manager.py"
-alias monitors-setup="~/.config/profile/connect_monitors.sh"
 
 # GIT
 
