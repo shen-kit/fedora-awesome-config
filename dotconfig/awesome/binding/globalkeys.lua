@@ -132,6 +132,9 @@ function _M.get()
     awful.key({ "Shift" }, "Print", function()
             awful.util.spawn("scrot -z -s ~screenshot.png") end,
             {description = "screenshot to file", group = "utilities"}),
+    awful.key({ "Control" }, "Print", function()
+            awful.util.spawn("flameshot gui") end,
+            {description = "screenshot with flameshot", group = "utilities"}),
 
     -- Screen brightness
     awful.key({ }, "XF86MonBrightnessUp", function () os.execute("light -A 5") end,
