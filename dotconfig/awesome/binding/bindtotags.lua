@@ -9,6 +9,16 @@ local modkey = RC.vars.modkey
 function _M.get(globalkeys)
   for i = 1, 9 do
     globalkeys = gears.table.join(globalkeys,
+
+      -- view tag only
+      awful.key({ modkey }, "#" .. i+9,
+        function ()
+          local tag = client.focus.screen.tags[i]
+          if tag then
+            tag:view_only()
+          end
+        end,
+        { description = "view tag only", group = "tag" }),
       
       -- Move client to tag.
       awful.key({ modkey, "Control" }, "#" .. i + 9,
