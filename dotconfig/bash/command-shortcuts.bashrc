@@ -77,15 +77,15 @@ alias pwds="py ~/comp-sci/projects/cli-password-manager/password-manager.py"
 alias lg="lazygit"                              # open lazygit
 alias gl="git log --graph --color=always"
 alias glo="git log --oneline --graph --color=always"
-function gac () {
-    git add .;
-    git commit -m "$1";
-}
-function gacp () {
-    git add .;
-    git commit -m "$1";
-    git push;
-}
+# function gac () {
+#     git add .;
+#     git commit -m "$1";
+# }
+# function gacp () {
+#     git add .;
+#     git commit -m "$1";
+#     git push;
+# }
 
 # ========== MISC. ==========
 
