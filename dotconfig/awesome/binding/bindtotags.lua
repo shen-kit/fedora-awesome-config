@@ -13,7 +13,7 @@ function _M.get(globalkeys)
       -- view tag only
       awful.key({ modkey }, "#" .. i+9,
         function ()
-          local tag = client.focus.screen.tags[i]
+          local tag = awful.screen.focused().tags[i]
           if tag then
             tag:view_only()
           end
