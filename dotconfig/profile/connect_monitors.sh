@@ -2,11 +2,12 @@
 
 # start with all displays off, turn on whatever wants to be turned on
 pkill conky
-xrandr --output eDP-1 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off
+
+xrandr --output eDP-1 --mode 1280x720 --output DP-1 --off --output DP-2 --off --output DP-3 --off
 
 # single monitor setup
-if [[ ! -z $(xrandr | grep "DP-1 connected") ]] then connected
-   xrandr --output DP-1 --mode 1920x1080 --primary --output eDP-1 --mode 1280x720 --right-of DP-1
+if [[ ! -z $(xrandr | grep --invert-match "eDP-1" | grep "DP-1 connected") ]] then # connected
+   xrandr --output DP-1 --mode 1920x1080 --primary --left-of eDP-1 #--output eDP-1 --mode 1280x720 --right-of DP-1
 fi
 
 # double monitor setup
@@ -18,4 +19,4 @@ fi
 # fi
 
 # restart conky
-conky -c ~/.config/conky/conky.conf &
+# conky -c ~/.config/conky/conky.conf &
