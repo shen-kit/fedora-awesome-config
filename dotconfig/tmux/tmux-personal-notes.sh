@@ -4,6 +4,7 @@
 # create the session if it does not exist
 
 tmux has-session -t personal-notes ||
-    tmux new -s personal-notes -d && tmux send-keys "cd ~/gDrive/1-personal-notes/; nvim ✅\ To\ Do.md" Enter;
+    tmux new -s personal-notes -d && tmux send-keys "cd ~/gDrive/1-personal-notes/; nvim Dashboard.md" Enter;
+    # tmux new -s personal-notes -d && tmux send-keys "cd ~/gDrive/1-personal-notes/; nvim ✅\ To\ Do.md" Enter;
 
 tmux switch-client -t personal-notes
