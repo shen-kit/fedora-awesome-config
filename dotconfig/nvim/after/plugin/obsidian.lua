@@ -15,13 +15,20 @@ require("obsidian").setup({
     open_app_foreground = true,
     disable_frontmatter = true, -- don't let obsidian.nvim manage frontmatter
     mappings = {
-        -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
+        -- override to work on markdown/wiki links in the vault
         ["gf"] = {
             action = function()
                 return require("obsidian").util.gf_passthrough()
             end,
             opts = { noremap = false, expr = true, buffer = true },
         },
+        -- Smart action depending on context, either follow link or toggle checkbox.
+        ["\u{00A1}"] = {
+          action = function()
+            return require("obsidian").util.smart_action()
+          end,
+          opts = { buffer = true, expr = true },
+        }
     },
     note_path_func = function(spec)
         return (spec.dir / spec.title):with_suffix(".md")

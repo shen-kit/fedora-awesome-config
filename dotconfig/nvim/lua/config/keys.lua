@@ -7,18 +7,14 @@ map('i', 'jk', '<ESC>', opts)
 -- set working directory to the current buffer's directory
 map('n', '<leader>cd', '<CMD>cd %:h<CR>', {noremap = true, silent = false})
 
--- jump forward in jump list (alacritty specific)
-map("n", "\u{00A5}", "<C-i>", opts)
-
 -- ============================================================
 --                            Editing
 -- ============================================================
 
 -- map ctrl+enter to new line below
-map('i', '\u{00A1}', '<C-o>o', opts)
-map('n', '\u{00A1}', 'o<ESC>', opts)
-map('i', '\u{00A2}', '<C-o>O', opts)
-map('n', '\u{00A2}', 'O<ESC>', opts)
+map('i', '<C-S-CR>', '<C-o>O', opts)
+map('i', '<C-CR>', '<C-o>o', opts)
+map('n', '<C-S-CR>', 'O<ESC>', opts)
 map('n', '<CR>', 'o<ESC>', opts)
 
 -- move lines
@@ -72,18 +68,18 @@ map("n", "<leader>fd", ":find \\c*", nosilent)
 map('n', '<S-H>', vim.cmd.bprevious, opts)
 map('n', '<S-L>', vim.cmd.bnext, opts)
 
--- close current buffer (ctrl+shift+D)
-map('n', '\u{00A3}', vim.cmd.bdelete, opts)
+-- save and close current buffer (ctrl+shift+D)
+map('n', '<C-S-D>', vim.cmd.bdelete, opts)
 -- close all buffers except current (ctrl+shift+B)
-map('n', '\u{00A4}', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
+map('n', '<C-S-B>', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
 
 -- save / exit
 map({'i', 'n', 'x'}, '<C-s>', '<CMD>w<CR>', nosilent)
-map('n', '<C-Q>', '<CMD>wqa<CR>', opts)
+map('n', '<C-S-Q>', '<CMD>wqa<CR>', opts)
 
 -- switch tabs
-map('n', '<TAB>', vim.cmd.tabnext, opts)
-map('n', '<S-TAB>', vim.cmd.tabprevious, opts)
+map('n', '<C-TAB>', vim.cmd.tabnext, opts)
+map('n', '<C-S-TAB>', vim.cmd.tabprevious, opts)
 
 -- copy to system clipboard
 map('x', 'Y', '"+y', opts)
@@ -93,7 +89,7 @@ map('x', 'Y', '"+y', opts)
 -- ============================================================
 
 -- nvim tree
-map('n', '<C-p>', vim.cmd.NvimTreeToggle, opts)
+map('n', '<C-S-P>', vim.cmd.NvimTreeToggle, opts)
 map('n', '<leader>fc', vim.cmd.NvimTreeFindFile, opts)
 
 -- oil
