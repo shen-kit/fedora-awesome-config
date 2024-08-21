@@ -32,56 +32,76 @@ style   = "Italic"
 
 # ========== set bindings for neovim to use ==========
 
-# for newline below
-[[keyboard.bindings]]
-key   = "Return"
-mods  = "Control"
-chars = "\u00A1"
+[keyboard]
+bindings = [
+  # all uncommented tested working
+  { key = "Tab",   mods = "Control", chars = "\u001b[27;5;9~"},
+  { key = "Tab",   mods = "Control|Shift", chars = "\u001b[27;6;9~"},
+  { key = "Enter", mods = "Control", chars = "\u001b[27;5;13~"},
+  { key = "Enter", mods = "Control|Shift", chars = "\u001b[27;6;13~"},
 
-# for newline above
-[[keyboard.bindings]]
-key   = "Return"
-mods  = "Control|Shift"
-chars = "\u00A2"
+  { key = "A", mods = "Control|Shift", chars = "\u001b[27;6;1~"},
+  { key = "B", mods = "Control|Shift", chars = "\u001b[27;6;2~"},
+  { key = "C", mods = "Control|Shift", chars = "\u001b[27;6;3~"},
+  { key = "D", mods = "Control|Shift", chars = "\u001b[27;6;4~"},
+  { key = "E", mods = "Control|Shift", chars = "\u001b[27;6;5~"},
+  { key = "F", mods = "Control|Shift", chars = "\u001b[27;6;6~"},
+  { key = "G", mods = "Control|Shift", chars = "\u001b[27;6;7~"},
+  { key = "H", mods = "Control|Shift", chars = "\u001b[27;6;8~"},
 
-# close current buffer
-[[keyboard.bindings]]
-key   = "D"
-mods  = "Control | Shift"
-chars = "\u00A3"
+  # { key = "I", mods = "Control|Shift", chars = "\u001b[27;6;9~"},
+  # { key = "J", mods = "Control|Shift", chars = "\u001b[27;6;A~"},
+  { key = "K", mods = "Control|Shift", chars = "\u001b[27;6;11~"},
+  { key = "L", mods = "Control|Shift", chars = "\u001b[27;6;12~"},
+  { key = "N", mods = "Control|Shift", chars = "\u001b[27;6;14~"},
+  { key = "O", mods = "Control|Shift", chars = "\u001b[27;6;15~"},
+  { key = "P", mods = "Control|Shift", chars = "\u001b[27;6;16~"},
+  { key = "Q", mods = "Control|Shift", chars = "\u001b[27;6;17~"},
+  { key = "R", mods = "Control|Shift", chars = "\u001b[27;6;18~"},
+  { key = "S", mods = "Control|Shift", chars = "\u001b[27;6;19~"},
+  # { key = "T", mods = "Control|Shift", chars = "\u001b[27;6;10~"},
+  # { key = "U", mods = "Control|Shift", chars = "\u001b[27;6;14~"},
+  # { key = "V", mods = "Control|Shift", chars = "\u001b[27;6;16~"},
+  # { key = "W", mods = "Control|Shift", chars = "\u001b[27;6;17~"},
+  # { key = "X", mods = "Control|Shift", chars = "\u001b[27;6;18~"},
+  # { key = "Y", mods = "Control|Shift", chars = "\u001b[27;6;19~"},
+  # { key = "Z", mods = "Control|Shift", chars = "\u001b[27;6;1a~"},
+]
 
-# delete all other buffers
-[[keyboard.bindings]]
-key   = "B"
-mods  = "Control | Shift"
-chars = "\u00A4"
-
-# jump forward in jump list
-[[keyboard.bindings]]
-key   = "I"
-mods  = "Control"
-chars = "\u00A5"
-
-# ---- Markdown Specific ----
-
-# renumber markdown list
-[[keyboard.bindings]]
-key   = "2"
-mods  = "Control"
-chars = "\u00B2"
-
-# markdown checkbox toggle
-[[keyboard.bindings]]
-key   = "3"
-mods  = "Control"
-chars = "\u00B3"
-
-# for quick switcher in obsidian nvim
-[[keyboard.bindings]]
-key   = "O"
-mods  = "Control | Shift"
-chars = "\u00B4"
-
+# # SCUFFED IMPLEMENTATION
+#
+# # for newline below
+# [[keyboard.bindings]]
+# key   = "Return"
+# mods  = "Control"
+# chars = "\u00A1"
+#
+# # for newline above
+# [[keyboard.bindings]]
+# key   = "Return"
+# mods  = "Control|Shift"
+# chars = "\u00A2"
+#
+# # ---- Markdown Specific ----
+#
+# # renumber markdown list
+# [[keyboard.bindings]]
+# key   = "2"
+# mods  = "Control"
+# chars = "\u00B2"
+#
+# # markdown checkbox toggle
+# [[keyboard.bindings]]
+# key   = "3"
+# mods  = "Control"
+# chars = "\u00B3"
+#
+# # for quick switcher in obsidian nvim
+# [[keyboard.bindings]]
+# key   = "O"
+# mods  = "Control | Shift"
+# chars = "\u00B4"
+#
 # ============================================================ 
 #                        colour schemes
 # ============================================================ 
