@@ -9,14 +9,14 @@ vim.g.bullets_custom_mappings = {
   {'nmap', 'o', '<Plug>(bullets-newline)'},
   -- indenting
   {'imap', '<C-t>', '<Plug>(bullets-demote)'},
-  {'nmap', '>>', '<Plug>(bullets-demote)'},
-  {'vmap', '>', '<Plug>(bullets-demote)'},
   {'imap', '<C-d>', '<Plug>(bullets-promote)'},
-  {'nmap', '<<', '<Plug>(bullets-promote)'},
-  {'vmap', '<', '<Plug>(bullets-promote)'},
+  {'nmap', '>', '<Plug>(bullets-demote)'},
+  {'vmap', '>', '<Plug>(bullets-demote)gv'},
+  {'nmap', '<', '<Plug>(bullets-promote)'},
+  {'vmap', '<', '<Plug>(bullets-promote)gv'},
   -- renumbering lists
-  {'vmap', '<C-2>', '<Plug>(bullets-renumber)'},
   {'nmap', '<C-2>', '<Plug>(bullets-renumber)'},
+  {'vmap', '<C-2>', '<Plug>(bullets-renumber)gv'},
 }
 
 require("config.autocmds")

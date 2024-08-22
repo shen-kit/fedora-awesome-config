@@ -90,8 +90,8 @@ map('x', 'Y', '"+y', opts)
 -- ============================================================
 
 -- nvim tree
-map('n', '<C-S-P>',    vim.cmd.NvimTreeToggle,   opts)
-map('n', '<leader>fc', vim.cmd.NvimTreeFindFile, opts)
+map({'i', 'n'}, '<C-S-P>',    vim.cmd.NvimTreeToggle,   opts)
+map('n',        '<leader>fc', vim.cmd.NvimTreeFindFile, opts)
 
 -- oil
 map('n', '<C-l>', '<CMD>Oil --float<CR>', opts)
