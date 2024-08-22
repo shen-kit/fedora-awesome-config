@@ -40,7 +40,7 @@ bindings = [
   { key = "Enter", mods = "Control", chars = "\u001b[27;5;13~"},
   { key = "Enter", mods = "Control|Shift", chars = "\u001b[27;6;13~"},
 
-  # control+shift+letter -- I/M reserved for <ESC>/<CR>
+  # control+shift+letter -- I/M reserved for <ESC>/<CR>; V for pasting from clipboard
   { key = "A", mods = "Control|Shift", chars = "\u001b[27;6;1~"},
   { key = "B", mods = "Control|Shift", chars = "\u001b[27;6;2~"},
   { key = "C", mods = "Control|Shift", chars = "\u001b[27;6;3~"},
@@ -60,7 +60,6 @@ bindings = [
   { key = "S", mods = "Control|Shift", chars = "\u001b[27;6;19~"},
   { key = "T", mods = "Control|Shift", chars = "\u001b[27;6;20~"},
   { key = "U", mods = "Control|Shift", chars = "\u001b[27;6;21~"},
-  { key = "V", mods = "Control|Shift", chars = "\u001b[27;6;22~"},
   { key = "W", mods = "Control|Shift", chars = "\u001b[27;6;23~"},
   { key = "X", mods = "Control|Shift", chars = "\u001b[27;6;24~"},
   { key = "Y", mods = "Control|Shift", chars = "\u001b[27;6;25~"},
