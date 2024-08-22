@@ -22,13 +22,6 @@ require("obsidian").setup({
             end,
             opts = { noremap = false, expr = true, buffer = true },
         },
-        -- Smart action depending on context, either follow link or toggle checkbox.
-        ["\u{00A1}"] = {
-          action = function()
-            return require("obsidian").util.smart_action()
-          end,
-          opts = { buffer = true, expr = true },
-        }
     },
     note_path_func = function(spec)
         return (spec.dir / spec.title):with_suffix(".md")

@@ -18,12 +18,12 @@ map('n', '<C-S-CR>', 'O<ESC>', opts)
 map('n', '<C-CR>',   'o<ESC>', opts)
 
 -- move lines
-map('x', '<C-M-j>', ":m '>+1<CR>gv=gv", opts)
-map('x', '<C-M-k>', ":m '<-2<CR>gv=gv", opts)
-map('n', '<C-M-k>', ":m -2<CR>",        opts)
-map('n', '<C-M-j>', ":m +1<CR>",        opts)
-map('i', '<C-M-k>', "<esc>:m -2<CR>a",  opts)
-map('i', '<C-M-j>', "<esc>:m +1<CR>a",  opts)
+map('x', '<M-C-j>', ":m '>+1<CR>gv=gv", opts)
+map('x', '<M-C-k>', ":m '<-2<CR>gv=gv", opts)
+map('n', '<M-C-k>', ":m -2<CR>",        opts)
+map('n', '<M-C-j>', ":m +1<CR>",        opts)
+map('i', '<M-C-k>', "<esc>:m -2<CR>a",  opts)
+map('i', '<M-C-j>', "<esc>:m +1<CR>a",  opts)
 
 -- indenting
 map('x', '<',       '<gv',   opts)

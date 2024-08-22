@@ -18,6 +18,6 @@ return {
     "lukas-reineke/headlines.nvim",
     dependencies = "nvim-treesitter/nvim-treesitter",
   },
-  { "bullets-vim/bullets.vim" },
   { "dhruvasagar/vim-table-mode" },
+  { "bullets-vim/bullets.vim" },
 }
