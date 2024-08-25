@@ -10,7 +10,7 @@ if [[ -f "$FILE" ]]; then
 else
   notify-send "Rclone Download" "download starting"
 
-  rclone sync gdrive: ~/gDrive/ --log-file $LOGFILE
+  rclone sync gdrive: ~/gDrive/ --log-file $LOGFILE --exclude-from /home/shenkit/.config/rclone/exclude-list.txt
 
   touch "$FILE"
   echo -e "download finished: $(date +'%H:%M, %d-%m-%y')\n" > $LOGFILE
