@@ -13,7 +13,7 @@ snippet >=
 snippet <<
 	« $0
 
-snippet daily-note
+snippet Tdaily-note
 	---
 	workout:
 	- 
@@ -27,7 +27,7 @@ snippet daily-note
 
 	highlight:: $0
 
-snippet zettel
+snippet Tzettel
 	---
 	created: `strftime("%Y-%m-%d, %H:%M")`
 	type: ${1:fleeting}
@@ -37,3 +37,43 @@ snippet zettel
 	***
 
 	$4
+
+snippet Tworkout
+  ---
+  start: $1
+  end: $2
+  focus:
+  - $3
+  ---
+  « [[+Fitness]]
+  ***
+
+  # Routine
+
+  ***
+
+  # Focus
+
+  - $3
+
+  ***
+
+  # Workouts
+
+  ## $0
+
+  | #   | sets      | reps  | exercise                                    | notes               |
+  | :-: | :-------: | :---: | ------------------------------------------- | ------------------- |
+
+  ***
+
+  # Tracker
+
+  \`\`\`dataview
+  TABLE WITHOUT ID
+    file.link as date,
+    workout
+  FROM "areas/journal/daily"
+  WHERE file.day.year = 2024 AND (file.day.month = 7 AND file.day.day >= 1) OR (file.day.month = 7 AND file.day.day <= 18)
+  SORT file.name ASC
+  \`\`\`
