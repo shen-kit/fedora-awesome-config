@@ -33,7 +33,7 @@ map("n" , "<leader>op" , vim.cmd.ObsidianOpen        , opts)    -- open in app
 -- map("n" , "<M-!>"      , "<CMD>vim.cmd.ObsidianToday -1<CR>  , opts)    -- yesterday's note (ctrl+alt+shift+1)
 
 -- tables
-map("n", "<leader>tt", "vip:EasyAlign *|<CR>", opts) -- align table cells
+map("n", "<leader>ta", "vip:EasyAlign *|<CR>", opts) -- align table cells
 
 -- ==========  COMPLETION ========== 
 -- remove completion engines except snippets

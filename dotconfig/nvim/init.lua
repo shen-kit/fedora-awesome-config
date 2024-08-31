@@ -19,6 +19,9 @@ vim.g.bullets_custom_mappings = {
   {'vmap', '<C-2>', '<Plug>(bullets-renumber)gv'},
 }
 
+-- vim-table-mode settings
+vim.g.table_mode_tableize_map = '<leader><leader>t'
+
 require("config.autocmds")
 require("config.opts")
 require("config.lazy")

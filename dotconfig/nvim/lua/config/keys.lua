@@ -127,3 +127,6 @@ map('n', '<leader><leader>l', require('smart-splits').swap_buf_right,       opts
 map('x', 'ga', ':EasyAlign ', nosilent)
 map('n', 'ga', 'vip:EasyAlign ', nosilent)
 
+-- debugging
+map('n', '<leader>db', '<CMD>DapToggleBreakpoint<CR>', opts)
+map('n', '<leader>dr', '<CMD>DapContinue<CR>', opts)

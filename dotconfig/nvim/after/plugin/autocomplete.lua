@@ -18,6 +18,7 @@ cmp.setup({
     end
   },
   sources = cmp.config.sources({
+    { name = 'lazydev' },
     { name = 'path' },
     { name = 'luasnip' },
     { name = 'nvim_lsp' },

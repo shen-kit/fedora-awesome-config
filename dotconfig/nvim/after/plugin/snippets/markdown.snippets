@@ -17,15 +17,9 @@ snippet Tdaily-note
 	---
 	workout:
 	- 
-	day_rating: 
 	---
-	[[`strftime("%Y-%m-%d", localtime() - 24*3600)`]] <== <button class="date_button_today">Today</button> ==> [[`strftime("%Y-%m-%d", localtime() + 24*3600)`]]
-
-	# Journal
-
-	*What happened today?*
-
-	highlight:: $0
+	[[`strftime("%Y-%m-%d", localtime() - 24*3600)`]] (prev)
+  [[`strftime("%Y-%m-%d", localtime() + 24*3600)`]] (next)
 
 snippet Tzettel
 	---
