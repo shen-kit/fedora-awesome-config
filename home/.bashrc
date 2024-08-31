@@ -21,3 +21,6 @@ eval "$(starship init bash)"
 
 eval "$(zoxide init bash)"
 alias z=cd
+
+alias luamake="/home/shenkit/lua-language-server/3rd/luamake/luamake"
+[ -f "/home/shenkit/.ghcup/env" ] && . "/home/shenkit/.ghcup/env" # ghcup-env for Haskell
