@@ -81,4 +81,6 @@ alias glo="git log --oneline --graph --color=always"
 # ========== MISC. ==========
 
 alias ntfy="notify-send"
-alias pandoc="pandoc -d ~/.config/pandoc/config.yaml"
+# second -V adds a border around images
+alias pandoc="pandoc --listings --template eisvogel -V linkcolor=blue -V header-includes:'\usepackage[export]{adjustbox} \let\includegraphicsbak\includegraphics \renewcommand*{\includegraphics}[2][]{\includegraphicsbak[frame,#1]{#2}}'"
+# alias pandoc="pandoc -d ~/.config/pandoc/config.yaml"
