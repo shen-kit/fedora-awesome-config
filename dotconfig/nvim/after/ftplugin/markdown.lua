@@ -12,11 +12,12 @@ local opts = { noremap = true, silent = true }
 
 -- surround selected text with a character and reselect the text
 map("x", "*"        , "c**<ESC>Pgvlolo", opts)
-map("x", "<C-b>"    , "c****<ESC>hPEa", opts)
 map("x", "<leader>$", "c$$<ESC>Pgvlolo", opts)
+map("x", "<C-b>"    , "c****<ESC>hPgvllollo", opts)
 map("n", "*"        , "viwc**<ESC>P", opts)
 map("n", "<C-b>"    , "viwc****<ESC>hP", opts)
 map("i", "<C-b>"    , "**"             , opts)
+map("i", "<C-i>"    , "*"              , opts)
 
 -- auto numbered list and checkboxes
 -- map({"n" , "v", "i"}, "<C-2>", "<CMD>RenumberList<CR>", opts)
