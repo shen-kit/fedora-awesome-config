@@ -98,9 +98,11 @@ map('n', '<C-l>', '<CMD>Oil --float<CR>', opts)
 
 -- telescope
 local telescope = require('telescope.builtin')
-map('n', '<leader>ff', telescope.find_files,  opts)
-map('n', '<leader>fb', telescope.buffers,     opts)
-map('n', '<leader>fg', telescope.grep_string, opts)
+map('n', '<leader>ff', telescope.find_files, opts)
+map('n', '<leader>fp', telescope.git_files,  opts)
+map('n', '<leader>fg', function()
+  telescope.grep_string({ search = vim.fn.input("Grep > ") })
+end, opts)
 
 -- undotree
 map('n', '<leader>u', vim.cmd.UndotreeToggle, opts)
