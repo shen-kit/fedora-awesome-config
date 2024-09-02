@@ -16,9 +16,9 @@ snippet <<
 snippet Tdaily-note
 	---
 	workout:
-	- 
+	- $0
 	---
-	[[`strftime("%Y-%m-%d", localtime() - 24*3600)`]] (prev)
+  [[`strftime("%Y-%m-%d", localtime() - 24*3600)`]] (prev)
   [[`strftime("%Y-%m-%d", localtime() + 24*3600)`]] (next)
 
 snippet Tzettel
@@ -26,8 +26,8 @@ snippet Tzettel
 	created: `strftime("%Y-%m-%d, %H:%M")`
 	type: ${1:fleeting}
 	---
-	#$2
-	source: [[$3
+	{$2:tags}
+	source: {$3:links}
 	***
 
 	$4
