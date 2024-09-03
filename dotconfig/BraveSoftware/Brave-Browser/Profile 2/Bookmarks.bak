@@ -1,0 +1,124 @@
+{
+   "checksum": "e7ae380ad05842e8f0b388f54bba1e24",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13367907904777458",
+               "date_last_used": "13367998620523165",
+               "guid": "bb3b880e-ba8f-4353-8abe-1c367c195c34",
+               "id": "80",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "FIT1056 lms",
+               "type": "url",
+               "url": "https://learning.monash.edu/course/view.php?id=18853"
+            }, {
+               "date_added": "13367907932971223",
+               "date_last_used": "0",
+               "guid": "97fc2a20-2932-472b-9d6f-10d4003fa160",
+               "id": "81",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "FIT1056 ed",
+               "type": "url",
+               "url": "https://edstem.org/au/courses/18116/discussion/"
+            }, {
+               "date_added": "13367997234863770",
+               "date_last_used": "13369101080493412",
+               "guid": "ea99b2bb-f39d-404e-ac37-649d1cf419cd",
+               "id": "85",
+               "name": "FIT1056 gdrive",
+               "type": "url",
+               "url": "https://drive.google.com/drive/folders/1tDAqJmrJ1J37wCWYF_eLQtUOLi7q51ej"
+            } ],
+            "date_added": "13367907941392959",
+            "date_last_used": "0",
+            "date_modified": "13367997234863770",
+            "guid": "9cbf1614-ec7d-4bc5-8d57-85bf95272123",
+            "id": "82",
+            "name": "FIT1056",
+            "type": "folder"
+         }, {
+            "date_added": "13368854251353847",
+            "date_last_used": "13368854254732038",
+            "guid": "02eb51e3-0d72-47e1-94d4-98015c45e40f",
+            "id": "87",
+            "name": "staff portal",
+            "type": "url",
+            "url": "https://staff.monash/"
+         }, {
+            "date_added": "13367907880729021",
+            "date_last_used": "13369185946555599",
+            "guid": "1a6ab296-283a-4029-b673-a6636262f990",
+            "id": "79",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ESS",
+            "type": "url",
+            "url": "https://eservices.monash.edu.au/irj/portal#Shell-home"
+         }, {
+            "date_added": "13367997155150575",
+            "date_last_used": "13368855348010116",
+            "guid": "00023e45-3c2e-4f13-b811-8425451cc62e",
+            "id": "84",
+            "name": "module evidence",
+            "type": "url",
+            "url": "https://infotech-monash.atlassian.net/servicedesk/customer/portal/71/group/176"
+         } ],
+         "date_added": "13366252047645962",
+         "date_last_used": "0",
+         "date_modified": "13368854257481545",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13366252047645964",
+         "date_last_used": "0",
+         "date_modified": "13367907806103799",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13314554358981829",
+            "date_last_used": "0",
+            "guid": "102bf242-d26f-4966-b31d-53a671c4a4ee",
+            "id": "70",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "maroon 5 songs - Google Search",
+            "type": "url",
+            "url": "https://www.google.com/search?q=maroon+5+songs&oq=maroon+5+songs&aqs=chrome..69i57.3697j0j9&sourceid=chrome-mobile&ie=UTF-8"
+         }, {
+            "date_added": "13320649802312128",
+            "date_last_used": "0",
+            "guid": "75f132f1-40d6-476d-a914-3333dea881bf",
+            "id": "71",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Coles Led Globes Gls Es 9W 840L Cool White | Coles Online",
+            "type": "url",
+            "url": "https://shop.coles.com.au/a/national/product/coles-led-10-watt-edison-screw-cool-white-globe?uztq=46abcbb7e16253b0cdc3e6c5bbe6a3f0&cid=col_cpc_Generic%7CColesSupermarkets%7CPLA%7CHousehold%7CAustralia%7CBroad&s_kwcid=AL!12693!3!495221477975!!!u!1930593814316!&gclsrc=ds&gclsrc=ds"
+         } ],
+         "date_added": "13366252047645966",
+         "date_last_used": "0",
+         "date_modified": "13320649802312128",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

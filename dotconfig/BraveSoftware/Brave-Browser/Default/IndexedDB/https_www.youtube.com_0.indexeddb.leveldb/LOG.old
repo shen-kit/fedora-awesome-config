@@ -1,0 +1,12 @@
+2024/09/01-20:12:45.090 149a7 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/01-20:12:45.091 149a7 Recovering log #154
+2024/09/01-20:12:45.095 149a7 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000154.log 
+2024/09/01-20:12:46.972 149a8 Level-0 table #160: started
+2024/09/01-20:12:46.994 149a8 Level-0 table #160: 1982023 bytes OK
+2024/09/01-20:12:47.002 149a8 Delete type=0 #154
+2024/09/01-20:13:03.148 149a8 Compacting 1@1 + 1@2 files
+2024/09/01-20:13:03.168 149a8 Generated table #161@1: 593 keys, 120331 bytes
+2024/09/01-20:13:03.168 149a8 Compacted 1@1 + 1@2 files => 120331 bytes
+2024/09/01-20:13:03.176 149a8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/09/01-20:13:03.176 149a8 Delete type=2 #157
+2024/09/01-20:13:03.176 149a8 Delete type=2 #160

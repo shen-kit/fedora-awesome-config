@@ -1,0 +1,12 @@
+2024/09/03-10:00:56.960 c0d Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/03-10:00:56.961 c0d Recovering log #172
+2024/09/03-10:00:56.968 c0d Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000172.log 
+2024/09/03-10:00:58.841 c0c Compacting 1@1 + 1@2 files
+2024/09/03-10:00:58.858 c0c Generated table #175@1: 200 keys, 705315 bytes
+2024/09/03-10:00:58.858 c0c Compacted 1@1 + 1@2 files => 705315 bytes
+2024/09/03-10:00:58.866 c0c compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/09/03-10:00:58.866 c0c Delete type=2 #170
+2024/09/03-10:00:58.868 c0c Delete type=2 #173
+2024/09/03-10:01:12.818 c0d Level-0 table #177: started
+2024/09/03-10:01:12.838 c0d Level-0 table #177: 3051600 bytes OK
+2024/09/03-10:01:12.847 c0d Delete type=0 #172

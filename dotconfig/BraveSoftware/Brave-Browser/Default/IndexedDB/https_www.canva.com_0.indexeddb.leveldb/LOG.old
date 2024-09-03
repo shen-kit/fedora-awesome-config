@@ -1,0 +1,23 @@
+2024/08/17-16:26:03.000 cfb0 Creating DB /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.canva.com_0.indexeddb.leveldb since it was missing.
+2024/08/17-16:26:03.013 cfb0 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.canva.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/17-16:34:59.729 cfb0 Level-0 table #5: started
+2024/08/17-16:34:59.767 cfb0 Level-0 table #5: 1717386 bytes OK
+2024/08/17-16:34:59.779 cfb0 Delete type=0 #3
+2024/08/17-16:50:28.737 cfb1 Level-0 table #7: started
+2024/08/17-16:50:28.766 cfb1 Level-0 table #7: 1672523 bytes OK
+2024/08/17-16:50:28.775 cfb1 Delete type=0 #4
+2024/08/17-16:50:46.792 cfb0 Compacting 1@1 + 1@2 files
+2024/08/17-16:50:46.818 cfb0 Generated table #8@1: 258 keys, 32813 bytes
+2024/08/17-16:50:46.818 cfb0 Compacted 1@1 + 1@2 files => 32813 bytes
+2024/08/17-16:50:46.831 cfb0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/08/17-16:50:46.831 cfb0 Delete type=2 #5
+2024/08/17-16:50:46.831 cfb0 Delete type=2 #7
+2024/08/17-17:01:00.671 cfb1 Level-0 table #10: started
+2024/08/17-17:01:00.717 cfb1 Level-0 table #10: 1659383 bytes OK
+2024/08/17-17:01:00.726 cfb1 Delete type=0 #6
+2024/08/17-17:01:12.700 cfb0 Compacting 1@1 + 1@2 files
+2024/08/17-17:01:12.726 cfb0 Generated table #11@1: 258 keys, 32822 bytes
+2024/08/17-17:01:12.726 cfb0 Compacted 1@1 + 1@2 files => 32822 bytes
+2024/08/17-17:01:12.734 cfb0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/08/17-17:01:12.735 cfb0 Delete type=2 #8
+2024/08/17-17:01:12.735 cfb0 Delete type=2 #10

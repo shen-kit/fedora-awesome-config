@@ -1,0 +1,30 @@
+2024/08/30-18:39:42.329 5370 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 1/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/30-18:39:42.330 5370 Recovering log #14
+2024/08/30-18:39:42.348 5370 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 1/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000014.log 
+2024/08/30-18:40:06.009 5371 Level-0 table #19: started
+2024/08/30-18:40:06.033 5371 Level-0 table #19: 2196977 bytes OK
+2024/08/30-18:40:06.043 5371 Delete type=0 #14
+2024/08/30-18:41:39.474 5371 Compacting 1@1 + 1@2 files
+2024/08/30-18:41:39.475 5371 Level-0 table #22: started
+2024/08/30-18:41:39.481 5371 Level-0 table #22: 194603 bytes OK
+2024/08/30-18:41:39.490 5371 Delete type=0 #18
+2024/08/30-18:41:39.498 5371 Generated table #20@1: 331 keys, 38410 bytes
+2024/08/30-18:41:39.499 5371 Compacted 1@1 + 1@2 files => 38410 bytes
+2024/08/30-18:41:39.507 5371 compacted to: files[ 1 0 1 0 0 0 0 ]
+2024/08/30-18:41:39.507 5371 Delete type=2 #16
+2024/08/30-18:41:39.507 5371 Delete type=2 #19
+2024/08/30-18:41:39.508 5371 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x09\x01\x1f\x03\x00\xa0\x0e*\\x8byB\x00\x01\x1c\x00y\x00t\x00-\x00m\x00i\x00n\x00i\x00p\x00l\x00a\x00y\x00e\x00r\x00-\x00s\x00h\x00o\x00w\x00n\x00-\x00v\x00i\x00d\x00e\x00o\x00-\x00i\x00d' @ 15969 : 0
+2024/08/30-18:41:39.509 5371 Compacting 1@0 + 0@1 files
+2024/08/30-18:41:39.514 5371 Generated table #23@0: 247 keys, 30294 bytes
+2024/08/30-18:41:39.515 5371 Compacted 1@0 + 0@1 files => 30294 bytes
+2024/08/30-18:41:39.523 5371 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/08/30-18:41:39.523 5371 Delete type=2 #22
+2024/08/30-18:41:39.523 5371 Manual compaction at level-0 from '\x00\x09\x01\x1f\x03\x00\xa0\x0e*\\x8byB\x00\x01\x1c\x00y\x00t\x00-\x00m\x00i\x00n\x00i\x00p\x00l\x00a\x00y\x00e\x00r\x00-\x00s\x00h\x00o\x00w\x00n\x00-\x00v\x00i\x00d\x00e\x00o\x00-\x00i\x00d' @ 15969 : 0 .. (end); will stop at (end)
+2024/08/30-18:41:39.523 5371 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x09\x01\x1f\x03\x00\xa0\x0e*\\x8byB\x00\x01\x1c\x00y\x00t\x00-\x00m\x00i\x00n\x00i\x00p\x00l\x00a\x00y\x00e\x00r\x00-\x00s\x00h\x00o\x00w\x00n\x00-\x00v\x00i\x00d\x00e\x00o\x00-\x00i\x00d' @ 15969 : 0
+2024/08/30-18:41:39.523 5371 Compacting 1@1 + 1@2 files
+2024/08/30-18:41:39.529 5371 Generated table #24@1: 304 keys, 44558 bytes
+2024/08/30-18:41:39.529 5371 Compacted 1@1 + 1@2 files => 44558 bytes
+2024/08/30-18:41:39.537 5371 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/08/30-18:41:39.537 5371 Delete type=2 #20
+2024/08/30-18:41:39.537 5371 Delete type=2 #23
+2024/08/30-18:41:39.538 5371 Manual compaction at level-1 from '\x00\x09\x01\x1f\x03\x00\xa0\x0e*\\x8byB\x00\x01\x1c\x00y\x00t\x00-\x00m\x00i\x00n\x00i\x00p\x00l\x00a\x00y\x00e\x00r\x00-\x00s\x00h\x00o\x00w\x00n\x00-\x00v\x00i\x00d\x00e\x00o\x00-\x00i\x00d' @ 15969 : 0 .. (end); will stop at (end)

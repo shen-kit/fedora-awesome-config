@@ -1,0 +1,275 @@
+{
+   "checksum": "7283518298155d554f62119d43f7b646",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13367761485645652",
+               "date_last_used": "0",
+               "guid": "95e6c68b-a9a4-424c-a043-c53ea0b2c6ce",
+               "id": "184",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2100 lms",
+               "type": "url",
+               "url": "https://learning.monash.edu/course/view.php?id=19165"
+            }, {
+               "date_added": "13368425145761003",
+               "date_last_used": "0",
+               "guid": "86ed2502-3e63-4024-b364-4bc5feb08728",
+               "id": "209",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2100 learning capture",
+               "type": "url",
+               "url": "https://learning.monash.edu/mod/lti/view.php?id=2626607"
+            }, {
+               "date_added": "13367761566232622",
+               "date_last_used": "0",
+               "guid": "049187d0-e221-462a-bd91-a3f2a7062c31",
+               "id": "191",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2100 ed",
+               "type": "url",
+               "url": "https://edstem.org/au/courses/17793/discussion/"
+            } ],
+            "date_added": "13367761448831895",
+            "date_last_used": "0",
+            "date_modified": "13368630361052229",
+            "guid": "ac6d958d-70fa-4d31-bd94-796f51944188",
+            "id": "180",
+            "name": "FIT2100",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13367761545449456",
+               "date_last_used": "0",
+               "guid": "db949e49-c9c3-44e4-b3e4-0eb6c6b2bcea",
+               "id": "189",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2101 lms",
+               "type": "url",
+               "url": "https://learning.monash.edu/course/view.php?id=19166"
+            }, {
+               "date_added": "13367761553554869",
+               "date_last_used": "13369227079011068",
+               "guid": "8fdacaf7-e166-4bf3-9e14-87b797630a73",
+               "id": "190",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2101 ed",
+               "type": "url",
+               "url": "https://edstem.org/au/courses/17701/discussion/"
+            }, {
+               "date_added": "13368086208497550",
+               "date_last_used": "13369227081021648",
+               "guid": "80585f1d-c521-47af-9404-be647a6eaf50",
+               "id": "198",
+               "name": "2101 team gdrive",
+               "type": "url",
+               "url": "https://drive.google.com/drive/folders/1ml8bQVjtFshv3cnThh9Q262J2nFCmVvB"
+            }, {
+               "date_added": "13369234915892409",
+               "date_last_used": "13369810149964121",
+               "guid": "f7d05fa1-c830-45b1-a991-11136b1fd819",
+               "id": "215",
+               "name": "2101 gitlab",
+               "type": "url",
+               "url": "https://git.infotech.monash.edu/fit2101/fit2101-s2-2024/CL_Friday5pm_Team20"
+            } ],
+            "date_added": "13367761451274588",
+            "date_last_used": "0",
+            "date_modified": "13369274828818033",
+            "guid": "7c58ec1a-f845-48c3-afcf-c7e0f7a52c16",
+            "id": "181",
+            "name": "FIT2101",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13367761525649812",
+               "date_last_used": "13369104720409737",
+               "guid": "6f1ba433-e6bc-4a76-8fcd-f9756ef8f4e9",
+               "id": "186",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2102 lms",
+               "type": "url",
+               "url": "https://learning.monash.edu/course/view.php?id=19218"
+            }, {
+               "date_added": "13368425104179958",
+               "date_last_used": "0",
+               "guid": "7c543573-43da-484a-bb2b-92851041e598",
+               "id": "208",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2102 learning capture",
+               "type": "url",
+               "url": "https://learning.monash.edu/mod/lti/view.php?id=2631829"
+            }, {
+               "date_added": "13367761496928651",
+               "date_last_used": "0",
+               "guid": "5a2590ae-4f95-4868-a32e-b4704c270ce6",
+               "id": "185",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2102 ed",
+               "type": "url",
+               "url": "https://edstem.org/au/courses/16784/discussion/2130953"
+            }, {
+               "date_added": "13367925565436401",
+               "date_last_used": "0",
+               "guid": "6b1f0484-720b-4f3a-9d53-538cdf7884f2",
+               "id": "193",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2102 course notes",
+               "type": "url",
+               "url": "https://tgdwyer.github.io/"
+            }, {
+               "date_added": "13368630361052229",
+               "date_last_used": "13368715868484163",
+               "guid": "e2d0b406-d08b-4c4d-bad4-ff2718b4d295",
+               "id": "211",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2102 a1 spec",
+               "type": "url",
+               "url": "https://docs.google.com/document/d/e/2PACX-1vRPZWwPEn47PS5xTAkFls9X5y0_v6yBxtE1Ta9mlDgW93G0qIF_M0gcovXbMc0S-kKOrHUm9iwvj6pW/pub"
+            } ],
+            "date_added": "13367761453841415",
+            "date_last_used": "0",
+            "date_modified": "13368760003701102",
+            "guid": "ebf3d020-9139-4586-8170-fd2752376c0e",
+            "id": "182",
+            "name": "FIT2102",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13367761529534208",
+               "date_last_used": "13368240757611007",
+               "guid": "683efe25-e355-4c9e-8f28-373dcd4d6d24",
+               "id": "187",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2107 lms",
+               "type": "url",
+               "url": "https://learning.monash.edu/course/view.php?id=18418"
+            }, {
+               "date_added": "13368178730715098",
+               "date_last_used": "13368761828037978",
+               "guid": "9a12c711-f716-4517-996b-01b68c1395ec",
+               "id": "200",
+               "name": "2107 learning capture",
+               "type": "url",
+               "url": "https://learning.monash.edu/mod/lti/view.php?id=2528540"
+            }, {
+               "date_added": "13367761538299505",
+               "date_last_used": "0",
+               "guid": "a4bbe3b9-84af-4258-8cb8-8fd796221fbc",
+               "id": "188",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "2107 ed",
+               "type": "url",
+               "url": "https://edstem.org/au/courses/16438/lessons/"
+            } ],
+            "date_added": "13367761456159165",
+            "date_last_used": "0",
+            "date_modified": "13368425145761003",
+            "guid": "3fd42dea-f1ec-4963-ba23-0b26aa7ac0f1",
+            "id": "183",
+            "name": "FIT2107",
+            "type": "folder"
+         }, {
+            "date_added": "13368085289483525",
+            "date_last_used": "13369492602218740",
+            "guid": "db37492f-115a-427a-960e-247d996e5012",
+            "id": "197",
+            "name": "gitlab",
+            "type": "url",
+            "url": "https://git.infotech.monash.edu/"
+         }, {
+            "children": [ {
+               "date_added": "13368187221625356",
+               "date_last_used": "13368608053786782",
+               "guid": "5b68997f-e17f-4fe0-8f4b-eac90f88a190",
+               "id": "202",
+               "name": "RA checklist",
+               "type": "url",
+               "url": "https://docs.google.com/document/d/1d2LdEWo8_2LEd69pzNtaL9ARt6pl1GxcnYkgENlMgX4/edit#heading=h.iwtfp7ipzugw"
+            } ],
+            "date_added": "13368190612964636",
+            "date_last_used": "0",
+            "date_modified": "13368190615687728",
+            "guid": "bf0eafb7-e031-455c-a486-3c3c91f8adba",
+            "id": "204",
+            "name": "RA",
+            "type": "folder"
+         } ],
+         "date_added": "13359298026068832",
+         "date_last_used": "0",
+         "date_modified": "13368760013717830",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13359298026068836",
+         "date_last_used": "0",
+         "date_modified": "13367761485645652",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13314554358981829",
+            "date_last_used": "0",
+            "guid": "102bf242-d26f-4966-b31d-53a671c4a4ee",
+            "id": "173",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "maroon 5 songs - Google Search",
+            "type": "url",
+            "url": "https://www.google.com/search?q=maroon+5+songs&oq=maroon+5+songs&aqs=chrome..69i57.3697j0j9&sourceid=chrome-mobile&ie=UTF-8"
+         }, {
+            "date_added": "13320649802312128",
+            "date_last_used": "0",
+            "guid": "75f132f1-40d6-476d-a914-3333dea881bf",
+            "id": "174",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Coles Led Globes Gls Es 9W 840L Cool White | Coles Online",
+            "type": "url",
+            "url": "https://shop.coles.com.au/a/national/product/coles-led-10-watt-edison-screw-cool-white-globe?uztq=46abcbb7e16253b0cdc3e6c5bbe6a3f0&cid=col_cpc_Generic%7CColesSupermarkets%7CPLA%7CHousehold%7CAustralia%7CBroad&s_kwcid=AL!12693!3!495221477975!!!u!1930593814316!&gclsrc=ds&gclsrc=ds"
+         } ],
+         "date_added": "13359298026068839",
+         "date_last_used": "0",
+         "date_modified": "13320649802312128",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

@@ -1,0 +1,6 @@
+2024/08/13-16:27:18.344 2c1f Creating DB /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_account.booking.com_0.indexeddb.leveldb since it was missing.
+2024/08/13-16:27:18.356 2c1f Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_account.booking.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/13-16:27:30.175 2c20 Level-0 table #5: started
+2024/08/13-16:27:30.179 2c20 Level-0 table #5: 1268 bytes OK
+2024/08/13-16:27:30.187 2c20 Delete type=0 #3
+2024/08/13-16:27:30.187 2c20 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

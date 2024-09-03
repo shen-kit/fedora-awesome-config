@@ -1,0 +1,12 @@
+2024/08/23-12:55:48.708 70f5 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 2/IndexedDB/https_infotech-monash.atlassian.net_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/23-12:55:48.709 70f5 Recovering log #4
+2024/08/23-12:55:48.719 70f5 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 2/IndexedDB/https_infotech-monash.atlassian.net_0.indexeddb.leveldb/000004.log 
+2024/08/23-13:00:27.061 70f5 Level-0 table #8: started
+2024/08/23-13:00:27.100 70f5 Level-0 table #8: 2244668 bytes OK
+2024/08/23-13:00:27.110 70f5 Delete type=0 #4
+2024/08/23-13:01:20.058 70f6 Compacting 1@1 + 1@2 files
+2024/08/23-13:01:20.086 70f6 Generated table #9@1: 1240 keys, 94309 bytes
+2024/08/23-13:01:20.086 70f6 Compacted 1@1 + 1@2 files => 94309 bytes
+2024/08/23-13:01:20.094 70f6 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/08/23-13:01:20.094 70f6 Delete type=2 #5
+2024/08/23-13:01:20.094 70f6 Delete type=2 #8

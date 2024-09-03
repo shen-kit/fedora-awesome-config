@@ -1,0 +1,6 @@
+2024/08/12-16:35:27.050 12473 Creating DB /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.usbank.com_0.indexeddb.leveldb since it was missing.
+2024/08/12-16:35:27.062 12473 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.usbank.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/12-16:35:28.481 12472 Level-0 table #5: started
+2024/08/12-16:35:28.486 12472 Level-0 table #5: 549 bytes OK
+2024/08/12-16:35:28.494 12472 Delete type=0 #3
+2024/08/12-16:35:28.494 12472 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

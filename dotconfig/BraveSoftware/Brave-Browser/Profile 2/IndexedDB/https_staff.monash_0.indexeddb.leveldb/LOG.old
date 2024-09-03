@@ -1,0 +1,36 @@
+2024/08/14-15:29:22.420 c600 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 2/IndexedDB/https_staff.monash_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/14-15:29:22.421 c600 Recovering log #8
+2024/08/14-15:29:22.421 c600 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 2/IndexedDB/https_staff.monash_0.indexeddb.leveldb/000008.log 
+2024/08/14-15:29:22.421 c600 Delete type=2 #7
+2024/08/14-15:29:22.460 c602 Level-0 table #13: started
+2024/08/14-15:29:22.464 c602 Level-0 table #13: 945 bytes OK
+2024/08/14-15:29:22.473 c602 Delete type=0 #8
+2024/08/14-15:29:22.473 c600 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 210 : 1
+2024/08/14-15:29:22.473 c600 Compacting 1@0 + 1@1 files
+2024/08/14-15:29:22.477 c600 Generated table #14@0: 65 keys, 1445 bytes
+2024/08/14-15:29:22.478 c600 Compacted 1@0 + 1@1 files => 1445 bytes
+2024/08/14-15:29:22.487 c600 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/08/14-15:29:22.487 c600 Delete type=2 #13
+2024/08/14-15:29:22.488 c600 Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 210 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/08/14-15:29:24.148 c602 Level-0 table #16: started
+2024/08/14-15:29:24.152 c602 Level-0 table #16: 1394 bytes OK
+2024/08/14-15:29:24.160 c602 Delete type=2 #10
+2024/08/14-15:29:24.160 c602 Delete type=0 #12
+2024/08/14-15:29:24.160 c600 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x07\x00\x00\x05' @ 255 : 1
+2024/08/14-15:29:24.160 c600 Compacting 1@0 + 1@1 files
+2024/08/14-15:29:24.165 c600 Generated table #17@0: 77 keys, 1656 bytes
+2024/08/14-15:29:24.165 c600 Compacted 1@0 + 1@1 files => 1656 bytes
+2024/08/14-15:29:24.172 c600 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/08/14-15:29:24.172 c600 Delete type=2 #16
+2024/08/14-15:29:24.173 c600 Manual compaction at level-0 from '\x00\x07\x00\x00\x05' @ 255 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/08/14-15:29:27.918 c602 Level-0 table #19: started
+2024/08/14-15:29:27.922 c602 Level-0 table #19: 1405 bytes OK
+2024/08/14-15:29:27.930 c602 Delete type=2 #14
+2024/08/14-15:29:27.930 c602 Delete type=0 #15
+2024/08/14-15:29:27.930 c600 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 300 : 1
+2024/08/14-15:29:27.930 c600 Compacting 1@0 + 1@1 files
+2024/08/14-15:29:27.934 c600 Generated table #20@0: 89 keys, 1674 bytes
+2024/08/14-15:29:27.934 c600 Compacted 1@0 + 1@1 files => 1674 bytes
+2024/08/14-15:29:27.942 c600 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/08/14-15:29:27.942 c600 Delete type=2 #19
+2024/08/14-15:29:27.942 c600 Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 300 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)

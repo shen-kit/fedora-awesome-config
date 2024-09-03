@@ -1,0 +1,37 @@
+2024/08/24-11:20:44.564 4563 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 1/IndexedDB/https_monashaps.notion.site_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/24-11:20:44.564 4563 Recovering log #4
+2024/08/24-11:20:44.564 4563 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 1/IndexedDB/https_monashaps.notion.site_0.indexeddb.leveldb/000004.log 
+2024/08/24-11:20:44.914 4563 Level-0 table #8: started
+2024/08/24-11:20:44.919 4563 Level-0 table #8: 555 bytes OK
+2024/08/24-11:20:44.926 4563 Delete type=0 #4
+2024/08/24-11:20:44.926 4563 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/08/24-11:28:43.308 4563 Level-0 table #10: started
+2024/08/24-11:28:43.317 4563 Level-0 table #10: 561 bytes OK
+2024/08/24-11:28:43.324 4563 Delete type=0 #7
+2024/08/24-11:28:43.325 4563 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x04\x00\x00\x05' @ 220 : 1
+2024/08/24-11:28:43.325 4563 Compacting 1@0 + 1@1 files
+2024/08/24-11:28:43.329 4563 Generated table #11@0: 13 keys, 545 bytes
+2024/08/24-11:28:43.329 4563 Compacted 1@0 + 1@1 files => 545 bytes
+2024/08/24-11:28:43.336 4563 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/08/24-11:28:43.337 4563 Delete type=2 #10
+2024/08/24-11:28:43.337 4563 Manual compaction at level-0 from '\x00\x04\x00\x00\x05' @ 220 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/08/24-11:57:27.908 4564 Level-0 table #13: started
+2024/08/24-11:57:27.913 4564 Level-0 table #13: 259 bytes OK
+2024/08/24-11:57:27.922 4564 Delete type=2 #8
+2024/08/24-11:57:27.922 4564 Delete type=0 #9
+2024/08/24-11:57:27.922 4564 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x00\x00\x002\x02\xb4\x05\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 234 : 0
+2024/08/24-11:57:27.923 4564 Compacting 1@0 + 1@1 files
+2024/08/24-11:57:27.927 4564 Generated table #14@0: 15 keys, 560 bytes
+2024/08/24-11:57:27.927 4564 Compacted 1@0 + 1@1 files => 560 bytes
+2024/08/24-11:57:27.936 4564 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/08/24-11:57:27.936 4564 Delete type=2 #11
+2024/08/24-11:57:27.936 4564 Delete type=2 #13
+2024/08/24-11:57:27.936 4564 Manual compaction at level-0 from '\x00\x00\x00\x002\x02\xb4\x05\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 234 : 0 .. (end); will stop at (end)
+2024/08/24-11:57:27.937 4564 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\xc9\x1f\x00h\x00t\x00t\x00p\x00s\x00_\x00m\x00o\x00n\x00a\x00s\x00h\x00a\x00p\x00s\x00.\x00n\x00o\x00t\x00i\x00o\x00n\x00.\x00s\x00i\x00t\x00e\x00_\x000\x00@\x001\x14\x00C\x00h\x00r\x00o\x00m\x00e\x009\x009\x00F\x00e\x00a\x00t\x00u\x00r\x00e\x00C\x00h\x00e\x00c\x00k' @ 224 : 0
+2024/08/24-11:57:27.937 4564 Compacting 1@1 + 1@2 files
+2024/08/24-11:57:27.941 4564 Generated table #15@1: 56 keys, 1048 bytes
+2024/08/24-11:57:27.941 4564 Compacted 1@1 + 1@2 files => 1048 bytes
+2024/08/24-11:57:27.950 4564 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/08/24-11:57:27.950 4564 Delete type=2 #5
+2024/08/24-11:57:27.950 4564 Delete type=2 #14
+2024/08/24-11:57:27.950 4564 Manual compaction at level-1 from '\x00\x00\x00\x00\xc9\x1f\x00h\x00t\x00t\x00p\x00s\x00_\x00m\x00o\x00n\x00a\x00s\x00h\x00a\x00p\x00s\x00.\x00n\x00o\x00t\x00i\x00o\x00n\x00.\x00s\x00i\x00t\x00e\x00_\x000\x00@\x001\x14\x00C\x00h\x00r\x00o\x00m\x00e\x009\x009\x00F\x00e\x00a\x00t\x00u\x00r\x00e\x00C\x00h\x00e\x00c\x00k' @ 224 : 0 .. (end); will stop at (end)

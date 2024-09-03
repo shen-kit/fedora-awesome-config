@@ -1,0 +1,6 @@
+2024/09/02-14:31:31.852 83c6 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/02-14:31:31.852 83c6 Recovering log #168
+2024/09/02-14:31:31.855 83c6 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000168.log 
+2024/09/02-14:31:44.780 83c7 Level-0 table #173: started
+2024/09/02-14:31:44.814 83c7 Level-0 table #173: 2961163 bytes OK
+2024/09/02-14:31:44.825 83c7 Delete type=0 #168

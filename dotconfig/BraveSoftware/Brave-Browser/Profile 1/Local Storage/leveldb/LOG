@@ -1,0 +1,15 @@
+2024/09/03-16:40:06.443 4 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 1/Local Storage/leveldb/MANIFEST-000001
+2024/09/03-16:40:06.447 4 Recovering log #331
+2024/09/03-16:40:06.448 4 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 1/Local Storage/leveldb/000331.log 
+2024/09/03-16:40:24.586 4 Level-0 table #335: started
+2024/09/03-16:40:24.603 4 Level-0 table #335: 35987 bytes OK
+2024/09/03-16:40:24.616 4 Delete type=0 #331
+2024/09/03-16:40:24.616 4 Compacting 4@0 + 1@1 files
+2024/09/03-16:40:24.642 4 Generated table #336@0: 2062 keys, 2036394 bytes
+2024/09/03-16:40:24.642 4 Compacted 4@0 + 1@1 files => 2036394 bytes
+2024/09/03-16:40:24.650 4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/09/03-16:40:24.650 4 Delete type=2 #323
+2024/09/03-16:40:24.650 4 Delete type=2 #326
+2024/09/03-16:40:24.651 4 Delete type=2 #329
+2024/09/03-16:40:24.651 4 Delete type=2 #332
+2024/09/03-16:40:24.651 4 Delete type=2 #335

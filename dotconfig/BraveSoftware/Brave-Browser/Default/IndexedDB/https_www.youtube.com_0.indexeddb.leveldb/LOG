@@ -1,0 +1,6 @@
+2024/09/02-17:38:27.197 f165 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/02-17:38:27.198 f165 Recovering log #159
+2024/09/02-17:38:27.200 f165 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000159.log 
+2024/09/02-17:40:17.445 f166 Level-0 table #164: started
+2024/09/02-17:40:17.466 f166 Level-0 table #164: 1652294 bytes OK
+2024/09/02-17:40:17.475 f166 Delete type=0 #159

@@ -1,0 +1,153 @@
+{
+   "checksum": "c005f5af5aa2af4366808b8e004a7fab",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [  ],
+            "date_added": "13367746918153860",
+            "date_last_used": "0",
+            "date_modified": "13367746923941055",
+            "guid": "ba4e1b32-980b-4bad-8d51-1cd9b79d87cf",
+            "id": "138",
+            "name": "admin",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13367917856072847",
+               "date_last_used": "13369119668621816",
+               "guid": "c5e107a6-8ae2-4724-946c-20c2d40b4574",
+               "id": "144",
+               "name": "A 5-Step System To Unlock Insane Sleep & Recovery (You'll Never Feel Tired Again) - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=AWoN9mqMF2E"
+            }, {
+               "date_added": "13368441685559576",
+               "date_last_used": "13369120430473370",
+               "guid": "712e603f-40c4-4d30-81ae-0db31fe164de",
+               "id": "160",
+               "name": "The Woman Who Helps NBA Stars To Sleep: Stop Having Showers Just Before Bed! Dr Cheri Mah",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=fybq6V74qRk"
+            }, {
+               "date_added": "13369039280815798",
+               "date_last_used": "13369210328875098",
+               "guid": "dcff3c7a-ba00-490c-b611-01fa5ea8ef40",
+               "id": "165",
+               "name": "This is perhaps my favorite password manager for the terminal",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=FhwsfH2TpFA"
+            }, {
+               "date_added": "13369039564219195",
+               "date_last_used": "13369121118683564",
+               "guid": "a23549a5-c8f9-42d1-9884-9cd0ace25aaa",
+               "id": "167",
+               "name": "Easiest Chicken Meal Prep Ever (Juicy Chicken in Less Than 30 Minutes)",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=PKquddeYht4"
+            } ],
+            "date_added": "13367747374741772",
+            "date_last_used": "0",
+            "date_modified": "13369039564219195",
+            "guid": "733b23d6-2263-45fe-95a8-d0559be32fa1",
+            "id": "140",
+            "name": "to watch",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13368960365061008",
+               "date_last_used": "0",
+               "guid": "fcbd362f-a617-4edb-a1d1-235ed5e7f885",
+               "id": "162",
+               "name": "russian progression method for calisthenics (full plan)",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=p_rQegMhlUg"
+            } ],
+            "date_added": "13368960376210551",
+            "date_last_used": "0",
+            "date_modified": "13368960380047059",
+            "guid": "f5f43cc6-e6f8-4787-af45-407f830a928a",
+            "id": "163",
+            "name": "saved",
+            "type": "folder"
+         }, {
+            "date_added": "13367746907369102",
+            "date_last_used": "13369810947813937",
+            "guid": "f0ff8068-ca1f-4ac1-a71e-135ae91a0134",
+            "id": "137",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "finances",
+            "type": "url",
+            "url": "https://docs.google.com/spreadsheets/d/1j2gVIqbOFZIVkUFzR4hBI5l8s6a7foVwrX9FjabQdtY/edit?pli=1&gid=743768879#gid=743768879"
+         }, {
+            "date_added": "13367908625995838",
+            "date_last_used": "13369186716535502",
+            "guid": "61dc1b82-7819-4ab2-905f-892234be0146",
+            "id": "142",
+            "name": "IMC | candidate.fyi",
+            "type": "url",
+            "url": "https://imc.candidate.fyi/home?isFollowUpsOpen=false&followUpId=&stageIndex=4&applicationId=84f1c251-a6da-43a3-a3d0-60c5ccf3a0d9"
+         }, {
+            "date_added": "13368263216511566",
+            "date_last_used": "0",
+            "guid": "e7578089-a7a6-440c-8095-1bc0f37374bb",
+            "id": "153",
+            "name": "Flexi eGift Card",
+            "type": "url",
+            "url": "https://egiftpost.com/g/?codes=C1F8A752-8B6A-4524-B755-4919AF439530#greeting"
+         } ],
+         "date_added": "13343029142650929",
+         "date_last_used": "0",
+         "date_modified": "13368960381545752",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13343029142650931",
+         "date_last_used": "0",
+         "date_modified": "13367746882133470",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13314554358981829",
+            "date_last_used": "0",
+            "guid": "102bf242-d26f-4966-b31d-53a671c4a4ee",
+            "id": "133",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "maroon 5 songs - Google Search",
+            "type": "url",
+            "url": "https://www.google.com/search?q=maroon+5+songs&oq=maroon+5+songs&aqs=chrome..69i57.3697j0j9&sourceid=chrome-mobile&ie=UTF-8"
+         }, {
+            "date_added": "13320649802312128",
+            "date_last_used": "0",
+            "guid": "75f132f1-40d6-476d-a914-3333dea881bf",
+            "id": "134",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Coles Led Globes Gls Es 9W 840L Cool White | Coles Online",
+            "type": "url",
+            "url": "https://shop.coles.com.au/a/national/product/coles-led-10-watt-edison-screw-cool-white-globe?uztq=46abcbb7e16253b0cdc3e6c5bbe6a3f0&cid=col_cpc_Generic%7CColesSupermarkets%7CPLA%7CHousehold%7CAustralia%7CBroad&s_kwcid=AL!12693!3!495221477975!!!u!1930593814316!&gclsrc=ds&gclsrc=ds"
+         } ],
+         "date_added": "13343029142650932",
+         "date_last_used": "0",
+         "date_modified": "13320649802312128",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CooBChAIiIECEgqEi5XitmQAAAAAEgAaWDJVQW1xNUIyTUN6L0xoOGNHN0VrbXU2dUpmVVNJWnE4MGNaS3dwazZaY0RicGVhbmZBc1BETDBjRTNNZk1UeWMwN2RVWGxGZ2U1QXVUU3RIRXNzL1Z3PT0qGGV5Zkc0a29GK1p2ekFJcSszcnJnbGc9PUgDEqgBCKIBEqIBChxpZnBtME5KNUpXRGk5cWtUUFh6MS8zNVFnZmM9EiRlMjRhNWZlNS0yZTA2LTQzNTktYjFmNC01MTJjMGNhZjM2ODQYACAEKAQw8reSoZgyOIWUr5uYMkC3pZKhmDJKHEVTOHBFcFBFK1hsRHdMTlpYUS9FN2tQcFpIRT1aHiIcUlprSDdrcVVDbENabU5FTm9KZTZ1TmRtZDFVPWU4+TkzEqgBCJABEqIBChw2Q0Jsbm1yQS9XZ0dhWEtpcGNiQnJ3V1MyM2M9EiQ1NjI2YWEyMi1kNTA1LTQyNzEtYmY4Yy0xZjdlMTg5N2ExZWEYACAAKAAw2s2hqpQyOMm6oaqUMkDJuqGqlDJKHFgwSS9iWVE5bjlMMThKWHdpTHg3TS9ac1VQUT1aHiIcT1U1TTJ3dzhPL2h0WEpYVXVKSTAzKzJmY2U0PWU4+TkzEoMBCAESfwoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkZmIxZjQxNjUtOGMyNi00MzYwLTk1NmYtNDE0YzFlODIyNTEwGAAgACgAMAE49JOAmMowQPSTgJjKMEocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAASqQEIpQESowEKHFRPWEtUTFM2UzZIKzIzNzBYZUtsVW1nMlhVVT0SJGE1YWI3YTZkLTAxYTMtNDgzNC05NDY5LTk1NDkwYzJkZjYwNBgAIAIoAjDAgsiSmTI4sOX/wJgyQL/ox5KZMkocdSttaWNSbkFwN3FuVkZaRHRXSUY1aFUwemdFPVofIh39OEdsMXZVOXhDRzQzN1c3enAzbnJmWit4WTNnPWU4+TkzEqkBCKcBEqMBChxVT0Y0RGhCN1lKUlZPampUWWYyZWwxS1NZc009EiQzOTYwYjcwMi1kNDJjLTQ2NmYtYTRhNS1hODk3MWZjNWQwOTcYACACKAIwn4uD6JgyOLuLkcGYMkDF+ILomDJKHHFIV1VCc2QwUDBPK3hGRDlvZk9MZ1FBVWRpMD1aHyId/3E0cHlqMVhsNExXUXZoTkVRcVVKVTlzcFExaz1lOPk5MxKpAQijARKjAQocK3U5R2YzcWlrUy9sZjg1WC95VWhEY2Zyb0lFPRIkMzliMmViMzQtNTA1ZC00NjIxLTkwNzEtODM3NDIwZDFkZTdkGAAgAygDMMbCsJuYMjiS66+bmDJAhrCwm5gyShxzTXlmTHNmZ0VYOEs3c0k2WE1jc1dYMEEzMFU9Wh8iHVNHUkdUVFZkNnlnaG5JR0hLRitEWHI2WERSWE09ZQAAAAASgwEIAxJ/ChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQ4OTAyNmRhNC0wZmU3LTRlOTUtYTllYS0xZDU4MjNiMTY0OWYYACAAKAAwATj0k4CYyjBA9JOAmMowShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAABKoAQiMARKiAQocVUJ0Q09LamNaRC9sbitUYUpiUCtqTlFCV1pFPRIkNmNhNzc3ZTctYTk3My00ZjU1LTg3MmEtYjUxNDg5YTVmOWU1GAAgACgAMLis/NiTMjiWjfzYkzJAlo382JMyShxSUWlZeHhmRnRHQlFMTkQwR25HdVcyTXJSdEk9Wh4iHExrcXRuRmRYblRmcDlwVVBBekRGMjBQUDdoYz1lAAAAABKoAQiJARKiAQocMXdOdENmMG5jdW10dlJKQm1NVzhtWjVpL2FFPRIkZTE0YmUzZWQtODg1MS00OWZkLWE5OWQtMzgyZGI1ZjJmNTYxGAAgAigCMMLFirGbMjjpyd/YkzJAmq/9sJsyShxGbkttNjFSK2h1Q1lSc2YrUTlNSkY2V0F5VGM9Wh4iHFpUdDZOWlRSdEUzNUhjaHczbHZZSzlwOFdSTT1lvivuRxKDAQgCEn8KHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDk1NjgyZWNmLTUwZDMtNDMwZC05ZTAwLWFjZjVjOGIxNDNhZhgAIAAoADABOPSTgJjKMED0k4CYyjBKHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAEqkBCKABEqMBChxmNlN2U0VCcC9BWGF6RU9sUi9McnRPOU53Sm89EiQ0ZGE2ZmZhYS00ZDBlLTQxZWItYjhhNS1jM2YyNTdlYzMwMzMYACABKAEwqIjZ55gyOLe8haSWMkDk9djnmDJKHHA0anAzN3lyZm03czZNbDNnMGhqYldQVThSMD1aHyId+zdkSU5iejhCN2tENDZ2MkRSYlVjVnhWRTcyRT1lOPk5MxKoAQiOARKiAQocTG9NNDhIZFkrTEhMNTZBalE2NXN1Z2o4MTFNPRIkYmZkMzFiNWYtMjVjMS00M2JiLWI1MGEtNTJkODM2ZmEwZGQyGAAgAigCMNzvpoeZMjjMjO6llDJA5tqmh5kyShw4T0hBdjAwekJ6L0tXdHYyVEVRNEI5UEJJTjA9Wh4iHHFxaHlYSysyaVBwdmhWODl1V2ltUzhBeGREYz1l09YITBKoAQiFARKiAQocWWtOK0RJTzdMQWVLa0tCSE1RSWJBRmxPVjhnPRIkZTk1ZDgxZmMtMmQxMy00MGMwLWJlMDEtODg4NjU0NGYwNzgzGAAgACgAMKauyMTNMDjJicjEzTBAyYnIxM0wShxSaE9LdTUzakpoNXlqaE5pekNKNjFONEh2dGc9Wh4iHEt2bEt4ZysxajN0c3BlS0l5VWVDR2Q2cCtOQT1ltWFDjRKpAQiGARKjAQocaTU3ZnI0elc1SjE0eUZIYS90anlHY2tPWkZzPRIkMTdkMWQyZjItNjZjNy00Y2M5LTkxM2EtYTY3YTIxYzBmZTMyGAAgACgAMNGHjZ/kMDjatIyf5DBA2rSMn+QwShxIdlltbldPWE5jSmkyVG16bjgrR0o4aFJtQms9Wh8iHaU1TnlnajV0L3kyQTVFRnJzS3FPTk5tN1B2bHM9ZXLEfM0SqQEIigESowEKHGpXS0YzK2tmaS9pYzVzeGFsaWFaMmN6bDJnVT0SJDZmY2MzOTQxLWM0MDEtNDRmMi1iNDcwLTViYmJjNzdkYjBkMRgAIAAoADCNxODYkzI4ip7g2JMyQIqe4NiTMkocZjRvRlAxT014THgvK2ovYjZ1WG5WZ3p4UkljPVofIh0taXh1aGFjNkpabDdYMjNrbDhYT0srVDRlYnZ3PWUAAAAAEqkBCJkBEqMBChw2UXVMc1owd2xXZUdReCtqM1NXdUxzbHJRSzg9EiQ3NzU3NGM1NS1iZjczLTRhZGItYTliYy1kNzUxOGU5ZDM5YTEYACAAKAAwmPb4zpUyOP/K+M6VMkD/yvjOlTJKHHdrYmwzd3BBejNUcHRZTmlTMU5pZDdnWUdxST1aHyIduFRudEswalZqVHQ5bmdEbTI3aVBQK2ZmaW1aST1l6ackjDABOARA+vWH0ZMy",
+   "version": 1
+}

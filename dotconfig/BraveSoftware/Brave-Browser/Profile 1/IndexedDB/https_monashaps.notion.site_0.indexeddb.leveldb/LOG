@@ -1,0 +1,7 @@
+2024/08/24-12:03:07.025 4563 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 1/IndexedDB/https_monashaps.notion.site_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/24-12:03:07.025 4563 Recovering log #12
+2024/08/24-12:03:07.025 4563 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Profile 1/IndexedDB/https_monashaps.notion.site_0.indexeddb.leveldb/000012.log 
+2024/08/24-12:03:07.647 4565 Level-0 table #18: started
+2024/08/24-12:03:07.651 4565 Level-0 table #18: 535 bytes OK
+2024/08/24-12:03:07.659 4565 Delete type=0 #12
+2024/08/24-12:03:07.659 4563 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,13 @@
+2024/08/29-10:19:06.168 6911 Reusing MANIFEST /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.unisuper.com.au_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/29-10:19:06.168 6911 Recovering log #7
+2024/08/29-10:19:06.168 6911 Reusing old log /home/shenkit/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.unisuper.com.au_0.indexeddb.leveldb/000007.log 
+2024/08/29-10:19:07.268 6911 Level-0 table #11: started
+2024/08/29-10:19:07.278 6911 Level-0 table #11: 574 bytes OK
+2024/08/29-10:19:07.286 6911 Delete type=0 #7
+2024/08/29-10:19:07.286 6911 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x03\x00\x00\x05' @ 45 : 1
+2024/08/29-10:19:07.286 6911 Compacting 1@0 + 1@1 files
+2024/08/29-10:19:07.291 6911 Generated table #12@0: 8 keys, 571 bytes
+2024/08/29-10:19:07.291 6911 Compacted 1@0 + 1@1 files => 571 bytes
+2024/08/29-10:19:07.299 6911 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/08/29-10:19:07.299 6911 Delete type=2 #11
+2024/08/29-10:19:07.300 6911 Manual compaction at level-0 from '\x00\x03\x00\x00\x05' @ 45 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
