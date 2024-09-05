@@ -46,7 +46,7 @@ alias tree="eza -T"
 
 alias ii="mimeopen -n"
 alias mkdir="mkdir -pv"                         # create parent directories + verbose
-alias rm="trashrm"                              # use trash-cli, if fail then use default rm
+alias rm="trash"                              # use trash-cli, if fail then use default rm
 
 alias cls=clear                                 # clear terminal screen
 
