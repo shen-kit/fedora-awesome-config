@@ -6,6 +6,8 @@ lspconfig.tsserver.setup({
   filetypes = {
     "javascript",
     "typescript",
+    "typescriptreact",
+    "javascriptreact",
   },
   capabilities = capabilities,
 })

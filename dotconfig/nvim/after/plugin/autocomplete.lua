@@ -78,3 +78,5 @@ cmp.setup({
 })
 
 require('nvim_comment').setup()
+
+require('nvim-ts-autotag').setup({ })

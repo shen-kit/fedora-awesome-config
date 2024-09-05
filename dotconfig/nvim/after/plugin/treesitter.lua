@@ -1,7 +1,10 @@
+---@diagnostic disable: missing-fields
 require('nvim-treesitter.configs').setup({
   ensure_installed = {
     "bash",
     "c",
+    "css",
+    "html",
     "java",
     "javascript",
     "json",
@@ -12,6 +15,7 @@ require('nvim-treesitter.configs').setup({
     "query",
     "regex",
     "typescript",
+    "tsx",
     "vim",
     "vimdoc",
     "yaml",

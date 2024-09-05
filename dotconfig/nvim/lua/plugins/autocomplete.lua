@@ -26,4 +26,6 @@ return {
 
   -- align
   { "junegunn/vim-easy-align" },
+
+  { "windwp/nvim-ts-autotag" },
 }
