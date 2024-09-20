@@ -8,7 +8,7 @@ require("luasnip.loaders.from_vscode").lazy_load({
   exclude = { "markdown", "all" },
 }) 
 -- custom snippets
-require("luasnip.loaders.from_snipmate").lazy_load({ paths="./after/plugin/snippets" }) 
+require("luasnip.loaders.from_snipmate").lazy_load({ paths="./after/plugin/snippets" })
 
 -- completion setup
 cmp.setup({
@@ -79,4 +79,10 @@ cmp.setup({
 
 require('nvim_comment').setup()
 
-require('nvim-ts-autotag').setup({ })
+require('nvim-ts-autotag').setup({
+  opts = {
+    enable_close = true, -- Auto close tags
+    enable_rename = true, -- Auto rename pairs of tags
+    enable_close_on_slash = false -- Auto close on trailing </
+  },
+})

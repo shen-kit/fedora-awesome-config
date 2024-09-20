@@ -53,6 +53,14 @@ create_au("User", {
   command = "lua require('lazy').sync({ show = false })",
 })
 
+-- -- format on save
+-- create_au("BufWritePre", {
+--   pattern = "*",
+--   callback = function(args)
+--     require("conform").format({ bufnr = args.buf })
+--   end,
+-- })
+
 -- syntax highlighting
 create_au({"BufNewFile", "BufRead"}, {
     desc = "Set syntax highlighting for bashrc files",

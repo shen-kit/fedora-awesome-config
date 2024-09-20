@@ -3,6 +3,11 @@ return {
   { "neovim/nvim-lspconfig" },
   { "hrsh7th/cmp-nvim-lsp" },
 
+  -- formatter
+  {
+    'stevearc/conform.nvim',
+  },
+
   -- debugger
   { 'mfussenegger/nvim-dap' },
   {
@@ -51,7 +56,7 @@ return {
     },
     cmd = "Trouble",
     keys = {
-     {
+      {
         "<leader>td",
         "<cmd>Trouble diagnostics toggle<cr>",
         desc = "Diagnostics (Trouble)",

@@ -79,8 +79,8 @@ map({'i', 'n', 'x'}, '<C-s>', '<CMD>w<CR>', nosilent)
 map('n', '<C-S-Q>', '<CMD>wqa<CR>', opts)
 
 -- switch tabs
-map('n', '<C-TAB>',   vim.cmd.tabnext,     opts)
-map('n', '<C-S-TAB>', vim.cmd.tabprevious, opts)
+map({'n', 'i'}, '<C-TAB>',   vim.cmd.tabnext,     opts)
+map({'n', 'i'}, '<C-S-TAB>', vim.cmd.tabprevious, opts)
 
 -- copy to system clipboard
 map('x', 'Y', '"+y', opts)

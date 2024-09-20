@@ -24,7 +24,7 @@ function cd() {
         z "$1"
         dirs
         echo
-        ls
+        eza
         echo
     fi
 } 
