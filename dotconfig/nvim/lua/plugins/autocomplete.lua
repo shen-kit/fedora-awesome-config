@@ -6,7 +6,7 @@ return {
   },
   { "hrsh7th/cmp-buffer" },
   { "hrsh7th/cmp-path" },
-  
+
   -- snippets
   {
     "L3MON4D3/LuaSnip",
@@ -22,7 +22,12 @@ return {
   },
 
   -- comments
-  { "terrortylor/nvim-comment" },
+  {
+    "folke/ts-comments.nvim",
+    opts = {},
+    event = "VeryLazy",
+    enabled = vim.fn.has("nvim-0.10.0") == 1,
+  },
 
   -- align
   { "junegunn/vim-easy-align" },

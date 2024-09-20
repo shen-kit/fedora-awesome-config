@@ -6,9 +6,9 @@ local ls = require('luasnip')
 -- friendly snippets
 require("luasnip.loaders.from_vscode").lazy_load({
   exclude = { "markdown", "all" },
-}) 
+})
 -- custom snippets
-require("luasnip.loaders.from_snipmate").lazy_load({ paths="./after/plugin/snippets" })
+require("luasnip.loaders.from_snipmate").lazy_load({ paths = "./after/plugin/snippets" })
 
 -- completion setup
 cmp.setup({
@@ -25,7 +25,7 @@ cmp.setup({
     { name = 'buffer' },
   }),
   mapping = cmp.mapping.preset.insert({
-    ['<C-x><C-p>'] = cmp.mapping.complete(),   -- trigger completion menu
+    ['<C-x><C-p>'] = cmp.mapping.complete(), -- trigger completion menu
     ['<C-p>'] = cmp.mapping.select_prev_item(select_opts),
     ['<C-n>'] = cmp.mapping.select_next_item(select_opts),
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
@@ -46,7 +46,7 @@ cmp.setup({
       else
         cmp.complete()
       end
-    end, {'i', 's'}),
+    end, { 'i', 's' }),
     -- If the completion menu is visible, move to the previous item
     ['<S-Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
@@ -56,14 +56,14 @@ cmp.setup({
       else
         fallback()
       end
-    end, {'i', 's'}),
+    end, { 'i', 's' }),
   }),
   window = {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
   },
   formatting = {
-    fields = {'menu', 'abbr', 'kind'},
+    fields = { 'menu', 'abbr', 'kind' },
     format = function(entry, item)
       local menu_icon = {
         nvim_lsp = '󰅩', -- λ
@@ -74,15 +74,5 @@ cmp.setup({
       item.menu = menu_icon[entry.source.name]
       return item
     end,
-  },
-})
-
-require('nvim_comment').setup()
-
-require('nvim-ts-autotag').setup({
-  opts = {
-    enable_close = true, -- Auto close tags
-    enable_rename = true, -- Auto rename pairs of tags
-    enable_close_on_slash = false -- Auto close on trailing </
   },
 })
