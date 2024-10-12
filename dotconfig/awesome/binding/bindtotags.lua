@@ -11,18 +11,18 @@ function _M.get(globalkeys)
     globalkeys = gears.table.join(globalkeys,
 
       -- view tag only
-      awful.key({ modkey }, "#" .. i+9,
-        function ()
+      awful.key({ modkey }, "#" .. i + 9,
+        function()
           local tag = awful.screen.focused().tags[i]
           if tag then
             tag:view_only()
           end
         end,
         { description = "view tag only", group = "tag" }),
-      
+
       -- Move client to tag.
       awful.key({ modkey, "Control" }, "#" .. i + 9,
-        function ()
+        function()
           if client.focus then
             local tag = client.focus.screen.tags[i]
             if tag then
@@ -30,18 +30,18 @@ function _M.get(globalkeys)
             end
           end
         end,
-        {description = "move focused client to tag #"..i, group = "tag"}),
-    
+        { description = "move focused client to tag #" .. i, group = "tag" }),
+
       -- Toggle tag display.
       awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
-        function ()
+        function()
           local screen = awful.screen.focused()
           local tag = screen.tags[i]
           if tag then
             awful.tag.viewtoggle(tag)
           end
         end,
-        {description = "toggle tag #" .. i, group = "tag"})
+        { description = "toggle tag #" .. i, group = "tag" })
 
     )
   end
@@ -49,7 +49,6 @@ function _M.get(globalkeys)
   return globalkeys
 end
 
-
-return setmetatable({}, { 
-  __call = function(_, ...) return _M.get(...) end 
+return setmetatable({}, {
+  __call = function(_, ...) return _M.get(...) end
 })
