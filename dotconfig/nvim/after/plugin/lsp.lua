@@ -17,6 +17,7 @@ local lspconfig = require('lspconfig')
 lspconfig.ts_ls.setup({})
 lspconfig.pyright.setup({})
 lspconfig.hls.setup({})
+lspconfig.jdtls.setup({})
 lspconfig.clangd.setup({})
 lspconfig.lua_ls.setup({
   on_init = function(client)

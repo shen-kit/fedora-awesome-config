@@ -10,4 +10,10 @@ then
     PATH="$HOME/.bashscripts:$PATH"
 fi
 
+# jdtls
+if ! [[ "$PATH" =~ "$HOME/.local/bin/jdtls/bin/:" ]]
+then
+    PATH="$HOME/.local/bin/jdtls/bin/:$PATH"
+fi
+
 export PATH
