@@ -1,11 +1,19 @@
 -- toggle diagnostic messages
 vim.api.nvim_create_user_command("DiagnosticToggle", function()
   local config = vim.diagnostic.config
+  local toSet = not config().virtual_text
   config {
-    virtual_text = not config().virtual_text,
-    signs = not config().virtual_text,
+    virtual_text = toSet,
+    -- signs = toSet,
+    -- underline = toSet,
   }
-end, { desc = "toggle diagnostic" })
+end, { desc = "toggle diagnostics virtual text" })
+
+-- vim.api.nvim_create_user_command("DiagnosticToggleUnderline", function()
+-- vim.diagnostic.config {
+-- underline = not vim.diagnostic.config().underline,
+-- }
+-- end, { desc = "toggle diagnostics underline" })
 
 vim.api.nvim_create_user_command("Format", function(args)
   local range = nil

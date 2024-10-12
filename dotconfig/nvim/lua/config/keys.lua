@@ -39,22 +39,22 @@ map('x', '<C-_>', ":norm gcc<CR>gv", opts)
 
 -- keep cursor in place
 map('n', 'J', 'mzJ`z', opts)
-map('n', '<C-u>', '<C-u>zz', opts)
-map('n', '<C-d>', '<C-d>zz', opts)
-map('n', '<C-f>', '<C-f>zz', opts)
-map('n', '<C-b>', '<C-b>zz', opts)
+-- map('n', '<C-u>', '<C-u>zz', opts)
+-- map('n', '<C-d>', '<C-d>zz', opts)
+-- map('n', '<C-f>', '<C-f>zz', opts)
+-- map('n', '<C-b>', '<C-b>zz', opts)
 
 -- search and replace the word under the cursor
 map('n', '<leader>r', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], nosilent)
 
 -- surround text with parentheses/quotes
-map('x', '(', 'c()<ESC>Pgvlolo', opts)
+map('x', '<leader>(', 'c()<ESC>Pgvlolo', opts)
 map('x', '<leader>[', 'c[]<ESC>Pgvlolo', opts)
 map('x', '<leader>{', 'c{}<ESC>Pgvlolo', opts)
 map('x', '<leader><', 'c<><ESC>Pgvlolo', opts)
 map('x', '<leader>\'', 'c\'\'<ESC>Pgvlolo', opts)
 map('x', '<leader>"', 'c""<ESC>Pgvlolo', opts)
-map("x", "`", "c``<ESC>Pgvlolo", opts)
+map("x", "<leader>`", "c``<ESC>Pgvlolo", opts)
 
 -- ============================================================
 --                    Working With Files
@@ -67,8 +67,9 @@ map("n", "<leader>fd", ":find \\c*", nosilent)
 map('n', '<S-H>', vim.cmd.bprevious, opts)
 map('n', '<S-L>', vim.cmd.bnext, opts)
 
--- save and close current buffer (ctrl+shift+D)
-map('n', '<C-S-D>', vim.cmd.bdelete, opts)
+-- close current buffer (ctrl+shift+D)
+-- move to previous buffer then delete the last buffer we were on to keep splits
+map('n', '<C-S-D>', ':bp | bd #<CR>', opts)
 -- close all buffers except current (ctrl+shift+B)
 map('n', '<C-S-B>', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
 
