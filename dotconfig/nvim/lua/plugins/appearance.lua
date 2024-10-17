@@ -22,4 +22,10 @@ return {
     opts = {},
   },
 
+  -- highlight the word under the cursor
+  {
+    'echasnovski/mini.cursorword',
+    version = '*'
+  },
+
 }

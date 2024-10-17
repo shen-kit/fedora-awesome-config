@@ -64,3 +64,6 @@ opt.timeoutlen     = 500
 -- [[ misc ]]
 opt.updatetime     = 50
 opt.path:append '**'
+
+-- [[ sessions ]]
+opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"

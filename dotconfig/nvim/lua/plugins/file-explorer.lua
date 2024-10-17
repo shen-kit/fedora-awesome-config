@@ -23,7 +23,7 @@ return {
       use_default_keymaps = true,
     },
   },
-  
+
   {
     "nvim-tree/nvim-tree.lua",
     opts = {
@@ -41,5 +41,7 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
-  }
+  },
+
+  { 'ThePrimeagen/harpoon' },
 }

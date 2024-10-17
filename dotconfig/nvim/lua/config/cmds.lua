@@ -26,3 +26,11 @@ vim.api.nvim_create_user_command("Format", function(args)
   end
   require("conform").format({ async = true, lsp_format = "fallback", range = range })
 end, { range = true })
+
+vim.api.nvim_create_user_command("AutocompleteDisable", function()
+  require('cmp').setup({ enabled = false })
+end, { desc = "toggle nvim-cmp" })
+
+vim.api.nvim_create_user_command("AutocompleteEnable", function()
+  require('cmp').setup({ enabled = true })
+end, { desc = "toggle nvim-cmp" })

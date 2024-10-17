@@ -39,10 +39,6 @@ map('x', '<C-_>', ":norm gcc<CR>gv", opts)
 
 -- keep cursor in place
 map('n', 'J', 'mzJ`z', opts)
--- map('n', '<C-u>', '<C-u>zz', opts)
--- map('n', '<C-d>', '<C-d>zz', opts)
--- map('n', '<C-f>', '<C-f>zz', opts)
--- map('n', '<C-b>', '<C-b>zz', opts)
 
 -- search and replace the word under the cursor
 map('n', '<leader>r', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], nosilent)
@@ -69,7 +65,7 @@ map('n', '<S-L>', vim.cmd.bnext, opts)
 
 -- close current buffer (ctrl+shift+D)
 -- move to previous buffer then delete the last buffer we were on to keep splits
-map('n', '<C-S-D>', ':bp | bd #<CR>', opts)
+map('n', '<C-S-D>', ':bp<bar>sp<bar>bn<bar>bd<CR>', opts)
 -- close all buffers except current (ctrl+shift+B)
 map('n', '<C-S-B>', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
 
@@ -104,8 +100,19 @@ map('n', '<leader>fg', function()
   telescope.grep_string({ search = vim.fn.input("Grep > ") })
 end, opts)
 
+-- harpoon
+map('n', '<leader>h', function() require('harpoon.ui').nav_file(1) end, opts)
+map('n', '<leader>j', function() require('harpoon.ui').nav_file(2) end, opts)
+map('n', '<leader>k', function() require('harpoon.ui').nav_file(3) end, opts)
+map('n', '<leader>l', function() require('harpoon.ui').nav_file(4) end, opts)
+map('n', '<leader>e', function() require('harpoon.ui').toggle_quick_menu() end, opts)
+map('n', '<leader>a', function() require("harpoon.mark").add_file() end, opts)
+
 -- undotree
 map('n', '<leader>u', vim.cmd.UndotreeToggle, opts)
+
+-- auto-session
+map('n', '<leader>ls', ':SessionSearch<CR>', opts)
 
 -- smart splits
 -- moving between splits
