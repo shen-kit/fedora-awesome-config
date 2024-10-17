@@ -65,7 +65,7 @@ map('n', '<S-L>', vim.cmd.bnext, opts)
 
 -- close current buffer (ctrl+shift+D)
 -- move to previous buffer then delete the last buffer we were on to keep splits
-map('n', '<C-S-D>', ':bp<bar>sp<bar>bn<bar>bd<CR>', opts)
+map('n', '<C-S-D>', ':w<bar>bp<bar>sp<bar>bn<bar>bd<CR>', opts)
 -- close all buffers except current (ctrl+shift+B)
 map('n', '<C-S-B>', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
 
@@ -78,7 +78,7 @@ map({ 'n', 'i' }, '<C-TAB>', vim.cmd.tabnext, opts)
 map({ 'n', 'i' }, '<C-S-TAB>', vim.cmd.tabprevious, opts)
 
 -- yank keeping cursor in-place
-map('x', 'y', "ygv<ESC>")
+map('x', 'y', "ygv<ESC>", opts)
 map('x', 'Y', '"+ygv<ESC>', opts) -- to system clipboard
 
 -- ============================================================
@@ -112,7 +112,7 @@ map('n', '<leader>a', function() require("harpoon.mark").add_file() end, opts)
 map('n', '<leader>u', vim.cmd.UndotreeToggle, opts)
 
 -- auto-session
-map('n', '<leader>ls', ':SessionSearch<CR>', opts)
+map('n', '<leader>ss', ':SessionSearch<CR>', opts)
 
 -- smart splits
 -- moving between splits
