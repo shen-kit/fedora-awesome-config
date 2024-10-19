@@ -26,15 +26,6 @@ return {
 
   {
     "nvim-tree/nvim-tree.lua",
-    opts = {
-      view = { width = 40 },
-      filters = { dotfiles = true },
-      actions = {
-        open_file = {
-          quit_on_open = true,
-        },
-      },
-    },
     dependencies = { "nvim-lua/plenary.nvim" }
   },
 
