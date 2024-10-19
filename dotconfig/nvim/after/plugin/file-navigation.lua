@@ -9,7 +9,6 @@ require("nvim-tree").setup({
     },
   },
   hijack_directories = {
-    enable = true,
-    auto_open = false,
+    enable = true, -- set to false for auto-session to load a session instantly when nvim is started with a directory argument
   },
 })

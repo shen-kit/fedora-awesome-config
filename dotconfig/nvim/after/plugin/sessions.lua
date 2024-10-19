@@ -14,4 +14,12 @@ require('auto-session').setup({
     local cmd = 'git rev-parse --is-inside-work-tree'
     return vim.fn.system(cmd) == 'true\n'
   end,
+  session_lens = {
+    theme_conf = {
+      layout_config = {
+        width = 0.8,
+        height = 0.5,
+      },
+    },
+  },
 })
