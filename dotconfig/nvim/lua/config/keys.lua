@@ -81,6 +81,13 @@ map({ 'n', 'i' }, '<C-S-TAB>', vim.cmd.tabprevious, opts)
 map('x', 'y', "ygv<ESC>", opts)
 map('x', 'Y', '"+ygv<ESC>', opts) -- to system clipboard
 
+-- ctrl+scroll to scroll 3 lines at a time (default 1)
+-- shift+scroll maps to <C-d> / <C-u>
+map({ 'n', 'i', 'v' }, '<C-ScrollWheelDown>', '3<C-e>', opts)
+map({ 'n', 'i', 'v' }, '<C-ScrollWheelUp>', '3<C-y>', opts)
+map({ 'n', 'i', 'v' }, '<S-ScrollWheelDown>', '<C-d>', opts)
+map({ 'n', 'i', 'v' }, '<S-ScrollWheelUp>', '<C-u>', opts)
+
 -- ============================================================
 --                          Plugins
 -- ============================================================

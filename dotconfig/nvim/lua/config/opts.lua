@@ -64,6 +64,8 @@ opt.timeoutlen     = 500
 -- [[ misc ]]
 opt.updatetime     = 50
 opt.path:append '**'
+opt.mousescroll    = 'ver:1,hor:1' -- scroll one line at a time (smoother scrolling)
+opt.scroll         = 15            -- <C-D> / <C-U> scroll amount (lines)
 
 -- [[ sessions ]]
 opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
