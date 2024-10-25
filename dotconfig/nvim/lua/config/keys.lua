@@ -33,9 +33,9 @@ map('n', '>', '>>', opts)
 map('i', '<S-Tab>', '<C-D>', opts)
 
 -- commenting
-map('i', '<C-_>', "<ESC>my:norm gcc<CR>`ya", { remap = true })
-map('n', '<C-_>', 'mygcc `y', { remap = true })
-map('x', '<C-_>', "gcgv", { remap = true })
+map('i', '<C-/>', "<ESC>my:norm gcc<CR>`ya", { remap = true })
+map('n', '<C-/>', 'mygcc `y', { remap = true })
+map('x', '<C-/>', "gcgv", { remap = true })
 
 -- keep cursor in place
 map('n', 'J', 'mzJ`z', opts)
