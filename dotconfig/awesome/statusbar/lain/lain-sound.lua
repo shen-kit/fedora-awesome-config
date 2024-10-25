@@ -20,7 +20,7 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 local wibox = require("wibox")
 local lain = require("lain")
 
-local W = clone_widget_set     -- object name
+local W = clone_widget_set -- object name
 
 -- Custom Local Library
 local gmc = require("themes.gmc")
@@ -32,13 +32,13 @@ local gmc = require("themes.gmc")
 W.volume = lain.widget.alsa({
   settings = function()
     if volume_now.status == "off" then
-      disp = "󰝟 " .. " " .. volume_now.level .. "%"
+      disp = "󰝟" .. " " .. volume_now.level .. "%"
       widget:set_markup(disp)
       return
     elseif volume_now.level >= 50 then
-      disp = "  "
+      disp = ""
     elseif volume_now.level >= 10 then
-      disp = " "
+      disp = ""
     else
       disp = ""
     end
@@ -53,13 +53,13 @@ theme.volume = W.volume
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 W.mpd = awful.widget.watch(
-          "playerctl metadata --format '    {{ title }} '",
-          10,
-          function(widget, stdout)
-            widget:set_markup(stdout:gsub("\n", ""))
-            widget.align = "center"
-          end
-        )
+  "playerctl metadata --format '    {{ title }} '",
+  10,
+  function(widget, stdout)
+    widget:set_markup(stdout:gsub("\n", ""))
+    widget.align = "center"
+  end
+)
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -130,5 +130,4 @@ W.volumebg = wibox.container.background(
 W.volumewidget = wibox.container.margin(
   W.volumebg, dpi(2), dpi(7), dpi(6), dpi(6))
 
-]]--
-
+]] --

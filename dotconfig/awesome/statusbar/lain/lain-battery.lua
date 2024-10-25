@@ -6,60 +6,60 @@
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 -- Standard awesome library
-local awful     = require("awful")
-local beautiful = require("beautiful")
-local gears = require("gears")
+-- local awful      = require("awful")
+-- local beautiful  = require("beautiful")
+-- local gears      = require("gears")
 
-local xresources = require("beautiful.xresources")
-local dpi = xresources.apply_dpi
+-- local xresources = require("beautiful.xresources")
+-- local dpi        = xresources.apply_dpi
 
 -- Wibox handling library
-local wibox = require("wibox")
+-- local wibox      = require("wibox")
 local lain = require("lain")
 
-local W = clone_widget_set     -- object name
-local I = clone_icon_set       -- object name
+local W    = clone_widget_set -- object name
+-- local I          = clone_icon_set   -- object name
 
 -- Custom Local Library
-local gmc = require("themes.gmc")
+-- local gmc        = require("themes.gmc")
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-W.bat = lain.widget.bat({
-  notify = true,
-  full_notify = false,
-  n_perc = {7, 20},
-  bat = "BAT0",
-  ac = "AC",
-  timeout = 5,
-  settings = function()
+W.bat      = lain.widget.bat({
+	notify = true,
+	full_notify = false,
+	n_perc = { 7, 20 },
+	bat = "BAT0",
+	ac = "AC",
+	timeout = 5,
+	settings = function()
+		local perc
+		if bat_now.status == "Charging" or bat_now.status == "Discharging" or bat_now.status == "Not charging" then
+			if bat_now.perc > 80 then
+				perc = ""
+			elseif bat_now.perc > 60 then
+				perc = ""
+			elseif bat_now.perc > 40 then
+				perc = ""
+			elseif bat_now.perc > 20 then
+				perc = ""
+			else
+				perc = ""
+			end
 
-    if bat_now.status == "Charging" or bat_now.status == "Discharging" or bat_now.status == "Not charging" then
-      if bat_now.perc > 80 then
-        perc = ""
-      elseif bat_now.perc > 60 then
-        perc = ""
-      elseif bat_now.perc > 40 then
-        perc = ""
-      elseif bat_now.perc > 20 then
-        perc = ""
-      else
-        perc = ""
-      end
+			perc = perc .. "  " .. bat_now.perc
 
-      perc = perc .. "    " .. bat_now.perc
+			if bat_now.status == "Charging" then
+				perc = perc .. "󱐋"
+			else
+				perc = perc .. "%"
+			end
+		else
+			perc = "  -/-"
+		end
 
-      if bat_now.status == "Charging" then
-        perc = perc .. "󱐋 "
-      else
-        perc = perc .. "% "
-      end
-    else
-      perc = "     -/-"
-    end
-
-    widget:set_markup(perc)
-  end
+		widget:set_markup(perc)
+	end
 })
 
 -- Battery from copycat-copland
@@ -128,4 +128,4 @@ W.batbg = wibox.container.background(
 W.battery_bar_widget = wibox.container.margin(
   W.batbg, dpi(2), dpi(7), dpi(6), dpi(6))
 
-]]--
+]] --

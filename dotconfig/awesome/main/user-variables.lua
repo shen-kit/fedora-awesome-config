@@ -3,7 +3,7 @@
 -- }}}
 
 local _M = {
-  terminal        = "alacritty",
+  terminal        = "kitty", -- alacritty
   browserPersonal = "brave-browser --profile-directory='Default'",
   browserUni      = "brave-browser --profile-directory='Profile 1'",
   browserWork     = "brave-browser --profile-directory='Profile 2'",
@@ -22,4 +22,3 @@ local _M = {
 }
 
 return _M
-

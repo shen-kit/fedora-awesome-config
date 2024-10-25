@@ -20,8 +20,8 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 local wibox = require("wibox")
 local lain = require("lain")
 
-local W = clone_widget_set     -- object name
-local I = clone_icon_set       -- object name
+local W = clone_widget_set -- object name
+local I = clone_icon_set   -- object name
 
 -- Custom Local Library
 local gmc = require("themes.gmc")
@@ -32,13 +32,13 @@ local gmc = require("themes.gmc")
 I.volume = wibox.widget.imagebox(beautiful.widget_vol)
 
 W.volume = lain.widget.alsa({
-    settings = function()
-        if volume_now.status == "off" then
-            volume_now.level = volume_now.level .. "M"
-        end
-
-        widget:set_markup(markup(gmc.color['blue900'], volume_now.level .. "% "))
+  settings = function()
+    if volume_now.status == "off" then
+      volume_now.level = volume_now.level .. "M"
     end
+
+    widget:set_markup(markup(gmc.color['blue900'], volume_now.level .. "% "))
+  end
 })
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -53,30 +53,33 @@ terminal = RC.vars.terminal
 I.volume_dynamic = wibox.widget.imagebox(beautiful.monitor_vol)
 
 local volume_wibox_settings = function()
-    if volume_now.status == "off" then
-        I.volume_dynamic:set_image(beautiful.monitor_vol_mute)
-    elseif volume_now.level == 0 then
-        I.volume_dynamic:set_image(beautiful.monitor_vol_no)
-    elseif volume_now.level <= 50 then
-        I.volume_dynamic:set_image(beautiful.monitor_vol_low)
-    else
-        I.volume_dynamic:set_image(beautiful.monitor_vol)
-    end
+  if volume_now.status == "off" then
+    I.volume_dynamic:set_image(beautiful.monitor_vol_mute)
+  elseif volume_now.level == 0 then
+    I.volume_dynamic:set_image(beautiful.monitor_vol_no)
+  elseif volume_now.level <= 50 then
+    I.volume_dynamic:set_image(beautiful.monitor_vol_low)
+  else
+    I.volume_dynamic:set_image(beautiful.monitor_vol)
+  end
 end
 
 local volume_wibox_colors = {
-    background = beautiful.bg_normal,
-    mute = gmc.color['red300'],
-    unmute = gmc.color['blue300']
+  background = beautiful.bg_normal,
+  mute = gmc.color['red300'],
+  unmute = gmc.color['blue300']
 }
 
 W.volume_wibox = lain.widget.alsabar({
-  width = 55, ticks = true, ticks_size = 6, step = "2%",
+  width = 55,
+  ticks = true,
+  ticks_size = 6,
+  step = "2%",
   settings = volume_wibox_settings,
   colors = volume_wibox_colors
 })
 
-W.volume_wibox_buttons = my_table.join (
+W.volume_wibox_buttons = my_table.join(
   awful.button({}, 1, function()
     awful.spawn(string.format("%s -e alsamixer", terminal))
   end),
@@ -85,14 +88,15 @@ W.volume_wibox_buttons = my_table.join (
     W.volume_wibox.update()
   end),
   awful.button({}, 3, function()
-    os.execute(string.format("%s set %s toggle", W.volume_wibox.cmd, W.volume_wibox.togglechannel or W.volume_wibox.channel))
+    os.execute(string.format("%s set %s toggle", W.volume_wibox.cmd,
+      W.volume_wibox.togglechannel or W.volume_wibox.channel))
     W.volume_wibox.update()
-    end),
+  end),
   awful.button({}, 4, function()
     os.execute(string.format("%s set %s 1%%+", W.volume_wibox.cmd, W.volume_wibox.channel))
     W.volume_wibox.update()
   end),
-    awful.button({}, 5, function()
+  awful.button({}, 5, function()
     os.execute(string.format("%s set %s 1%%-", W.volume_wibox.cmd, W.volume_wibox.channel))
     W.volume_wibox.update()
   end)
@@ -113,25 +117,25 @@ W.volumewidget = wibox.container.margin(
 
 I.mpd = wibox.widget.imagebox(beautiful.widget_note)
 W.mpd = lain.widget.mpd({
-    settings = function()
-        mpd_notification_preset = {
-            text = string.format("%s [%s] - %s\n%s", mpd_now.artist,
-                   mpd_now.album, mpd_now.date, mpd_now.title)
-        }
+  settings = function()
+    mpd_notification_preset = {
+      text = string.format("%s [%s] - %s\n%s", mpd_now.artist,
+        mpd_now.album, mpd_now.date, mpd_now.title)
+    }
 
-        if mpd_now.state == "play" then
-            artist = mpd_now.artist .. " > "
-            title  = mpd_now.title .. " "
-            I.mpd:set_image(beautiful.widget_note_on)
-        elseif mpd_now.state == "pause" then
-            artist = "mpd "
-            title  = "paused "
-        else
-            artist = ""
-            title  = ""
-            I.mpd:set_image(nil)
-        end
-        widget:set_markup(markup(gmc.color['blue900'], artist)
-            .. markup(gmc.color['green900'], title))
+    if mpd_now.state == "play" then
+      artist = mpd_now.artist .. " > "
+      title  = mpd_now.title .. " "
+      I.mpd:set_image(beautiful.widget_note_on)
+    elseif mpd_now.state == "pause" then
+      artist = "mpd "
+      title  = "paused "
+    else
+      artist = ""
+      title  = ""
+      I.mpd:set_image(nil)
     end
+    widget:set_markup(markup(gmc.color['blue900'], artist)
+      .. markup(gmc.color['green900'], title))
+  end
 })
