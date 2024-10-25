@@ -6,7 +6,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 # ls colours --> "other-writeable" in bold cyan, directories in bold light purple
-export LS_COLORS='ow=1;35:di=1;95'
+# export LS_COLORS='ow=1;35:di=1;95'
 
 # github credential manager
 export GPG_TTY=$(tty)
