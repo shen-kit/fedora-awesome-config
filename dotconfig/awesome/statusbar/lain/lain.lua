@@ -6,26 +6,26 @@
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 -- Standard awesome library
-local awful     = require("awful")
-local beautiful = require("beautiful")
+local awful       = require("awful")
+local beautiful   = require("beautiful")
 
 -- Wibox handling library
-local wibox = require("wibox")
-local lain = require("lain")
+local wibox       = require("wibox")
+local lain        = require("lain")
 
 -- Custom Local Library
-local gmc = require("themes.gmc")
+local gmc         = require("themes.gmc")
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-local W = {}
-clone_widget_set = W           -- object name
+local W           = {}
+clone_widget_set  = W -- object name
 
 -- split module, to make each file shorter,
 -- all must have same package name
 
 -- global for all splited
-markup      = lain.util.markup
+markup            = lain.util.markup
 
 -- progress bar related widgets -- after global markup
 local config_path = awful.util.getdir("config") .. "statusbar/lain/"
@@ -46,9 +46,6 @@ W.mem = lain.widget.mem({
 
 -- Textclock
 W.textclock = awful.widget.textclock(" %a %d %b, %I:%M%P  ")
-    --markup(gmc.color['blue900'], "%a %d %b ")
-    --    .. markup(gmc.color['grey100'], ",")
-    --    .. markup(gmc.color['green900'], " %H:%M "))
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -78,4 +75,4 @@ W.netupinfo = lain.widget.net({
     end
 })
 
-]]--
+]] --

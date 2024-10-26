@@ -1,23 +1,24 @@
 -- Standard awesome library
-local gears = require("gears")
+local gears     = require("gears")
 local awful     = require("awful")
+local beautiful = require("beautiful")
 
 -- Wibox handling library
-local wibox = require("wibox")
+local wibox     = require("wibox")
 
 -- Custom Local Library: Wallpaper, Keys and Mouse Binding
-local deco = {
+local deco      = {
   wallpaper = require("deco.wallpaper"),
   taglist   = require("deco.taglist"),
   tasklist  = require("deco.tasklist")
 }
 
-local _M = {}
+local _M        = {}
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-local WB = {}
-wibox_package = WB -- global object name
+local WB        = {}
+wibox_package   = WB -- global object name
 
 -- default statusbar
 require("statusbar.lain.helper_default")
@@ -29,7 +30,7 @@ require("statusbar.lain.helper_lain")
 
 -- {{{ Wibar
 
-function WB.setup_common_boxes (s)
+function WB.setup_common_boxes(s)
   -- Wallpaper
   set_wallpaper(s)
 
@@ -45,14 +46,14 @@ function WB.setup_common_boxes (s)
     screen  = s,
     filter  = awful.widget.tasklist.filter.currenttags,
     buttons = WB.tasklist,
-    style = {
+    style   = {
       shape = gears.shape.rounded_rect,
       shape_border_width = 4,
       shape_border_color = theme.bg_normal,
       align = "center"
     },
-    layout   = {
-      spacing = 20,
+    layout  = {
+      spacing        = 20,
       spacing_widget = {
         {
           forced_width = 4,
@@ -63,7 +64,7 @@ function WB.setup_common_boxes (s)
         halign = 'center',
         widget = wibox.container.place,
       },
-      layout  = wibox.layout.flex.horizontal
+      layout         = wibox.layout.flex.horizontal
     }
   }
 end
@@ -76,15 +77,15 @@ end
 function _M.init()
   WB.taglist  = deco.taglist()
   WB.tasklist = deco.tasklist()
-  WB.initdeco ()
-    
-  awful.screen.connect_for_each_screen(function(s)
-    WB.setup_common_boxes (s)
-    
-    WB.generate_wibox_one (s)
-  end)
+  WB.initdeco()
 
+  awful.screen.connect_for_each_screen(function(s)
+    WB.setup_common_boxes(s)
+
+    WB.generate_wibox_one(s)
+  end)
 end
+
 -- }}}
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
