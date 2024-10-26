@@ -1,0 +1,6 @@
+{
+    "diagnostics.globals": [
+        "theme",
+        "theme_path"
+    ]
+}
