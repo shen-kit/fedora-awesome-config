@@ -4,12 +4,8 @@ alias vim=nvim
 alias vi=nvim
 alias v=nvim
 alias sv=sudoedit
-alias vfind=nvimFind
-alias vf=nvimFind
-
-function nvimFind() {
-    nvim "$(find $1 -type f | fzf)"
-}
+alias fzf-nvim=nvimFind
+alias fv='nvim "$(fzf)"'
 
 # ========== FILES / NAVIGATION ==========
 
@@ -28,6 +24,9 @@ function cd() {
         echo
     fi
 } 
+
+alias fcd='cd "$(find . -type d | fzf)"'
+alias fz=fzfCd
 alias c=cd
 alias ..="cd .."
 alias ...="cd ../.."
@@ -45,6 +44,7 @@ alias lss="du -sh * | sort -hr"  # list file/folder sizes descending
 alias tree="eza -T"
 
 alias ii="mimeopen -n"
+alias fii='mimeopen -n "$(find . -type f | fzf)"'
 alias mkdir="mkdir -pv"                         # create parent directories + verbose
 alias rm="trash"                              # use trash-cli, if fail then use default rm
 
