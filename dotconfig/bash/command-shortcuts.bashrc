@@ -26,10 +26,10 @@ function cd() {
 } 
 
 alias fcd='cd "$(find . -type d | fzf)"'
-alias fz=fzfCd
-alias c=cd
+alias fz='cd "$(find . -type d | fzf)"'
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
 
 alias cat=bat
 
