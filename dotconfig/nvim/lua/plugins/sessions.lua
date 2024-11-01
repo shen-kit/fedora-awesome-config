@@ -1,6 +1,6 @@
 return {
-  {
-    'rmagatti/auto-session',
-    lazy = false,
-  },
+  -- {
+  --   'rmagatti/auto-session',
+  --   lazy = false,
+  -- },
 }

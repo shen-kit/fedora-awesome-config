@@ -29,7 +29,7 @@ opt.pumheight      = 7
 -- [[ theme / appearance ]]
 opt.termguicolors  = true
 opt.linebreak      = true     -- only wrap after a space
-opt.textwidth      = 999      -- don't hard-wrap at 80 chars, override in ftplugin/<filetype>.lua for specific files
+opt.textwidth      = 9999     -- don't hard-wrap at 80 chars, override in ftplugin/<filetype>.lua for specific files
 opt.wrap           = true     -- whether to wrap at edges of screen
 opt.breakindent    = true     -- indent wrapped text to the same level as the first line
 opt.breakindentopt = "list:2" -- show the set symbol to denote a wrapped line
