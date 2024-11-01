@@ -60,8 +60,8 @@ map("x", "<leader>`", "c``<ESC>Pgvlolo", opts)
 map("n", "<leader>fd", ":find \\c*", nosilent)
 
 -- cycle through buffers
-map('n', '<S-H>', vim.cmd.bprevious, opts)
-map('n', '<S-L>', vim.cmd.bnext, opts)
+-- map('n', '<S-H>', vim.cmd.bprevious, opts)
+-- map('n', '<S-L>', vim.cmd.bnext, opts)
 
 -- close current buffer (ctrl+shift+D)
 -- move to previous buffer then delete the last buffer we were on to keep splits
@@ -105,8 +105,9 @@ map('n', '<C-l>', '<CMD>Oil --float<CR>', opts)
 
 -- telescope
 local telescope = require('telescope.builtin')
-map('n', '<leader>ff', telescope.find_files, opts)
-map('n', '<leader>fp', telescope.git_files, opts)
+map('n', '<leader>ff', telescope.git_files, opts)
+map('n', '<leader>fa', telescope.find_files, opts)
+map('n', '<leader>b', telescope.buffers, opts)
 map('n', '<leader>fg', function()
   telescope.grep_string({ search = vim.fn.input("Grep > ") })
 end, opts)
@@ -117,6 +118,8 @@ map('n', '<leader>j', function() require('harpoon.ui').nav_file(2) end, opts)
 map('n', '<leader>k', function() require('harpoon.ui').nav_file(3) end, opts)
 map('n', '<leader>l', function() require('harpoon.ui').nav_file(4) end, opts)
 map('n', '<leader>e', function() require('harpoon.ui').toggle_quick_menu() end, opts)
+map('n', '<S-H>', function() require("harpoon.ui").nav_prev() end, opts)
+map('n', '<S-L>', function() require("harpoon.ui").nav_next() end, opts)
 map('n', '<leader>a', function() require("harpoon.mark").add_file() end, opts)
 
 -- undotree
