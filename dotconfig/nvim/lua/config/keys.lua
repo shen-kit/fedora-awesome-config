@@ -60,8 +60,8 @@ map("x", "<leader>`", "c``<ESC>Pgvlolo", opts)
 map("n", "<leader>fd", ":find \\c*", nosilent)
 
 -- cycle through buffers
--- map('n', '<S-H>', vim.cmd.bprevious, opts)
--- map('n', '<S-L>', vim.cmd.bnext, opts)
+map('n', '<S-H>', vim.cmd.bprevious, opts)
+map('n', '<S-L>', vim.cmd.bnext, opts)
 
 -- close current buffer (ctrl+shift+D)
 -- move to previous buffer then delete the last buffer we were on to keep splits
@@ -117,9 +117,10 @@ map('n', '<leader>h', function() require('harpoon.ui').nav_file(1) end, opts)
 map('n', '<leader>j', function() require('harpoon.ui').nav_file(2) end, opts)
 map('n', '<leader>k', function() require('harpoon.ui').nav_file(3) end, opts)
 map('n', '<leader>l', function() require('harpoon.ui').nav_file(4) end, opts)
+map('n', '<leader>;', function() require('harpoon.ui').nav_file(5) end, opts)
 map('n', '<leader>e', function() require('harpoon.ui').toggle_quick_menu() end, opts)
-map('n', '<S-H>', function() require("harpoon.ui").nav_prev() end, opts)
-map('n', '<S-L>', function() require("harpoon.ui").nav_next() end, opts)
+-- map('n', '<S-H>', function() require("harpoon.ui").nav_prev() end, opts)
+-- map('n', '<S-L>', function() require("harpoon.ui").nav_next() end, opts)
 map('n', '<leader>a', function() require("harpoon.mark").add_file() end, opts)
 
 -- undotree
