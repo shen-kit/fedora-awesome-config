@@ -147,6 +147,9 @@ map('n', '<leader><leader>j', require('smart-splits').swap_buf_down, opts)
 map('n', '<leader><leader>k', require('smart-splits').swap_buf_up, opts)
 map('n', '<leader><leader>l', require('smart-splits').swap_buf_right, opts)
 
+-- no neck pain (centre buffer)
+map('n', '<leader>n', vim.cmd.NoNeckPain, opts)
+
 -- align
 map('x', 'ga', ':EasyAlign ', nosilent)
 map('n', 'ga', 'vip:EasyAlign ', nosilent)

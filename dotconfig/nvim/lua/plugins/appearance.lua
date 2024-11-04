@@ -28,4 +28,9 @@ return {
     version = '*'
   },
 
+  -- center buffer
+  {
+    "shortcuts/no-neck-pain.nvim",
+    version = "*"
+  },
 }
