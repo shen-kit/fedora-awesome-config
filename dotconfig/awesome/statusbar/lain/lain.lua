@@ -21,9 +21,6 @@ local gmc         = require("themes.gmc")
 local W           = {}
 clone_widget_set  = W -- object name
 
--- split module, to make each file shorter,
--- all must have same package name
-
 -- global for all splited
 markup            = lain.util.markup
 

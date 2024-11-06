@@ -6,5 +6,3 @@ awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("nm-applet") -- network manager
 awful.spawn.with_shell("~/.config/redshift/redshiftStart.sh")
 awful.spawn.with_shell("conky -c ~/.config/conky/conky.conf")
-
--- awful.spawn.with_shell("fcitx -d & disown")

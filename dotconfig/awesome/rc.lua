@@ -71,9 +71,7 @@ awful.rules.rules = main.rules(
 require("main.signals")
 
 -- Statusbar: Wibar
--- local statusbar = require("statusbar.default.statusbar")
 local statusbar = require("statusbar.lain.statusbar")
--- local statusbar = require("statusbar.arrow.statusbar")
 
 statusbar()
 
