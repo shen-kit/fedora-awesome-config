@@ -16,7 +16,9 @@ local lspconfig = require('lspconfig')
 -- setup lsp servers
 lspconfig.ts_ls.setup({})
 lspconfig.pyright.setup({})
-lspconfig.hls.setup({})
+lspconfig.hls.setup({
+  filetypes = { 'haskell', 'lhaskell', 'cabal' },
+})
 lspconfig.jdtls.setup({})
 lspconfig.clangd.setup({})
 lspconfig.lua_ls.setup({
