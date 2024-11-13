@@ -1,5 +1,6 @@
 # path
 # export PATH="/var/lib/flatpak/app/org.wezfurlong.wezterm/current/active/export/bin:$PATH"
+export PATH="/usr/bin/wezterm-gui:$PATH"
 
 # default text editor
 export EDITOR=nvim
