@@ -110,7 +110,7 @@ wezterm.on('update-right-status', function(win, _)
   win:set_right_status(wezterm.format({
     { Background = { Color = "#3ebd40" } },
     { Foreground = { Color = "#111111" } },
-    { Text = " " .. win:active_workspace() },
+    { Text = " " .. win:active_workspace() .. " " },
   }))
 end)
 
