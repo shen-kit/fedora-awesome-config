@@ -150,7 +150,7 @@ config.keys   = {
     action = act.SwitchToWorkspace {
       name = 'obsidian',
       spawn = {
-        args = { 'nvim', '/home/shenkit/gDrive/1-obsidian/Dashboard.md' },
+        args = { 'nvim', '/home/shenkit/gDrive/1_obsidian/Dashboard.md' },
       }
     }
   },

@@ -3,7 +3,7 @@
 -- ============================================================
 
 local g            = vim.g
-g.markdown_folding = 1
+-- g.markdown_folding = 1
 
 -- ============================================================
 --                       Local Options
@@ -45,24 +45,33 @@ opt.expandtab      = true
 opt.smartindent    = true
 
 -- [[ folding ]]
-opt.foldmethod     = 'indent'
+opt.foldmethod     = "expr"
+-- opt.foldexpr     = "nvim_treesitter#foldexpr()"
+opt.foldexpr       =
+"v:lnum >= line('$') || v:lnum == 0  ? '0'  :  indent(v:lnum+1) > indent(v:lnum)   ? 'a1' :  indent(v:lnum+1) < indent(v:lnum)   ? 's1' :  indent(v:lnum) == 0 ? '0' : '=' "
+opt.foldtext       =
+[[substitute(getline(v:foldstart),'\\t',repeat('\ ',&tabstop),'g').'...'.trim(getline(v:foldend)) . ' (' . (v:foldend - v:foldstart + 1) . ' lines)']]
+opt.fillchars      = "fold: "
+opt.foldnestmax    = 3
+opt.foldminlines   = 1
 opt.foldlevelstart = 99
 
+
 -- [[ search ]]
-opt.ignorecase     = true
-opt.smartcase      = true  -- case sensitive if search contains capitals
-opt.hlsearch       = false -- don't highlight all occurrences
-opt.incsearch      = true  -- incremental search (update while typing)
+opt.ignorecase = true
+opt.smartcase  = true  -- case sensitive if search contains capitals
+opt.hlsearch   = false -- don't highlight all occurrences
+opt.incsearch  = true  -- incremental search (update while typing)
 
 -- [[ splits ]]
-opt.splitright     = true -- split right instead of left by default
-opt.splitbelow     = true -- split down instead of up by default
+opt.splitright = true -- split right instead of left by default
+opt.splitbelow = true -- split down instead of up by default
 
 -- [[ sequences ]]
-opt.timeoutlen     = 500
+opt.timeoutlen = 500
 
 -- [[ misc ]]
-opt.updatetime     = 50
+opt.updatetime = 50
 opt.path:append '**'
 opt.mousescroll    = 'ver:1,hor:1' -- scroll one line at a time (smoother scrolling)
 opt.scroll         = 15            -- <C-D> / <C-U> scroll amount (lines)

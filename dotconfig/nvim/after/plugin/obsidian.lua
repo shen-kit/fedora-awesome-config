@@ -2,7 +2,7 @@ require("obsidian").setup({
   workspaces = {
     {
       name = "obsidian",
-      path = "~/gDrive/1-obsidian",
+      path = "~/gDrive/1_obsidian",
     },
   },
   new_notes_location = "current_dir",

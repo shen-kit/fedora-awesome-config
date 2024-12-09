@@ -4,8 +4,8 @@ return {
     version = "*", -- use latest release instead of latest commit
     lazy = true,
     event = {      -- only load obsidian.nvim for markdown files in my vault
-      "BufReadPre " .. vim.fn.expand "~" .. "/gDrive/1-obsidian/**.md",
-      "BufNewFile " .. vim.fn.expand "~" .. "/gDrive/1-obsidian/**.md",
+      "BufReadPre /home/shenkit/gDrive/1_obsidian/**",
+      "BufNewFile /home/shenkit/gDrive/1_obsidian/**",
     },
     dependencies = {
       "nvim-lua/plenary.nvim", -- required
