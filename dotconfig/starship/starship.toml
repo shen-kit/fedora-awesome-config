@@ -8,10 +8,11 @@ $git_state\
 $git_status\
 [ ](fg:#4B566B)\
 $cmd_duration\
-$line_break\
 $python\
 $character
 """
+# $line_break\ (before `$python`)
+
 palette = "sk"
 add_newline = false
 command_timeout = 5000
@@ -23,7 +24,7 @@ style = "bg:#2C313D fg:grey"
 format = '[ $time ]($style)'
 
 [directory]
-style = "bg:#384152 fg:red"
+style = "bg:#384152 fg:orange"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncate_to_repo = false
@@ -49,14 +50,15 @@ style = "fg:grey"
 format = '[(\($virtualenv\) )]($style)'
 
 [character]
-success_symbol = '[\$](white)'
-error_symbol = '[\$](white)' # "[✗](red)"
+success_symbol = '[❯](orange)'
+error_symbol   = '[❯](orange)' # "[✗](red)"
 
 # ========== Colours ========== 
 
 [palettes.sk]
 blue = '#5FC8ED'
-red = '#F29E54'
+orange = '#F29E54'
+red = '#FF0000'
 green = '#85ed13'
 grey = '#cccccc'
 
