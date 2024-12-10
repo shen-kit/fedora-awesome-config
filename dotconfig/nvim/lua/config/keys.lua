@@ -119,15 +119,20 @@ map('n', '<leader>k', function() require('harpoon.ui').nav_file(3) end, opts)
 map('n', '<leader>l', function() require('harpoon.ui').nav_file(4) end, opts)
 map('n', '<leader>;', function() require('harpoon.ui').nav_file(5) end, opts)
 map('n', '<leader>e', function() require('harpoon.ui').toggle_quick_menu() end, opts)
--- map('n', '<S-H>', function() require("harpoon.ui").nav_prev() end, opts)
--- map('n', '<S-L>', function() require("harpoon.ui").nav_next() end, opts)
 map('n', '<leader>a', function() require("harpoon.mark").add_file() end, opts)
 
 -- undotree
 map('n', '<leader>u', vim.cmd.UndotreeToggle, opts)
 
--- auto-session
-map('n', '<leader>ss', ':SessionSearch<CR>', opts)
+-- ufo (folds)
+map('n', 'zR', require('ufo').openAllFolds, { desc = 'Open all folds' })
+map('n', 'zM', require('ufo').closeAllFolds, { desc = 'Close all folds' })
+map('n', 'zk', function ()
+  local winid = require('ufo').peekFoldedLinesUnderCursor()
+  if not winid then
+    vim.lsp.buf.hover()
+  end
+end, { desc = 'Peek fold' })
 
 -- smart splits
 -- moving between splits
