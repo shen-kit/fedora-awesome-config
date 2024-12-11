@@ -9,6 +9,7 @@ theme = {}
 
 dofile(theme_path .. "elements.lua")
 dofile(theme_path .. "icons.lua")
+dofile(theme_path .. "notifications.lua")
 
 theme.wallpaper = theme_path .. "background.jpg"
 
