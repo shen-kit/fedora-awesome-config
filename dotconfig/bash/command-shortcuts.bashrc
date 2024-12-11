@@ -9,8 +9,9 @@ alias fv='nvim "$(fzf)"'
 
 # ========== FILES / NAVIGATION ==========
 
-# vifm
+# file browsers
 alias fm=vifm
+alias y=yazi
 
 # call ls after zoxide, unless going back to home dir
 function cd() {
