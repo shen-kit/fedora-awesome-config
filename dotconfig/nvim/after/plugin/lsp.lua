@@ -14,14 +14,14 @@ require("conform").setup({
 local lspconfig = require('lspconfig')
 
 -- setup lsp servers
-lspconfig.ts_ls.setup({})
-lspconfig.pyright.setup({})
+lspconfig.ts_ls.setup({})   -- typescript
+lspconfig.pyright.setup({}) -- python
 lspconfig.hls.setup({
   filetypes = { 'haskell', 'lhaskell', 'cabal' },
 })
-lspconfig.jdtls.setup({})
-lspconfig.clangd.setup({})
-lspconfig.lua_ls.setup({
+lspconfig.jdtls.setup({})  -- java
+lspconfig.clangd.setup({}) -- c / c++
+lspconfig.lua_ls.setup({   -- lua
   on_init = function(client)
     local path = client.workspace_folders[1].name
     if vim.loop.fs_stat(path .. '/.luarc.json') or vim.loop.fs_stat(path .. '/.luarc.jsonc') then

@@ -21,6 +21,7 @@ cmp.setup({
     { name = 'lazydev' },
     { name = 'path' },
     { name = 'luasnip' },
+    { name = 'render-markdown' },
     { name = 'nvim_lsp' },
     { name = 'buffer' },
   }),
