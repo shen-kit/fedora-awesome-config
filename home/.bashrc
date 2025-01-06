@@ -3,9 +3,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# attach to tmux
-# ~/.config/tmux/tmux-attach.sh
-
 # load custom aliases and functions from ~/.bashrc.d
 if [ -d ~/.config/bash ]; then 
 	for rc in ~/.config/bash/*; do
@@ -20,7 +17,6 @@ unset rc
 eval "$(starship init bash)"
 
 eval "$(zoxide init bash)"
-alias z=cd
 
 alias luamake="/home/shenkit/lua-language-server/3rd/luamake/luamake"
 [ -f "/home/shenkit/.ghcup/env" ] && . "/home/shenkit/.ghcup/env" # ghcup-env for Haskell
