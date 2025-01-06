@@ -26,7 +26,7 @@ map("i", "<C-b>", "**", opts)
 map("i", "<C-i>", "*", opts)
 
 -- auto numbered list and checkboxes
-map({ "n", "i" }, "<C-3>", "<CMD>ObsidianToggleCheckbox<CR>", opts)
+map({ "n", "i" }, "<C-3>", "<CMD>ToggleCheckbox<CR>", opts)
 map("x", "<C-3>", ":norm @c<CR>gv", opts) -- requires @c to be bound to :ObsidianToggleCheckbox
 
 -- obsidian
