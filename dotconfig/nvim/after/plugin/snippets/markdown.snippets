@@ -13,14 +13,6 @@ snippet >=
 snippet <<
 	« $0
 
-snippet Tdaily-note
-	---
-	workout:
-	- $0
-	---
-  [[`strftime("%Y-%m-%d", localtime() - 24*3600)`]] (prev)
-  [[`strftime("%Y-%m-%d", localtime() + 24*3600)`]] (next)
-
 snippet Tzettel
 	---
 	created: `strftime("%Y-%m-%d, %H:%M")`
@@ -30,7 +22,7 @@ snippet Tzettel
 	source: ${3:links}
 	***
 
-	$4
+ $4
 
 snippet Tworkout
   ---
@@ -68,6 +60,6 @@ snippet Tworkout
     file.link as date,
     workout
   FROM "areas/journal/daily"
-  WHERE file.day.year = 2024 AND (file.day.month = 7 AND file.day.day >= 1) OR (file.day.month = 7 AND file.day.day <= 18)
+  WHERE file.day.year = 2025 AND (file.day.month = 7 AND file.day.day >= 1) OR (file.day.month = 7 AND file.day.day <= 18)
   SORT file.name ASC
   \`\`\`
