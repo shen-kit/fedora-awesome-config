@@ -51,15 +51,3 @@ snippet Tworkout
   | #   | sets      | reps  | exercise                                    | notes               |
   | :-: | :-------: | :---: | ------------------------------------------- | ------------------- |
 
-  ***
-
-  # Tracker
-
-  \`\`\`dataview
-  TABLE WITHOUT ID
-    file.link as date,
-    workout
-  FROM "areas/journal/daily"
-  WHERE file.day.year = 2025 AND (file.day.month = 7 AND file.day.day >= 1) OR (file.day.month = 7 AND file.day.day <= 18)
-  SORT file.name ASC
-  \`\`\`
