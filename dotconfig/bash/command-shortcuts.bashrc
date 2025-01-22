@@ -71,7 +71,7 @@ alias connect-bt-headphones="bluetoothctl connect 2C:FD:B3:8C:50:89"
 # ========== CODING / SCRIPTS ==========
 
 alias py="python"                               # python
-alias pwds="py ~/comp-sci/projects/cli-password-manager/password-manager.py"
+alias pwds="py ~/compsci/projects/cli-password-manager/password-manager.py"
 
 # GIT
 
