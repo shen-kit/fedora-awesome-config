@@ -1,10 +1,12 @@
-vim.g.mapleader = ' '
+-- ========== GLOBAL SETTINGS ==========
 
--- vim.bullets settings
-vim.g.bullets_outline_levels = { 'num', 'std-' } -- if indenting after a number, use unordered list
-vim.g.bullets_nested_checkboxes = 0              -- don't toggle parents to 'partial' state when child checked
-vim.g.bullets_set_mappings = 0                   -- disable default mappings
-vim.g.bullets_custom_mappings = {
+local g                     = vim.g
+g.mapleader                 = ' '
+
+g.bullets_outline_levels    = { 'num', 'std-' } -- if indenting after a number, use unordered list
+g.bullets_nested_checkboxes = 0                 -- don't toggle parents to 'partial' state when child checked
+g.bullets_set_mappings      = 0                 -- disable default mappings
+g.bullets_custom_mappings   = {
   -- list continuation
   { 'imap', '<CR>',  '<Plug>(bullets-newline)' },
   { 'nmap', 'o',     '<Plug>(bullets-newline)' },
@@ -21,11 +23,11 @@ vim.g.bullets_custom_mappings = {
   { 'vmap', '<C-2>', '<Plug>(bullets-renumber)gv' },
 }
 
--- vim-table-mode settings
-vim.g.table_mode_tableize_map = '<leader><leader>t'
+-- ========== LOAD CONFIG ==========
 
 require("config.autocmds")
 require("config.opts")
 require("config.lazy")
 require("config.cmds")
 require("config.keys")
+

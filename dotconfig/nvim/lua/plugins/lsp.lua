@@ -4,38 +4,7 @@ return {
   { "hrsh7th/cmp-nvim-lsp" },
 
   -- formatter
-  {
-    'stevearc/conform.nvim',
-  },
-
-  -- debugger
-  { 'mfussenegger/nvim-dap' },
-  {
-    'rcarriga/nvim-dap-ui',
-    dependencies = {
-      'mfussenegger/nvim-dap',
-      'nvim-neotest/nvim-nio',
-    },
-  },
-  {
-    'mfussenegger/nvim-dap-python',
-    ft = 'python',
-    dependencies = {
-      'mfussenegger/nvim-dap',
-      'rcarriga/nvim-dap-ui',
-    },
-    config = function() require('dap-python').setup('python') end,
-  },
-
-  {
-    "folke/lazydev.nvim",
-    ft = "lua",
-    opts = {
-      library = {
-        { path = "luvit-meta/library", words = { "vim%.uv" } },
-      },
-    },
-  },
+  { 'stevearc/conform.nvim' },
 
   {
     "folke/trouble.nvim",
@@ -71,21 +40,6 @@ return {
         "<cmd>Trouble symbols toggle focus=false<cr>",
         desc = "Symbols (Trouble)",
       },
-      {
-        "<leader>tl",
-        "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
-        desc = "LSP Definitions / references / ... (Trouble)",
-      },
-      {
-        "<leader>tQ",
-        "<cmd>Trouble qflist toggle<cr>",
-        desc = "Quickfix List (Trouble)",
-      },
-      -- {
-      --   "<leader>xL",
-      --   "<cmd>Trouble loclist toggle<cr>",
-      --   desc = "Location List (Trouble)",
-      -- },
     },
   },
 }

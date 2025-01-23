@@ -1,12 +1,10 @@
 return {
-
-  {
-    "catppuccin/nvim",
-    lazy = false,
-    priority = 1000,
-    name = "catppuccin",
-    config = function() vim.cmd("colorscheme catppuccin") end,
-  },
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		config = function() vim.cmd("colorscheme catppuccin") end
+	},
 
   {
     "nvim-lualine/lualine.nvim",
@@ -15,22 +13,14 @@ return {
   },
 
   { "nvim-treesitter/nvim-treesitter" },
-
-  {
-    "folke/ts-comments.nvim",
-    event = "VeryLazy",
-    opts = {},
-  },
-
+  
   -- highlight the word under the cursor
   {
     'echasnovski/mini.cursorword',
     version = '*'
   },
 
-  -- center buffer
-  {
-    "shortcuts/no-neck-pain.nvim",
-    version = "*"
-  },
+  -- centre buffer
+  { "shortcuts/no-neck-pain.nvim" },
 }
+

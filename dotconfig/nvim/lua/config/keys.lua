@@ -17,7 +17,7 @@ map('i', '<C-CR>', '<C-o>o', opts)
 map('n', '<C-S-CR>', 'O<ESC>', opts)
 map('n', '<C-CR>', 'o<ESC>', opts)
 
--- move lines
+-- move lines up/down
 map('x', '<M-C-j>', ":m '>+1<CR>gv=gv", opts)
 map('x', '<M-C-k>', ":m '<-2<CR>gv=gv", opts)
 map('n', '<M-C-k>', ":m -2<CR>", opts)
@@ -25,57 +25,28 @@ map('n', '<M-C-j>', ":m +1<CR>", opts)
 map('i', '<M-C-k>', "<ESC>:m -2<CR>a", opts)
 map('i', '<M-C-j>', "<ESC>:m +1<CR>a", opts)
 
--- indenting
+-- indents
 map('x', '<', '<gv', opts)
 map('x', '>', '>gv', opts)
 map('n', '<', '<<', opts)
 map('n', '>', '>>', opts)
 map('i', '<S-Tab>', '<C-D>', opts)
 
--- commenting
-map('i', '<C-/>', "<ESC>my:norm gcc<CR>`ya", { remap = true })
-map('n', '<C-/>', 'mygcc `y', { remap = true })
-map('x', '<C-/>', "gcgv", { remap = true })
-
--- keep cursor in place
-map('n', 'J', 'mzJ`z', opts)
-
 -- search and replace the word under the cursor
 map('n', '<leader>r', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], nosilent)
 
--- surround text with parentheses/quotes
-map('x', '<leader>(', 'c()<ESC>Pgvlolo', opts)
-map('x', '<leader>[', 'c[]<ESC>Pgvlolo', opts)
-map('x', '<leader>{', 'c{}<ESC>Pgvlolo', opts)
-map('x', '<leader><', 'c<><ESC>Pgvlolo', opts)
-map('x', '<leader>\'', 'c\'\'<ESC>Pgvlolo', opts)
-map('x', '<leader>"', 'c""<ESC>Pgvlolo', opts)
-map("x", "<leader>`", "c``<ESC>Pgvlolo", opts)
+-- in-place cursor
+map('i', '<C-/>', "<ESC>my:norm gcc<CR>`ya", { remap = true })
+map('n', '<C-/>', 'mygcc `y', { remap = true })
+map('n', 'J', 'mzJ`z', opts)
 
 -- ============================================================
 --                    Working With Files
 -- ============================================================
 
--- find file
-map("n", "<leader>fd", ":find \\c*", nosilent)
-
--- cycle through buffers
-map('n', '<S-H>', vim.cmd.bprevious, opts)
-map('n', '<S-L>', vim.cmd.bnext, opts)
-
--- close current buffer (ctrl+shift+D)
--- move to previous buffer then delete the last buffer we were on to keep splits
-map('n', '<C-S-D>', ':w<bar>bp<bar>sp<bar>bn<bar>bd<CR>', opts)
--- close all buffers except current (ctrl+shift+B)
-map('n', '<C-S-B>', ':%bd|e#<CR>:bnext<CR>:bdelete<CR>', opts)
-
 -- save / exit
 map({ 'i', 'n', 'x' }, '<C-s>', '<CMD>w<CR>', nosilent)
 map('n', '<C-S-Q>', '<CMD>wqa<CR>', opts)
-
--- switch tabs
-map({ 'n', 'i' }, '<C-TAB>', vim.cmd.tabnext, opts)
-map({ 'n', 'i' }, '<C-S-TAB>', vim.cmd.tabprevious, opts)
 
 -- yank keeping cursor in-place
 map('x', 'y', "ygv<ESC>", opts)
@@ -96,12 +67,15 @@ map('i', '<S-ScrollWheelUp>', '<C-x><C-u>', opts)
 --                          Plugins
 -- ============================================================
 
+-- mini.files
+map({ 'i', 'n' }, '<C-S-L>', '<CMD>lua MiniFiles.open()<CR>', opts)
+
+-- mini.bufremove
+map('n', '<C-S-D>', '<CMD>lua MiniBufremove.unshow()<CR>', opts)
+
 -- nvim tree
 map({ 'i', 'n' }, '<C-S-P>', vim.cmd.NvimTreeToggle, opts)
 map('n', '<leader>fc', vim.cmd.NvimTreeFindFile, opts)
-
--- oil
-map('n', '<C-l>', '<CMD>Oil --float<CR>', opts)
 
 -- telescope
 local telescope = require('telescope.builtin')
@@ -111,6 +85,9 @@ map('n', '<leader>b', telescope.buffers, opts)
 map('n', '<leader>fg', function()
   telescope.grep_string({ search = vim.fn.input("Grep > ") })
 end, opts)
+
+-- no neck pain (centre buffer)
+map('n', '<leader>cc', '<CMD>NoNeckPain<CR>', opts)
 
 -- harpoon
 map('n', '<leader>h', function() require('harpoon.ui').nav_file(1) end, opts)
@@ -123,16 +100,6 @@ map('n', '<leader>a', function() require("harpoon.mark").add_file() end, opts)
 
 -- undotree
 map('n', '<leader>u', vim.cmd.UndotreeToggle, opts)
-
--- ufo (folds)
-map('n', 'zR', require('ufo').openAllFolds, { desc = 'Open all folds' })
-map('n', 'zM', require('ufo').closeAllFolds, { desc = 'Close all folds' })
-map('n', 'zk', function ()
-  local winid = require('ufo').peekFoldedLinesUnderCursor()
-  if not winid then
-    vim.lsp.buf.hover()
-  end
-end, { desc = 'Peek fold' })
 
 -- smart splits
 -- moving between splits
@@ -152,13 +119,12 @@ map('n', '<leader><leader>j', require('smart-splits').swap_buf_down, opts)
 map('n', '<leader><leader>k', require('smart-splits').swap_buf_up, opts)
 map('n', '<leader><leader>l', require('smart-splits').swap_buf_right, opts)
 
--- no neck pain (centre buffer)
-map('n', '<leader>n', vim.cmd.NoNeckPain, opts)
-
--- align
-map('x', 'ga', ':EasyAlign ', nosilent)
-map('n', 'ga', 'vip:EasyAlign ', nosilent)
-
--- debugging
-map('n', '<leader>db', '<CMD>DapToggleBreakpoint<CR>', opts)
-map('n', '<leader>dr', '<CMD>DapContinue<CR>', opts)
+-- ufo (folds)
+map('n', 'zR', require('ufo').openAllFolds, { desc = 'Open all folds' })
+map('n', 'zM', require('ufo').closeAllFolds, { desc = 'Close all folds' })
+map('n', 'zk', function()
+  local winid = require('ufo').peekFoldedLinesUnderCursor()
+  if not winid then
+    vim.lsp.buf.hover()
+  end
+end, { desc = 'Peek fold' })

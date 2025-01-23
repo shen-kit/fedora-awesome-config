@@ -2,19 +2,10 @@
 vim.api.nvim_create_user_command("DiagnosticToggle", function()
   local config = vim.diagnostic.config
   local toSet = not config().virtual_text
-  config {
-    virtual_text = toSet,
-    -- signs = toSet,
-    -- underline = toSet,
-  }
+  config { virtual_text = toSet }
 end, { desc = "toggle diagnostics virtual text" })
 
--- vim.api.nvim_create_user_command("DiagnosticToggleUnderline", function()
--- vim.diagnostic.config {
--- underline = not vim.diagnostic.config().underline,
--- }
--- end, { desc = "toggle diagnostics underline" })
-
+-- format buffer
 vim.api.nvim_create_user_command("Format", function(args)
   local range = nil
   if args.count ~= -1 then
@@ -27,10 +18,10 @@ vim.api.nvim_create_user_command("Format", function(args)
   require("conform").format({ async = true, lsp_format = "fallback", range = range })
 end, { range = true })
 
+-- enable/disable autocomplete
 vim.api.nvim_create_user_command("AutocompleteDisable", function()
   require('cmp').setup({ enabled = false })
 end, { desc = "toggle nvim-cmp" })
-
 vim.api.nvim_create_user_command("AutocompleteEnable", function()
   require('cmp').setup({ enabled = true })
 end, { desc = "toggle nvim-cmp" })

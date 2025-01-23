@@ -46,7 +46,6 @@ opt.smartindent    = true
 
 -- [[ folding ]]
 opt.foldmethod     = "expr"
--- opt.foldexpr     = "nvim_treesitter#foldexpr()"
 opt.foldexpr       =
 "v:lnum >= line('$') || v:lnum == 0  ? '0'  :  indent(v:lnum+1) > indent(v:lnum)   ? 'a1' :  indent(v:lnum+1) < indent(v:lnum)   ? 's1' :  indent(v:lnum) == 0 ? '0' : '=' "
 opt.foldtext       =
@@ -56,11 +55,10 @@ opt.foldnestmax    = 3
 opt.foldminlines   = 1
 opt.foldlevelstart = 99
 
-
 -- [[ search ]]
 opt.ignorecase = true
 opt.smartcase  = true  -- case sensitive if search contains capitals
-opt.hlsearch   = false -- don't highlight all occurrences
+opt.hlsearch   = false -- highlight all occurrences?
 opt.incsearch  = true  -- incremental search (update while typing)
 
 -- [[ splits ]]
@@ -78,3 +76,4 @@ opt.scroll         = 15            -- <C-D> / <C-U> scroll amount (lines)
 
 -- [[ sessions ]]
 opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+

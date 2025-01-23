@@ -1,4 +1,4 @@
-require("harpoon").setup()
+require('harpoon').setup()
 
 require("nvim-tree").setup({
   view = { width = 40 },
@@ -9,6 +9,7 @@ require("nvim-tree").setup({
     },
   },
   hijack_directories = {
-    enable = true, -- set to false for auto-session to load a session instantly when nvim is started with a directory argument
+    enable = true,
   },
 })
+

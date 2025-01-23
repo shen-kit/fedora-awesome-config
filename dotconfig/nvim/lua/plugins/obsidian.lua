@@ -12,10 +12,6 @@ return {
       "hrsh7th/nvim-cmp",      -- note reference completion
     },
   },
-  -- {
-  --   "lukas-reineke/headlines.nvim",
-  --   dependencies = "nvim-treesitter/nvim-treesitter",
-  -- },
   {
     'MeanderingProgrammer/render-markdown.nvim',
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
@@ -24,3 +20,4 @@ return {
   { "dhruvasagar/vim-table-mode" },
   { "bullets-vim/bullets.vim" },
 }
+

@@ -1,14 +1,11 @@
-local cmp = require('cmp')
-local select_opts = { behavior = cmp.SelectBehavior.Select }
-
-local ls = require('luasnip')
-
 -- friendly snippets
-require("luasnip.loaders.from_vscode").lazy_load({
-  exclude = { "markdown", "all" },
-})
+require("luasnip.loaders.from_vscode").lazy_load({ exclude = { "markdown", "all" } })
 -- custom snippets
 require("luasnip.loaders.from_snipmate").lazy_load({ paths = "./after/plugin/snippets" })
+
+local cmp = require('cmp')
+local select_opts = { behavior = cmp.SelectBehavior.Select }
+local ls = require('luasnip')
 
 -- completion setup
 cmp.setup({
@@ -18,10 +15,8 @@ cmp.setup({
     end
   },
   sources = cmp.config.sources({
-    { name = 'lazydev' },
     { name = 'path' },
     { name = 'luasnip' },
-    { name = 'render-markdown' },
     { name = 'nvim_lsp' },
     { name = 'buffer' },
   }),
@@ -67,13 +62,14 @@ cmp.setup({
     fields = { 'menu', 'abbr', 'kind' },
     format = function(entry, item)
       local menu_icon = {
-        nvim_lsp = '󰅩', -- λ
-        luasnip  = '󰘖', -- ⋗
-        buffer   = '', -- 
-        path     = '', -- 
+        nvim_lsp = '󰅩',
+        luasnip  = '󰘖',
+        buffer   = '',
+        path     = '',
       }
       item.menu = menu_icon[entry.source.name]
       return item
     end,
   },
 })
+

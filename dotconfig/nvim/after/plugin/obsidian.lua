@@ -13,24 +13,22 @@ require("obsidian").setup({
       opts = { noremap = false, expr = true, buffer = true },
     },
   },
-  note_path_func = function(spec)
-    return (spec.dir / spec.title):with_suffix(".md")
-  end,
+  note_path_func = function(spec) return (spec.dir / spec.title):with_suffix(".md") end,
   completion = {
     nvim_cmp = true,
-    min_chars = 2, -- trigger completion after typing 2 characters
+    min_chars = 2
   },
   picker = { name = "telescope.nvim" },
   -- what to do if :ObsidianOpenLink called on a non-file link (e.g. URL)
   follow_url_func = function(url) vim.fn.jobstart({ "xdg-open", url }) end,
-  ui = { enable = false, },
+  ui = { enable = false },
 })
 
 require('render-markdown').setup({
   render_modes = { 'n', 'c', 't', 'v', 'V', 'i', 'x', '\22' },
   file_types = { 'markdown' },
   heading = {
-    width = {'full', 'block'},
+    width = { 'full', 'block' },
     position = 'inline',
     min_width = { 100, 70, 40, 30, 30, 30 },
     right_pad = 2,

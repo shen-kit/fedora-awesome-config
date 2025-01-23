@@ -31,3 +31,4 @@ require('ufo').setup({
     return newVirtText
   end
 })
+

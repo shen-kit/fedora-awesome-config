@@ -14,23 +14,6 @@ return {
   },
   { "saadparwaiz1/cmp_luasnip" },
 
-  -- autopairs
-  {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = true,
-  },
-
-  -- comments
-  {
-    "folke/ts-comments.nvim",
-    opts = {},
-    event = "VeryLazy",
-    enabled = vim.fn.has("nvim-0.10.0") == 1,
-  },
-
-  -- align
-  { "junegunn/vim-easy-align" },
-
+  -- auto-add closing tags in javascript/typescript
   { "windwp/nvim-ts-autotag" },
 }
