@@ -169,6 +169,7 @@ config.keys   = {
   { mods = 'CTRL|SHIFT', key = 'p',   action = act.DisableDefaultAssignment },
   { mods = 'CTRL',       key = 'Tab', action = act.DisableDefaultAssignment },
   { mods = 'CTRL|SHIFT', key = 'Tab', action = act.DisableDefaultAssignment },
+  { mods = 'CTRL|SHIFT', key = 'l',   action = act.DisableDefaultAssignment },
 }
 
 return config
