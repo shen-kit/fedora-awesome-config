@@ -3,7 +3,7 @@
 -- }}}
 
 local _M = {
-  terminal        = "wezterm",
+  terminal        = "wezterm start --always-new-process",
   browserPersonal = "brave-browser --profile-directory='Default'",
   browserUni      = "brave-browser --profile-directory='Profile 1'",
   browserWork     = "brave-browser --profile-directory='Profile 2'",
