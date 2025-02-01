@@ -71,7 +71,7 @@ map('i', '<S-ScrollWheelUp>', '<C-x><C-u>', opts)
 map({ 'i', 'n' }, '<C-S-L>', '<CMD>lua MiniFiles.open()<CR>', opts)
 
 -- mini.bufremove
-map('n', '<C-S-D>', '<CMD>lua MiniBufremove.unshow()<CR>', opts)
+map('n', '<C-S-D>', '<CMD>lua MiniBufremove.delete()<CR>', opts)
 
 -- nvim tree
 map({ 'i', 'n' }, '<C-S-P>', vim.cmd.NvimTreeToggle, opts)
