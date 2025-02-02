@@ -5,6 +5,7 @@ lspconfig.ts_ls.setup({})                                               -- types
 lspconfig.pyright.setup({})                                             -- python
 lspconfig.jdtls.setup({})                                               -- java
 lspconfig.clangd.setup({})                                              -- C / C++
+lspconfig.gopls.setup({})                                               -- golang
 lspconfig.hls.setup({ filetypes = { 'haskell', 'lhaskell', 'cabal' } }) -- haskell
 lspconfig.lua_ls.setup({                                                -- lua
   on_init = function(client)

@@ -16,4 +16,10 @@ then
     PATH="$HOME/.local/bin/jdtls/bin/:$PATH"
 fi
 
+# go
+if ! [[ "$PATH" =~ "/usr/local/go/bin:$HOME/go/bin:" ]]
+then
+    PATH="/usr/local/go/bin:$HOME/go/bin:$PATH"
+fi
+
 export PATH

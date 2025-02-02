@@ -47,7 +47,8 @@ alias tree="eza -T"
 alias ii="mimeopen -n"
 alias fii='mimeopen -n "$(find . -type f | fzf)"'
 alias mkdir="mkdir -pv"                         # create parent directories + verbose
-alias rm="trash"                              # use trash-cli, if fail then use default rm
+function mkcd () { mkdir -pv $1; cd $1; }       # make + enter directory
+alias rm="trash"                                # use trash-cli, if fail then use default rm
 
 alias cls=clear                                 # clear terminal screen
 
