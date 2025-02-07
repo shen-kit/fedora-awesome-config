@@ -48,6 +48,9 @@ map('n', 'J', 'mzJ`z', opts)
 map({ 'i', 'n', 'x' }, '<C-s>', '<CMD>w<CR>', nosilent)
 map('n', '<C-S-Q>', '<CMD>wqa<CR>', opts)
 
+-- alternate buffer
+map('n', ',,', '<C-^>', opts)
+
 -- yank keeping cursor in-place
 map('x', 'y', "ygv<ESC>", opts)
 map('x', 'Y', '"+ygv<ESC>', opts) -- to system clipboard
