@@ -28,13 +28,14 @@ opt.pumheight      = 7
 
 -- [[ theme / appearance ]]
 opt.termguicolors  = true
-opt.linebreak      = true     -- only wrap after a space
-opt.textwidth      = 9999     -- don't hard-wrap at 80 chars, override in ftplugin/<filetype>.lua for specific files
-opt.wrap           = true     -- whether to wrap at edges of screen
-opt.breakindent    = true     -- indent wrapped text to the same level as the first line
-opt.breakindentopt = "list:2" -- show the set symbol to denote a wrapped line
-opt.showtabline    = 2        -- always show
-opt.conceallevel   = 0        -- show characters as they are
+opt.linebreak      = true -- only wrap after a space
+opt.textwidth      = 9999 -- don't hard-wrap at 80 chars, override in ftplugin/<filetype>.lua for specific files
+opt.wrap           = true -- whether to wrap at edges of screen
+opt.breakindent    = true -- indent wrapped text to the same level as the first line
+opt.breakindentopt = "sbr"
+opt.showbreak      = "\\ ↪"
+opt.showtabline    = 2 -- always show
+opt.conceallevel   = 0 -- show characters as they are
 vim.diagnostic.config({ virtual_text = false, signs = true, underline = false })
 
 -- [[ indents ]]
@@ -56,24 +57,22 @@ opt.foldminlines   = 1
 opt.foldlevelstart = 99
 
 -- [[ search ]]
-opt.ignorecase = true
-opt.smartcase  = true  -- case sensitive if search contains capitals
-opt.hlsearch   = false -- highlight all occurrences?
-opt.incsearch  = true  -- incremental search (update while typing)
+opt.ignorecase     = true
+opt.smartcase      = true  -- case sensitive if search contains capitals
+opt.hlsearch       = false -- highlight all occurrences?
+opt.incsearch      = true  -- incremental search (update while typing)
 
 -- [[ splits ]]
-opt.splitright = true -- split right instead of left by default
-opt.splitbelow = true -- split down instead of up by default
+opt.splitright     = true -- split right instead of left by default
+opt.splitbelow     = true -- split down instead of up by default
 
 -- [[ sequences ]]
-opt.timeoutlen = 500
+opt.timeoutlen     = 500
 
 -- [[ misc ]]
-opt.updatetime = 50
+opt.updatetime     = 50
 opt.path:append '**'
 opt.mousescroll    = 'ver:1,hor:1' -- scroll one line at a time (smoother scrolling)
-opt.scroll         = 15            -- <C-D> / <C-U> scroll amount (lines)
 
 -- [[ sessions ]]
 opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
-

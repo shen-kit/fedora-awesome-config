@@ -1,9 +1,11 @@
 -- ==========  OPTIONS ==========
 
+vim.opt.breakindentopt = "list:2" -- wrap to same indentation as bullet lists
+
 -- ==========  KEYBINDS ==========
 
-local map                       = vim.keymap.set
-local opts                      = { noremap = true, silent = true }
+local map              = vim.keymap.set
+local opts             = { noremap = true, silent = true }
 
 -- bold text
 map("x", "<C-b>", "c****<ESC>hPgvllollo", opts)

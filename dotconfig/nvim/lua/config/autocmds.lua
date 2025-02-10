@@ -60,3 +60,10 @@ create_au({ "BufNewFile", "BufRead" }, {
   command = "set filetype=sh",
   group = my_group,
 })
+
+-- set scroll amount
+create_au({ "BufReadPost" }, {
+  desc = "Reduce <C-D> and <C-U> to scroll 15 lines",
+  command = "set scroll=15",
+  group = my_group
+})
