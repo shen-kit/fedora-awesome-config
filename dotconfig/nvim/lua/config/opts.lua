@@ -28,14 +28,13 @@ opt.pumheight      = 7
 
 -- [[ theme / appearance ]]
 opt.termguicolors  = true
-opt.linebreak      = true -- only wrap after a space
-opt.textwidth      = 9999 -- don't hard-wrap at 80 chars, override in ftplugin/<filetype>.lua for specific files
-opt.wrap           = true -- whether to wrap at edges of screen
-opt.breakindent    = true -- indent wrapped text to the same level as the first line
-opt.breakindentopt = "sbr"
-opt.showbreak      = "\\ ↪"
-opt.showtabline    = 2 -- always show
-opt.conceallevel   = 0 -- show characters as they are
+opt.linebreak      = true      -- only wrap after a space
+opt.textwidth      = 9999      -- don't hard-wrap at 80 chars, override in ftplugin/<filetype>.lua for specific files
+opt.wrap           = true      -- whether to wrap at edges of screen
+opt.breakindent    = true      -- indent wrapped text to the same level as the first line
+opt.breakindentopt = "shift:2" -- indent 2 spaces in from the start of the line
+opt.showtabline    = 2         -- always show
+opt.conceallevel   = 0         -- show characters as they are
 vim.diagnostic.config({ virtual_text = false, signs = true, underline = false })
 
 -- [[ indents ]]
