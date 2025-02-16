@@ -40,6 +40,10 @@ map('i', '<C-/>', "<ESC>my:norm gcc<CR>`ya", { remap = true })
 map('n', '<C-/>', 'mygcc `y', { remap = true })
 map('n', 'J', 'mzJ`z', opts)
 
+-- reduce scroll amount
+map('n', '<C-u>', '15<C-u>', opts)
+map('n', '<C-d>', '15<C-d>', opts)
+
 -- ============================================================
 --                    Working With Files
 -- ============================================================
@@ -49,7 +53,7 @@ map({ 'i', 'n', 'x' }, '<C-s>', '<CMD>w<CR>', nosilent)
 map('n', '<C-S-Q>', '<CMD>wqa<CR>', opts)
 
 -- alternate buffer
-map('n', ',,', '<C-^>', opts)
+map('n', '<leader><leader>', '<C-^>', opts)
 
 -- yank keeping cursor in-place
 map('x', 'y', "ygv<ESC>", opts)
@@ -98,6 +102,7 @@ map('n', '<leader>j', function() require('harpoon.ui').nav_file(2) end, opts)
 map('n', '<leader>k', function() require('harpoon.ui').nav_file(3) end, opts)
 map('n', '<leader>l', function() require('harpoon.ui').nav_file(4) end, opts)
 map('n', '<leader>;', function() require('harpoon.ui').nav_file(5) end, opts)
+map('n', '<leader>\'', function() require('harpoon.ui').nav_file(6) end, opts)
 map('n', '<leader>e', function() require('harpoon.ui').toggle_quick_menu() end, opts)
 map('n', '<leader>a', function() require("harpoon.mark").add_file() end, opts)
 
@@ -117,10 +122,10 @@ map('n', '<M-J>', require('smart-splits').resize_down, opts)
 map('n', '<M-K>', require('smart-splits').resize_up, opts)
 map('n', '<M-L>', require('smart-splits').resize_right, opts)
 -- swapping buffers between windows
-map('n', '<leader><leader>h', require('smart-splits').swap_buf_left, opts)
-map('n', '<leader><leader>j', require('smart-splits').swap_buf_down, opts)
-map('n', '<leader><leader>k', require('smart-splits').swap_buf_up, opts)
-map('n', '<leader><leader>l', require('smart-splits').swap_buf_right, opts)
+map('n', '<M-C-S-H>', require('smart-splits').swap_buf_left, opts)
+map('n', '<M-C-S-J>', require('smart-splits').swap_buf_down, opts)
+map('n', '<M-C-S-K>', require('smart-splits').swap_buf_up, opts)
+map('n', '<M-C-S-L>', require('smart-splits').swap_buf_right, opts)
 
 -- ufo (folds)
 map('n', 'zR', require('ufo').openAllFolds, { desc = 'Open all folds' })
