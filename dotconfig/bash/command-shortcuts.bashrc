@@ -79,6 +79,7 @@ alias pwds="py ~/compsci/projects/cli-password-manager/password-manager.py"
 alias lg="lazygit"                              # open lazygit
 alias gl="git log --graph --color=always"
 alias glo="git log --oneline --graph --color=always"
+alias finances="finance-tracker /home/shenkit/gDrive/4_personal_documents/financial/finances.db"
 
 # ========== MISC. ==========
 
