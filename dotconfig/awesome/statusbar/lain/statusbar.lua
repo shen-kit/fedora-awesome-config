@@ -44,13 +44,13 @@ function WB.setup_common_boxes(s)
   -- Create a tasklist widget
   s.tasklist = awful.widget.tasklist {
     screen  = s,
-    filter  = awful.widget.tasklist.filter.currenttags,
+    filter  = awful.widget.tasklist.filter.focused, -- only show current app
     buttons = WB.tasklist,
     style   = {
       shape = gears.shape.rounded_rect,
       shape_border_width = 4,
       shape_border_color = theme.bg_normal,
-      align = "center"
+      align = "center",
     },
     layout  = {
       spacing        = 20,

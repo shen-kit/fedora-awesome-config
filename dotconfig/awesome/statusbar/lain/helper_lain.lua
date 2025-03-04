@@ -32,78 +32,15 @@ end
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-function WB.add_widgets_main(s)
-  return {
-    --layout = wibox.layout.fixed.horizontal,
-    --  --  RC.launcher,
-    --  --  s.taglist,
-    --WB.ar_lr_pre,
-    --s.promptbox,
-    --WB.ar_lr_post
-  }
-end
+function WB.add_widgets_main(s) return {} end
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-function WB.add_widgets_monitor_left(line, s)
-  local cws = clone_widget_set
-  local cis = clone_icon_set
-
-  return {
-    --layout = wibox.layout.fixed.horizontal,
-
-    ----  time
-    --WB.arrow_rd,
-    --cis.clock,   cws.textclock,
-
-    ----  net
-    --WB.arrow_dr,  WB.arrow_rd,
-    --cis.netdown, cws.netdowninfo,
-    --cis.netup,   cws.netupinfo,
-
-    ----  mem, cpu, files system, temp, batt
-    --WB.arrow_dr,  WB.arrow_rd,
-    --cis.mem,     cws.mem,
-    --cis.cpu,     cws.cpu,
-    --cis.fs,      cws.fs,
-    --  --cis.temp,    cws.temp,
-    --cis.bat,     cws.bat,
-    --
-    ----  mpd
-    --WB.arrow_dr,  WB.arrow_rd,
-    --cis.volume,  cws.volume,
-    --cis.mpd,     cws.mpd,
-
-    ---- at last   , you can ignore this line below
-    --WB.spacer,
-  }
-end
+function WB.add_widgets_monitor_left(line, s) return {} end
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-function WB.add_widgets_monitor_right(line, s)
-  local cws = clone_widget_set
-  local cis = clone_icon_set
-
-  return {
-    --layout = wibox.layout.fixed.horizontal,
-
-    ----  volume
-    --WB.arrow_dl,         WB.arrow_ld,
-    --cis.volume_dynamic,  cws.volumewidget,
-    --
-    ----  disk
-    --WB.arrow_dl,         WB.arrow_ld,
-    --cis.disk,           cws.disk_bar_widget,
-
-    ----  battery
-    --WB.arrow_dl,         WB.arrow_ld,
-    --cis.battery,        cws.battery_bar_widget,
-
-    ---- at last
-    --WB.arrow_dl
-  }
-end
+function WB.add_widgets_monitor_right(line, s) return {} end
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 

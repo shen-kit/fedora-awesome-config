@@ -4,23 +4,21 @@ local awful = require("awful")
 
 -- Wibox handling library
 local wibox = require("wibox")
-local lain  = require("lain")
 
 -- Custom local library
 require("statusbar.lain.lain")
-local gmc = require("themes.gmc")
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 local WB = wibox_package
 
-local sep1 = wibox.widget.textbox("  |  ")
+local sep1 = wibox.widget.textbox("    ")
 
 function WB.add_widgets_left(s)
   return {
     layout = wibox.layout.fixed.horizontal,
     s.taglist,
-    wibox.widget.textbox(" | "),
+    sep1,
   }
 end
 
@@ -33,9 +31,6 @@ function WB.add_widgets_right(s)
 
   local t = {
     layout = wibox.layout.fixed.horizontal,
-    -- cws.mpd,
-    -- sep1,
-    -- cws.mem,
     sep1,
     cws.volume,
     sep1,
