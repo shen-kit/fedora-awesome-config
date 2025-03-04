@@ -8,11 +8,8 @@ local dpi                   = xresources.apply_dpi
 
 theme.font                  = "Arimo Nerd Font Propo 9"
 theme.taglist_font          = "Inconsolata Medium 9"
-theme.tasklist_disable_icon = true
-theme.tasklist_fg_normal    = "#aaaaaa"
-theme.tasklist_bg_focus     = "#333333"
 
-theme.bg_normal             = "#333333"
+theme.bg_normal             = "#222222"
 theme.bg_focus              = "#4a4a4a"
 theme.bg_minimize           = "#222222"
 theme.bg_urgent             = "#ff0000"
@@ -21,9 +18,12 @@ theme.fg_normal             = "#eeeeee"
 theme.fg_focus              = "#ffffff"
 theme.fg_urgent             = "#ffffff"
 
+theme.tasklist_disable_icon = true
+theme.tasklist_fg_normal    = "#aaaaaa"
+theme.tasklist_bg_focus     = theme.bg_normal --"#333333"
 
 theme.useless_gap           = dpi(2)
-theme.border_width          = dpi(2)
+theme.border_width          = dpi(1)
 
 theme.border_normal         = gmc.color['grey800']
 theme.border_focus          = gmc.color['blue800'] .. "cc"
